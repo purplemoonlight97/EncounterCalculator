@@ -100,6 +100,8 @@ const RepelSection = (props) => {
       holdRepelLevel = 100;
     } else if (holdRepelLevel <= 0){
       holdRepelLevel = "";
+    } else if (holdRepelLevel.match(/\D/g)){
+      holdRepelLevel = repelLevel;
     }
     setRepelLevel(holdRepelLevel);
     props.setEncounters(processRepels(props.encounters, holdRepelLevel)); 
