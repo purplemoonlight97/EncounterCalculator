@@ -1,0 +1,58 @@
+* {
+    background-color: blanchedalmond;
+}
+
+h2{
+    text-align: center;
+}
+
+select, option, input, img, span{
+    background-color: whitesmoke;
+}
+
+#abilityArea, #repelArea, #todArea, #gscSwarmArea, #rseSwarmArea, gscRuinsArea{
+    width: 20%;
+    margin: 10px auto;
+}
+
+#selections {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0px auto;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 10px;
+}
+
+#encounterSlots, #processedEncounters{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.encounterSlot{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(156, 156, 156);
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+}
+
+.encounterSlot > img {
+    height: 50px;
+    width: 50px;
+    margin: 2px auto;
+}
+
+.encounterSlot > span {
+    text-align: center;
+}

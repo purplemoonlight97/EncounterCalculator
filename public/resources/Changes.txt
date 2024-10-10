@@ -1,0 +1,19 @@
+Improvements made over OG encounter calc
+
+General: 
+Sprites based on game
+Speed
+
+Gen1:
+Added
+
+Gen2:
+Ruins of Alph Unown Individual Letters
+Headbutt Encounters
+JPN/KOR versions
+
+Gen3:
+Static works consistently
+Removed Pressure/Hustle/Vital Spirit (These do NOT affect encounter rates)
+Swarms added
+Allow the use of Keen Eye/Intimidate and Repel at the same time
