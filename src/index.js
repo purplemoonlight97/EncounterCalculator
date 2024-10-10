@@ -141,7 +141,7 @@ const RepelSection = (props) => {
           type='number' 
           value={repelLevel} 
           onChange={handleChange} 
-          onKeyDown={(evt) => ["e", "E", "+", "-", "."].includes(evt.key) && evt.preventDefault()}
+          onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
         />
       </div>
     )
