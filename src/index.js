@@ -92,8 +92,10 @@ const RepelSection = (props) => {
     return tempArray;
   };
 
-  const handleChange = (event) => {
-    let holdRepelLevel = Number(event.target.value).toString(); //Number to string gets rid of leading zeros 
+  const handleChange = (event) => { 
+    let holdRepelLevel = event.target.value;
+    holdRepelLevel = holdRepelLevel.replace(/\D/g,"");
+    holdRepelLevel = Number(holdRepelLevel).toString(); //Number to string gets rid of leading zeros
     if(holdRepelLevel > 100){
       holdRepelLevel = 100;
     } else if (holdRepelLevel <= 0){
