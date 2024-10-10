@@ -1,0 +1,4539 @@
+{
+    "Route 1": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "16",
+                "minLevel": "3",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "19",
+                "minLevel": "3",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "19",
+                "minLevel": "3",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "19",
+                "minLevel": "2",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "16",
+                "minLevel": "2",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "16",
+                "minLevel": "3",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "16",
+                "minLevel": "3",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "19",
+                "minLevel": "4",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "16",
+                "minLevel": "4",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "16",
+                "minLevel": "5",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Route 2": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "19",
+                "minLevel": "3",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "16",
+                "minLevel": "3",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "16",
+                "minLevel": "4",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "19",
+                "minLevel": "4",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "16",
+                "minLevel": "5",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "10",
+                "minLevel": "3",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "19",
+                "minLevel": "2",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "19",
+                "minLevel": "5",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "10",
+                "minLevel": "4",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "10",
+                "minLevel": "5",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Route 3": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "16",
+                "minLevel": "6",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "21",
+                "minLevel": "5",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "16",
+                "minLevel": "7",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "21",
+                "minLevel": "6",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "21",
+                "minLevel": "7",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "16",
+                "minLevel": "8",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "21",
+                "minLevel": "8",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "39",
+                "minLevel": "3",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "39",
+                "minLevel": "5",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "39",
+                "minLevel": "7",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Route 4": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "19",
+                "minLevel": "10",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "21",
+                "minLevel": "10",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "19",
+                "minLevel": "8",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "27",
+                "minLevel": "6",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "21",
+                "minLevel": "8",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "27",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "19",
+                "minLevel": "12",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "21",
+                "minLevel": "12",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "27",
+                "minLevel": "8",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "27",
+                "minLevel": "12",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Route 5": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "43",
+                "minLevel": "13",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "16",
+                "minLevel": "13",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "16",
+                "minLevel": "15",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "52",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "52",
+                "minLevel": "12",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "43",
+                "minLevel": "15",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "43",
+                "minLevel": "16",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "16",
+                "minLevel": "16",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "52",
+                "minLevel": "14",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "52",
+                "minLevel": "16",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Route 6": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "43",
+                "minLevel": "13",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "16",
+                "minLevel": "13",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "16",
+                "minLevel": "15",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "52",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "52",
+                "minLevel": "12",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "43",
+                "minLevel": "15",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "43",
+                "minLevel": "16",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "16",
+                "minLevel": "16",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "52",
+                "minLevel": "14",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "52",
+                "minLevel": "16",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.33333"
+            },
+            "3": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 7": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "16",
+                "minLevel": "19",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "69",
+                "minLevel": "19",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "52",
+                "minLevel": "17",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "43",
+                "minLevel": "22",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "16",
+                "minLevel": "22",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "52",
+                "minLevel": "18",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "58",
+                "minLevel": "18",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "58",
+                "minLevel": "20",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "52",
+                "minLevel": "19",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "52",
+                "minLevel": "20",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Route 8": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "16",
+                "minLevel": "18",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "52",
+                "minLevel": "18",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "27",
+                "minLevel": "17",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "58",
+                "minLevel": "16",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "16",
+                "minLevel": "20",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "52",
+                "minLevel": "20",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "27",
+                "minLevel": "19",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "58",
+                "minLevel": "17",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "58",
+                "minLevel": "15",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "58",
+                "minLevel": "18",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Route 9": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "19",
+                "minLevel": "16",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "21",
+                "minLevel": "16",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "19",
+                "minLevel": "14",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "27",
+                "minLevel": "11",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "21",
+                "minLevel": "13",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "27",
+                "minLevel": "15",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "19",
+                "minLevel": "17",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "21",
+                "minLevel": "17",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "27",
+                "minLevel": "13",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "27",
+                "minLevel": "17",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Route 10": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "100",
+                "minLevel": "16",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "21",
+                "minLevel": "16",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "100",
+                "minLevel": "14",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "27",
+                "minLevel": "11",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "21",
+                "minLevel": "13",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "27",
+                "minLevel": "15",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "100",
+                "minLevel": "17",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "21",
+                "minLevel": "17",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "27",
+                "minLevel": "13",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "27",
+                "minLevel": "17",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "61",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "61",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "79",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "79",
+                "minLevel": "23",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 11": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "27",
+                "minLevel": "14",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "21",
+                "minLevel": "15",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "27",
+                "minLevel": "12",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "96",
+                "minLevel": "9",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "21",
+                "minLevel": "13",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "96",
+                "minLevel": "13",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "27",
+                "minLevel": "15",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "21",
+                "minLevel": "17",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "96",
+                "minLevel": "11",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "96",
+                "minLevel": "15",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 12": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "43",
+                "minLevel": "24",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "16",
+                "minLevel": "25",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "16",
+                "minLevel": "23",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "48",
+                "minLevel": "24",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "43",
+                "minLevel": "22",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "48",
+                "minLevel": "26",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "43",
+                "minLevel": "26",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "16",
+                "minLevel": "27",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "44",
+                "minLevel": "28",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "44",
+                "minLevel": "30",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "72",
+                "minLevel": "5",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "129",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 13": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "43",
+                "minLevel": "24",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "16",
+                "minLevel": "25",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "16",
+                "minLevel": "27",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "48",
+                "minLevel": "24",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "43",
+                "minLevel": "22",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "48",
+                "minLevel": "26",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "43",
+                "minLevel": "26",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "132",
+                "minLevel": "25",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "44",
+                "minLevel": "28",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "44",
+                "minLevel": "30",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "72",
+                "minLevel": "5",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "129",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 14": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "43",
+                "minLevel": "24",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "16",
+                "minLevel": "26",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "132",
+                "minLevel": "23",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "48",
+                "minLevel": "24",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "43",
+                "minLevel": "22",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "48",
+                "minLevel": "26",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "43",
+                "minLevel": "26",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "44",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "17",
+                "minLevel": "28",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "17",
+                "minLevel": "30",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Route 15": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "43",
+                "minLevel": "24",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "132",
+                "minLevel": "26",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "16",
+                "minLevel": "23",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "48",
+                "minLevel": "26",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "43",
+                "minLevel": "22",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "48",
+                "minLevel": "28",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "43",
+                "minLevel": "26",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "44",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "17",
+                "minLevel": "28",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "17",
+                "minLevel": "30",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Route 16": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "21",
+                "minLevel": "20",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "21",
+                "minLevel": "22",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "19",
+                "minLevel": "18",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "84",
+                "minLevel": "20",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "19",
+                "minLevel": "20",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "84",
+                "minLevel": "18",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "84",
+                "minLevel": "22",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "19",
+                "minLevel": "22",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "20",
+                "minLevel": "23",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "20",
+                "minLevel": "25",
+                "rate": "0.01172"
+            }
+        }
+    }
+    ,
+    "Route 17": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "21",
+                "minLevel": "20",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "21",
+                "minLevel": "22",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "20",
+                "minLevel": "25",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "84",
+                "minLevel": "24",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "20",
+                "minLevel": "27",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "84",
+                "minLevel": "26",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "84",
+                "minLevel": "28",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "20",
+                "minLevel": "29",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "22",
+                "minLevel": "25",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "22",
+                "minLevel": "27",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "72",
+                "minLevel": "5",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "129",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 18": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "21",
+                "minLevel": "20",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "21",
+                "minLevel": "22",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "20",
+                "minLevel": "25",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "84",
+                "minLevel": "24",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "22",
+                "minLevel": "25",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "84",
+                "minLevel": "26",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "84",
+                "minLevel": "28",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "20",
+                "minLevel": "29",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "22",
+                "minLevel": "27",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "22",
+                "minLevel": "29",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "72",
+                "minLevel": "5",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "129",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 19": {
+        "surf": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "72",
+                "minLevel": "5",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "72",
+                "minLevel": "10",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "72",
+                "minLevel": "15",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "72",
+                "minLevel": "5",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "72",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "72",
+                "minLevel": "15",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "72",
+                "minLevel": "20",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "72",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "72",
+                "minLevel": "35",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "72",
+                "minLevel": "40",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "120",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "116",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 20": {
+        "surf": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "72",
+                "minLevel": "5",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "72",
+                "minLevel": "10",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "72",
+                "minLevel": "15",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "72",
+                "minLevel": "5",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "72",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "72",
+                "minLevel": "15",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "72",
+                "minLevel": "20",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "72",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "72",
+                "minLevel": "35",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "72",
+                "minLevel": "40",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "120",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "116",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    }
+    ,
+    "Route 21": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "19",
+                "minLevel": "21",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "16",
+                "minLevel": "23",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "20",
+                "minLevel": "30",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "19",
+                "minLevel": "23",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "16",
+                "minLevel": "21",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "17",
+                "minLevel": "30",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "17",
+                "minLevel": "32",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "114",
+                "minLevel": "28",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "114",
+                "minLevel": "30",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "114",
+                "minLevel": "32",
+                "rate": "0.01172"
+            }
+        },
+        "surf": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "72",
+                "minLevel": "5",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "72",
+                "minLevel": "10",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "72",
+                "minLevel": "15",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "72",
+                "minLevel": "5",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "72",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "72",
+                "minLevel": "15",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "72",
+                "minLevel": "20",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "72",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "72",
+                "minLevel": "35",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "72",
+                "minLevel": "40",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "120",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "116",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 22": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "19",
+                "minLevel": "3",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "29",
+                "minLevel": "3",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "19",
+                "minLevel": "4",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "29",
+                "minLevel": "4",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "19",
+                "minLevel": "2",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "29",
+                "minLevel": "2",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "21",
+                "minLevel": "3",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "21",
+                "minLevel": "5",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "32",
+                "minLevel": "3",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "32",
+                "minLevel": "4",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "60",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "60",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 23": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "27",
+                "minLevel": "26",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "132",
+                "minLevel": "33",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "21",
+                "minLevel": "26",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "22",
+                "minLevel": "38",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "132",
+                "minLevel": "38",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "22",
+                "minLevel": "38",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "28",
+                "minLevel": "41",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "132",
+                "minLevel": "43",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "22",
+                "minLevel": "41",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "22",
+                "minLevel": "43",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "80",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "119",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "99",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "117",
+                "minLevel": "23",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Route 24": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "10",
+                "minLevel": "7",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "11",
+                "minLevel": "8",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "16",
+                "minLevel": "12",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "43",
+                "minLevel": "12",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "43",
+                "minLevel": "13",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "63",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "43",
+                "minLevel": "14",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "16",
+                "minLevel": "13",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "63",
+                "minLevel": "8",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "63",
+                "minLevel": "12",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "54",
+                "minLevel": "15",
+                "rate": "0.33333"
+            },
+            "1": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.33333"
+            },
+            "2": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.33333"
+            }
+        }
+    },
+    "Route 25": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "10",
+                "minLevel": "8",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "11",
+                "minLevel": "9",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "16",
+                "minLevel": "13",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "43",
+                "minLevel": "12",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "43",
+                "minLevel": "13",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "63",
+                "minLevel": "12",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "43",
+                "minLevel": "14",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "63",
+                "minLevel": "10",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "14",
+                "minLevel": "7",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "13",
+                "minLevel": "8",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "54",
+                "minLevel": "15",
+                "rate": "0.33333"
+            },
+            "1": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.33333"
+            },
+            "2": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.33333"
+            }
+        }
+    },
+    "Celadon City": {
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "61",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "61",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "79",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "79",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Cerulean Cave - 1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "42",
+                "minLevel": "46",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "97",
+                "minLevel": "46",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "82",
+                "minLevel": "46",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "78",
+                "minLevel": "49",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "49",
+                "minLevel": "49",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "28",
+                "minLevel": "52",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "64",
+                "minLevel": "49",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "47",
+                "minLevel": "52",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "26",
+                "minLevel": "53",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "132",
+                "minLevel": "53",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "80",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "119",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "99",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "117",
+                "minLevel": "23",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Cerulean Cave - 2F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "85",
+                "minLevel": "51",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "49",
+                "minLevel": "51",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "64",
+                "minLevel": "51",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "112",
+                "minLevel": "52",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "20",
+                "minLevel": "52",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "101",
+                "minLevel": "52",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "113",
+                "minLevel": "56",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "40",
+                "minLevel": "54",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "132",
+                "minLevel": "55",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "132",
+                "minLevel": "60",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Cerulean Cave - B1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "112",
+                "minLevel": "55",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "105",
+                "minLevel": "55",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "101",
+                "minLevel": "55",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "35",
+                "minLevel": "64",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "47",
+                "minLevel": "64",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "26",
+                "minLevel": "64",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "28",
+                "minLevel": "57",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "132",
+                "minLevel": "65",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "132",
+                "minLevel": "63",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "132",
+                "minLevel": "67",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "80",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "119",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "99",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "117",
+                "minLevel": "23",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Cerulean City": {
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "54",
+                "minLevel": "15",
+                "rate": "0.33333"
+            },
+            "1": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.33333"
+            },
+            "2": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.33333"
+            }
+        }
+    },
+    "Cinnabar Island": {
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "120",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "116",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Diglett's Cave": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "50",
+                "minLevel": "18",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "50",
+                "minLevel": "19",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "50",
+                "minLevel": "17",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "50",
+                "minLevel": "20",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "50",
+                "minLevel": "16",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "50",
+                "minLevel": "15",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "50",
+                "minLevel": "21",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "50",
+                "minLevel": "22",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "51",
+                "minLevel": "29",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "51",
+                "minLevel": "31",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Fushia City" : {
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "119",
+                "minLevel": "23",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "129",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Mt. Moon - 1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "41",
+                "minLevel": "8",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "41",
+                "minLevel": "7",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "41",
+                "minLevel": "9",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "74",
+                "minLevel": "8",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "41",
+                "minLevel": "6",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "41",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "74",
+                "minLevel": "10",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "46",
+                "minLevel": "8",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "41",
+                "minLevel": "11",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "35",
+                "minLevel": "8",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Mt. Moon - B1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "41",
+                "minLevel": "8",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "41",
+                "minLevel": "7",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "74",
+                "minLevel": "7",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "74",
+                "minLevel": "8",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "41",
+                "minLevel": "9",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "46",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "41",
+                "minLevel": "10",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "41",
+                "minLevel": "11",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "35",
+                "minLevel": "9",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "74",
+                "minLevel": "9",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Mt. Moon - B2F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "41",
+                "minLevel": "9",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "74",
+                "minLevel": "9",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "41",
+                "minLevel": "10",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "74",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "41",
+                "minLevel": "11",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "46",
+                "minLevel": "10",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "46",
+                "minLevel": "12",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "35",
+                "minLevel": "10",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "41",
+                "minLevel": "12",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "35",
+                "minLevel": "12",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Pallet Town": {
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "72",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "72",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "60",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "60",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Pokemon Mansion - 1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "88",
+                "minLevel": "32",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "88",
+                "minLevel": "30",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "77",
+                "minLevel": "34",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "77",
+                "minLevel": "30",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "58",
+                "minLevel": "34",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "77",
+                "minLevel": "32",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "109",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "77",
+                "minLevel": "28",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "89",
+                "minLevel": "37",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "110",
+                "minLevel": "39",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Pokemon Mansion - 2F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "58",
+                "minLevel": "32",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "88",
+                "minLevel": "34",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "88",
+                "minLevel": "34",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "77",
+                "minLevel": "30",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "88",
+                "minLevel": "30",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "77",
+                "minLevel": "32",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "109",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "77",
+                "minLevel": "28",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "89",
+                "minLevel": "39",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "110",
+                "minLevel": "37",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Pokemon Mansion - 3F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "88",
+                "minLevel": "31",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "58",
+                "minLevel": "33",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "88",
+                "minLevel": "35",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "77",
+                "minLevel": "32",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "77",
+                "minLevel": "34",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "89",
+                "minLevel": "40",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "109",
+                "minLevel": "34",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "89",
+                "minLevel": "38",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "77",
+                "minLevel": "36",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "110",
+                "minLevel": "42",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Pokemon Mansion - B1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "88",
+                "minLevel": "33",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "88",
+                "minLevel": "31",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "58",
+                "minLevel": "35",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "77",
+                "minLevel": "32",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "88",
+                "minLevel": "31",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "89",
+                "minLevel": "40",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "77",
+                "minLevel": "34",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "109",
+                "minLevel": "35",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "126",
+                "minLevel": "42",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "110",
+                "minLevel": "42",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Pokemon Tower - 3F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "92",
+                "minLevel": "20",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "92",
+                "minLevel": "21",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "92",
+                "minLevel": "22",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "92",
+                "minLevel": "23",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "92",
+                "minLevel": "19",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "92",
+                "minLevel": "18",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "92",
+                "minLevel": "24",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "104",
+                "minLevel": "20",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "104",
+                "minLevel": "22",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "93",
+                "minLevel": "25",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Pokemon Tower - 4F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "92",
+                "minLevel": "20",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "92",
+                "minLevel": "21",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "92",
+                "minLevel": "22",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "92",
+                "minLevel": "23",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "92",
+                "minLevel": "19",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "92",
+                "minLevel": "18",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "93",
+                "minLevel": "25",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "104",
+                "minLevel": "20",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "104",
+                "minLevel": "22",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "92",
+                "minLevel": "24",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Pokemon Tower - 5F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "92",
+                "minLevel": "20",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "92",
+                "minLevel": "21",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "92",
+                "minLevel": "22",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "92",
+                "minLevel": "23",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "92",
+                "minLevel": "19",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "92",
+                "minLevel": "18",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "93",
+                "minLevel": "25",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "104",
+                "minLevel": "20",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "104",
+                "minLevel": "22",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "92",
+                "minLevel": "24",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Pokemon Tower - 6F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "92",
+                "minLevel": "21",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "92",
+                "minLevel": "22",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "92",
+                "minLevel": "23",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "92",
+                "minLevel": "24",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "92",
+                "minLevel": "20",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "92",
+                "minLevel": "19",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "93",
+                "minLevel": "26",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "104",
+                "minLevel": "22",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "104",
+                "minLevel": "24",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "93",
+                "minLevel": "28",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Pokemon Tower - 7F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "92",
+                "minLevel": "21",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "92",
+                "minLevel": "22",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "92",
+                "minLevel": "23",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "92",
+                "minLevel": "24",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "92",
+                "minLevel": "20",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "93",
+                "minLevel": "28",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "104",
+                "minLevel": "22",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "104",
+                "minLevel": "24",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "93",
+                "minLevel": "28",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "93",
+                "minLevel": "30",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Power Plant": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "100",
+                "minLevel": "21",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "81",
+                "minLevel": "21",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "25",
+                "minLevel": "20",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "25",
+                "minLevel": "24",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "81",
+                "minLevel": "23",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "100",
+                "minLevel": "23",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "82",
+                "minLevel": "32",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "82",
+                "minLevel": "35",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "26",
+                "minLevel": "33",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "26",
+                "minLevel": "36",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Rock Tunnel - 1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "41",
+                "minLevel": "16",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "41",
+                "minLevel": "17",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "74",
+                "minLevel": "17",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "66",
+                "minLevel": "15",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "74",
+                "minLevel": "16",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "132",
+                "minLevel": "18",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "41",
+                "minLevel": "15",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "66",
+                "minLevel": "17",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "95",
+                "minLevel": "13",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "95",
+                "minLevel": "15",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Rock Tunnel - B1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "41",
+                "minLevel": "16",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "41",
+                "minLevel": "17",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "74",
+                "minLevel": "17",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "66",
+                "minLevel": "15",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "74",
+                "minLevel": "16",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "132",
+                "minLevel": "18",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "66",
+                "minLevel": "17",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "66",
+                "minLevel": "17",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "95",
+                "minLevel": "13",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "74",
+                "minLevel": "18",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Safari Zone - Central": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "32",
+                "minLevel": "22",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "111",
+                "minLevel": "25",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "48",
+                "minLevel": "22",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "102",
+                "minLevel": "24",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "33",
+                "minLevel": "31",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "102",
+                "minLevel": "25",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "30",
+                "minLevel": "31",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "47",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "123",
+                "minLevel": "23",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "113",
+                "minLevel": "23",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "147",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "54",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "79",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Safari Zone - East": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "32",
+                "minLevel": "24",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "84",
+                "minLevel": "26",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "46",
+                "minLevel": "22",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "102",
+                "minLevel": "25",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "33",
+                "minLevel": "33",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "102",
+                "minLevel": "23",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "29",
+                "minLevel": "24",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "47",
+                "minLevel": "25",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "108",
+                "minLevel": "25",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "123",
+                "minLevel": "28",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "147",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "54",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "79",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Safari Zone - North": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "32",
+                "minLevel": "22",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "111",
+                "minLevel": "26",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "46",
+                "minLevel": "23",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "102",
+                "minLevel": "25",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "33",
+                "minLevel": "30",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "102",
+                "minLevel": "27",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "30",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "49",
+                "minLevel": "32",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "113",
+                "minLevel": "26",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "127",
+                "minLevel": "28",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "147",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "54",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "79",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Safari Zone - West": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "32",
+                "minLevel": "25",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "84",
+                "minLevel": "26",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "48",
+                "minLevel": "23",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "102",
+                "minLevel": "24",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "33",
+                "minLevel": "33",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "102",
+                "minLevel": "26",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "29",
+                "minLevel": "25",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "49",
+                "minLevel": "31",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "127",
+                "minLevel": "26",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "108",
+                "minLevel": "28",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "147",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "54",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "79",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Seafoam Islands - 1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "86",
+                "minLevel": "30",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "116",
+                "minLevel": "30",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "120",
+                "minLevel": "30",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "98",
+                "minLevel": "30",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "98",
+                "minLevel": "28",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "41",
+                "minLevel": "21",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "42",
+                "minLevel": "29",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "79",
+                "minLevel": "28",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "120",
+                "minLevel": "28",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "80",
+                "minLevel": "38",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Seafoam Islands - B1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "90",
+                "minLevel": "30",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "30",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "120",
+                "minLevel": "32",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "98",
+                "minLevel": "32",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "116",
+                "minLevel": "28",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "86",
+                "minLevel": "30",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "116",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "86",
+                "minLevel": "28",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "87",
+                "minLevel": "38",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "99",
+                "minLevel": "37",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Seafoam Islands - B2F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "86",
+                "minLevel": "30",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "116",
+                "minLevel": "30",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "86",
+                "minLevel": "32",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "116",
+                "minLevel": "32",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "98",
+                "minLevel": "28",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "90",
+                "minLevel": "30",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "98",
+                "minLevel": "30",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "120",
+                "minLevel": "28",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "42",
+                "minLevel": "30",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "124",
+                "minLevel": "37",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Seafoam Islands - B3F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "116",
+                "minLevel": "31",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "86",
+                "minLevel": "31",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "116",
+                "minLevel": "33",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "86",
+                "minLevel": "33",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "98",
+                "minLevel": "29",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "120",
+                "minLevel": "31",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "98",
+                "minLevel": "31",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "120",
+                "minLevel": "29",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "99",
+                "minLevel": "39",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "87",
+                "minLevel": "37",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "120",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "116",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Seafoam Islands - B4F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "98",
+                "minLevel": "31",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "120",
+                "minLevel": "31",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "98",
+                "minLevel": "33",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "120",
+                "minLevel": "33",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "116",
+                "minLevel": "29",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "86",
+                "minLevel": "31",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "116",
+                "minLevel": "31",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "86",
+                "minLevel": "29",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "124",
+                "minLevel": "39",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "42",
+                "minLevel": "32",
+                "rate": "0.01172"
+            }
+        },
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "120",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "116",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "118",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Vermilion City": {
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Vermilion City - Port": {
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "98",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "90",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    },
+    "Victory Road - 1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "66",
+                "minLevel": "24",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "74",
+                "minLevel": "26",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "41",
+                "minLevel": "22",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "95",
+                "minLevel": "36",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "95",
+                "minLevel": "39",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "95",
+                "minLevel": "42",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "75",
+                "minLevel": "41",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "42",
+                "minLevel": "41",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "67",
+                "minLevel": "42",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "105",
+                "minLevel": "43",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Victory Road - 2F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "66",
+                "minLevel": "22",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "74",
+                "minLevel": "24",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "41",
+                "minLevel": "26",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "95",
+                "minLevel": "36",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "95",
+                "minLevel": "39",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "95",
+                "minLevel": "42",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "67",
+                "minLevel": "41",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "42",
+                "minLevel": "40",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "105",
+                "minLevel": "40",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "75",
+                "minLevel": "43",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Victory Road - 3F": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "66",
+                "minLevel": "24",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "74",
+                "minLevel": "26",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "41",
+                "minLevel": "22",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "95",
+                "minLevel": "42",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "49",
+                "minLevel": "40",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "95",
+                "minLevel": "45",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "75",
+                "minLevel": "43",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "42",
+                "minLevel": "41",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "67",
+                "minLevel": "42",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "67",
+                "minLevel": "45",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Viridian Forest": {
+        "Walk": {
+            "variables": {
+                "repel": "true"
+            },
+            "0": {
+                "number": "10",
+                "minLevel": "4",
+                "rate": "0.19921"
+            },
+            "1": {
+                "number": "11",
+                "minLevel": "5",
+                "rate": "0.19921"
+            },
+            "2": {
+                "number": "10",
+                "minLevel": "3",
+                "rate": "0.15234"
+            },
+            "3": {
+                "number": "10",
+                "minLevel": "5",
+                "rate": "0.09765"
+            },
+            "4": {
+                "number": "11",
+                "minLevel": "4",
+                "rate": "0.09765"
+            },
+            "5": {
+                "number": "11",
+                "minLevel": "6",
+                "rate": "0.09765"
+            },
+            "6": {
+                "number": "14",
+                "minLevel": "4",
+                "rate": "0.05078"
+            },
+            "7": {
+                "number": "13",
+                "minLevel": "3",
+                "rate": "0.05078"
+            },
+            "8": {
+                "number": "25",
+                "minLevel": "3",
+                "rate": "0.04297"
+            },
+            "9": {
+                "number": "25",
+                "minLevel": "5",
+                "rate": "0.01172"
+            }
+        }
+    },
+    "Viridian City": {
+        "Old Rod": {
+            "0": {
+                "number": "129",
+                "minLevel": "5",
+                "rate": "1"
+            }
+        },
+        "Good Rod": {
+            "0": {
+                "number": "118",
+                "minLevel": "10",
+                "rate": "0.5"
+            },
+            "1": {
+                "number": "60",
+                "minLevel": "10",
+                "rate": "0.5"
+            }
+        },
+        "Super Rod": {
+            "0": {
+                "number": "72",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "1": {
+                "number": "72",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "2": {
+                "number": "60",
+                "minLevel": "15",
+                "rate": "0.25"
+            },
+            "3": {
+                "number": "60",
+                "minLevel": "15",
+                "rate": "0.25"
+            }
+        }
+    }
+}
