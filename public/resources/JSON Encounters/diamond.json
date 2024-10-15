@@ -1,11 +1,153 @@
 {
+    "Eterna Forest": {
+        "Walk": {
+            "variables": {
+                "repel": "true",
+                "tod": "||265,10,266,10,198,11,198,10,427,10,406,11,427,11,406,12,406,12,427,12,267,12,267,12",
+                "dppRadar": "290,290,290,290",
+                "dppSwarm": "287",
+                "dongle": "273,,204,11,14",
+                "ability": "static|magnet pull|keen eye/intimidate"
+            },
+            "0": {
+                "number": "265",
+                "minLevel": "10",
+                "rate": "0.2"
+            },
+            "1": {
+                "number": "266",
+                "minLevel": "10",
+                "rate": "0.2"
+            },
+            "2": {
+                "number": "265",
+                "minLevel": "11",
+                "rate": "0.1"
+            },
+            "3": {
+                "number": "406",
+                "minLevel": "10",
+                "rate": "0.1"
+            },
+            "4": {
+                "number": "427",
+                "minLevel": "10",
+                "rate": "0.1"
+            },
+            "5": {
+                "number": "406",
+                "minLevel": "11",
+                "rate": "0.1"
+            },
+            "6": {
+                "number": "427",
+                "minLevel": "11",
+                "rate": "0.05"
+            },
+            "7": {
+                "number": "406",
+                "minLevel": "12",
+                "rate": "0.05"
+            },
+            "8": {
+                "number": "406",
+                "minLevel": "12",
+                "rate": "0.04"
+            },
+            "9": {
+                "number": "427",
+                "minLevel": "12",
+                "rate": "0.04"
+            },
+            "10": {
+                "number": "267",
+                "minLevel": "12",
+                "rate": "0.01"
+            },
+            "11": {
+                "number": "267",
+                "minLevel": "12",
+                "rate": "0.01"
+            }
+        }
+    },
+    "Great Marsh - Zones 1 & 2": {
+        "Walk": {
+            "variables": {
+                "repel": "true",
+                "tod": "||194,24,400,25,163,24,164,26,183,25,195,25,183,26,195,26,54,26,54,24,399,26,298,24",
+                "dongle": ",,,24,",
+                "dppGreatMarsh": "true",
+                "ability": "static|magnet pull|keen eye/intimidate"
+            },
+            "0": {
+                "number": "194",
+                "minLevel": "24",
+                "rate": "0.2"
+            },
+            "1": {
+                "number": "400",
+                "minLevel": "25",
+                "rate": "0.2"
+            },
+            "2": {
+                "number": "406",
+                "minLevel": "24",
+                "rate": "0.1"
+            },
+            "3": {
+                "number": "396",
+                "minLevel": "26",
+                "rate": "0.1"
+            },
+            "4": {
+                "number": "183",
+                "minLevel": "25",
+                "rate": "0.1"
+            },
+            "5": {
+                "number": "195",
+                "minLevel": "25",
+                "rate": "0.1"
+            },
+            "6": {
+                "number": "183",
+                "minLevel": "26",
+                "rate": "0.05"
+            },
+            "7": {
+                "number": "195",
+                "minLevel": "26",
+                "rate": "0.05"
+            },
+            "8": {
+                "number": "54",
+                "minLevel": "26",
+                "rate": "0.04"
+            },
+            "9": {
+                "number": "54",
+                "minLevel": "24",
+                "rate": "0.04"
+            },
+            "10": {
+                "number": "399",
+                "minLevel": "26",
+                "rate": "0.01"
+            },
+            "11": {
+                "number": "298",
+                "minLevel": "24",
+                "rate": "0.01"
+            }
+        }
+    },
     "Trophy Garden": {
         "Walk": {
             "variables": {
                 "repel": "true",
                 "tod": "|397,17,315,16,397,16,397,16,315,17,402,17,25,18,172,16,25,18,172,16,25,18,172,16|397,17,315,16,402,16,402,16,315,17,402,17,25,18,172,16,25,18,172,16,25,18,172,16",
-                "dppRadar": "315,402,25,172",
-                "dpptTrophy": "true",
+                "dppTrophy": "true",
                 "ability": "static|magnet pull|keen eye/intimidate"
             },
             "0": {

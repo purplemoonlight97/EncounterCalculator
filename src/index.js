@@ -385,12 +385,12 @@ const GscRuinsSection = (props) => {
 
 const DppRadarSection = (props) => {
 
-  const handleChange = (event) => {
-    if(event.target.checked){
-      const tempArray = JSON.parse(JSON.stringify(props.encounters))
+  const handleChange = () => {
+    if(document.getElementById("radar").checked){
+      const tempArray = JSON.parse(JSON.stringify(props.encounters));
       const radarEncountersArr = props.dppRadar.split(",");
-      tempArray[6].number = radarEncountersArr[0];
-      tempArray[7].number = radarEncountersArr[1];
+      tempArray[4].number = radarEncountersArr[0];
+      tempArray[5].number = radarEncountersArr[1];
       tempArray[10].number = radarEncountersArr[2];
       tempArray[11].number = radarEncountersArr[3];
       props.setEncounters(tempArray);
@@ -402,7 +402,11 @@ const DppRadarSection = (props) => {
   };
 
   useEffect(() => {
-    props.setEncounters(props.encounters);
+    if(props.dppRadar){
+      handleChange();
+    } else {
+      props.setEncounters(props.encounters);
+    }
   }, [props.encounters]);
 
   if (props.dppRadar){
@@ -455,14 +459,14 @@ const DppTrophySection = (props) => {
   };
 
   useEffect(() => {
-    if (props.dpptTrophy){
+    if (props.dppTrophy){
       handleChange();
     } else{
       props.setEncounters(props.encounters);
     }
   }, [props.encounters]);
 
-  if (props.dpptTrophy){
+  if (props.dppTrophy){
     return(
       <div id="dppTrophyArea" class="modChunk">
         <label for="currentDaily">Current Daily: </label>
@@ -472,6 +476,174 @@ const DppTrophySection = (props) => {
         <label for="yesterdayDaily">Previous Daily: </label>
         <select id="yesterdayDaily" disabled onChange={handleChange}>
           <option value="0">None</option>
+        </select>
+      </div>
+    )
+  }
+
+};
+
+const DppGreatMarshSection = (props) => {
+  const handleChange = () => {
+    const greatMarshSelectValue = document.getElementById("greatMarshSelect").value;
+    if(greatMarshSelectValue === "0"){
+      props.setEncounters(props.encounters);
+    } else {
+      const tempArray = JSON.parse(JSON.stringify(props.encounters));
+      tempArray[6].number = greatMarshSelectValue;
+      tempArray[7].number = greatMarshSelectValue;
+      props.setEncounters(tempArray);
+    }
+  };
+
+  useEffect(() => {
+    if (props.dppGreatMarsh){
+      handleChange();
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters]);
+
+  if (props.dppGreatMarsh){
+    if (document.getElementById("games").value !== "platinum"){ //game is diamond or pearl
+      return (
+        <div id="dppGreatMarshArea" class="modChunk">
+          <label for="greatMarshSelect">Daily Spawn?</label>
+          <select id="greatMarshSelect" onChange={handleChange}>
+            <option value="0">None</option>
+            <option value="46">Paras</option>
+            <option value="55">Golduck</option>
+            <option value="102">Exeggcute</option>
+            <option value="115">Kangaskhan</option>
+            <option value="183">Marill</option>
+            <option value="193">Yanma</option>
+            <option value="194">Wooper</option>
+            <option value="195">Quagsire</option>
+            <option value="285">Shroomish</option>
+            <option value="298">Azurill</option>
+            <option value="315">Roselia</option>
+            <option value="316">Gulpin</option>
+            <option value="397">Staravia</option>
+            <option value="399">Bidoof</option>
+            <option value="400">Bibarel</option>
+            <option value="451">Skorupi</option>
+            <option value="452">Drapion</option>
+            <option value="453">Croagunk</option>
+            <option value="454">Toxicroak</option>
+            <option value="455">Carnivine</option>
+          </select>
+        </div>
+      )
+    } else { //game is platinum
+      return (
+        <div id="dppGreatMarshArea" class="modChunk">
+          <label for="greatMarshSelect">Daily Spawn?</label>
+          <select id="greatMarshSelect" onChange={handleChange}>
+            <option value="0">None</option>
+            <option value="46">Paras</option>
+            <option value="102">Exeggcute</option>
+            <option value="115">Kangaskhan</option>
+            <option value="114">Tangela</option>
+            <option value="193">Yanma</option>
+            <option value="194">Wooper</option>
+            <option value="195">Quagsire</option>
+            <option value="285">Shroomish</option>
+            <option value="316">Gulpin</option>
+            <option value="352">Kecleon</option>
+            <option value="357">Tropius</option>
+            <option value="451">Skorupi</option>
+            <option value="452">Drapion</option>
+            <option value="453">Croagunk</option>
+            <option value="454">Toxicroak</option>
+            <option value="455">Carnivine</option>
+          </select>
+        </div>
+      )
+    }
+  }
+};
+
+const DppSwarmSection = (props) => {
+
+  const handleChange = () => {
+    if (document.getElementById("dppSwarmCheckbox").checked){
+      const tempArray = JSON.parse(JSON.stringify(props.encounters));
+      tempArray[0].number = props.dppSwarm;
+      tempArray[1].number = props.dppSwarm;
+      props.setEncounters(tempArray);
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  };
+
+  useEffect(() => {
+    if (props.dppSwarm){
+      handleChange();
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters]);
+
+  if (props.dppSwarm){
+    return (
+      <div id="dppSwarmArea" class="modChunk">
+        <label for="radar">Swarm?</label>
+        <input type="checkbox" id="dppSwarmCheckbox" onChange={handleChange}/>
+      </div>
+    )
+  }
+};
+
+const DongleSection = (props) => {
+
+  const gamesArr = ["Ruby", "Sapphire", "Emerald", "FireRed", "LeafGreen"];
+  const [selectedGame, setSelectedGame] = useState(-1);
+
+  const handleDongleChange = () => {
+    const dongleArr = props.dongle.split(",");
+    const dongleSelect = document.getElementById("dongleGameSelect");
+    let dongleHTML = `<option value="-1">None</option>`
+    dongleArr.forEach((e,i) => {
+      if (e != ""){
+        dongleHTML += `<option value=${i}>${gamesArr[i]}</option>`;
+      }
+    });
+    dongleSelect.innerHTML = dongleHTML;
+    dongleSelect.value = selectedGame;
+  };
+
+  const handleChange = () => {
+    const dongleArr = props.dongle.split(",");
+    const dongleSelect = document.getElementById("dongleGameSelect");
+    const dongleSelectValue = dongleSelect.value;
+    setSelectedGame(dongleSelectValue);
+
+    if (dongleSelectValue != "-1"){
+      const tempArray = JSON.parse(JSON.stringify(props.encounters));
+      tempArray[8].number = dongleArr[dongleSelectValue];
+      tempArray[9].number = dongleArr[dongleSelectValue];
+      props.setEncounters(tempArray);
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  }
+
+  useEffect(() => {
+    if (props.dongle){
+      handleDongleChange();
+      handleChange();
+    } else {
+      setSelectedGame(-1);
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters]);
+
+  if (props.dongle){
+    return (
+      <div id="dongleArea" class="modChunk">
+        <label for="dongleGameSelect">GBA game?</label>
+        <select id="dongleGameSelect" onChange={handleChange}>
+          <option value="-1">None</option>
         </select>
       </div>
     )
@@ -554,9 +726,14 @@ const AbilitySection = (props) => {
             props.setEncounters(typeModAbility("steel", 0.5));
             break;
           case "keen eye/intimidate":
-            leadLevelInput.disabled = false;
-            props.setEncounters(intimidateAbility(leadLevel));
-            props.setIntimidateActive(true);
+            if (!props.radarActive){
+              leadLevelInput.disabled = false;
+              props.setEncounters(intimidateAbility(leadLevel));
+              props.setIntimidateActive(true);
+            } else {
+              leadLevelInput.value = "";
+              props.setEncounters(props.encounters);
+            }
             break;
           default:
             break;
@@ -638,6 +815,9 @@ const App = () => {
   const [gscRuinsEncounters, setGscRuinsEncounters] = useState([]); //encounters modified in the Ruins of Alph
   const [dppRadarEncounters, setDppRadarEncounters] = useState([]); //encounters modified by Diamond, Pearl, and Platinum Radar
   const [dppTrophyEncounters, setDppTrophyEncounters] = useState([]); //encounters modified by the DPP Trophy Garden
+  const [dppGreatMarshEncounters, setDppGreatMarshEncounters] = useState([]); //encounters modified by the DPP Great Marsh daily spawns
+  const [dppSwarmEncounters, setDppSwarmEncounters] = useState([]); //encounters modified by DPP Swarms
+  const [dongleEncounters, setDongleEncounters] = useState([]); //encounters modified by GBA slot in DPP
   const [abilityEncounters, setAbilityEncounters] = useState([]);//encounters modified by abilities such as static
   const [repelEncounters, setRepelEncounters] = useState([]); //encounters modified by repels
   //variables that come with the encounters such as if a repel can be used
@@ -791,14 +971,17 @@ const App = () => {
           <option value="" selected disabled hidden>Choose Area First</option>
         </select>
       </div>
-      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(dppTrophyEncounters, spriteExtension, pokemonData)}></div>
+      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(dongleEncounters, spriteExtension, pokemonData)}></div>
       <TimeOfDaySection tod={variables.tod} setTodIndex={setTodIndex} encounters={encounters} setEncounters={setTodEncounters}/>
       <GscSwarmSection gscSwarm={variables.gscSwarm} todIndex={todIndex} encounters={todEncounters} setEncounters={setGscSwarmEncounters}/>
       <RseSwarmSection rseSwarm={variables.rseSwarm} encounters={gscSwarmEncounters} setEncounters={setRseSwarmEncounters}/>
       <GscRuinsSection gscRuins={variables.gscRuins} encounters={rseSwarmEncounters} setEncounters={setGscRuinsEncounters}/>
       <DppRadarSection dppRadar={variables.dppRadar} encounters={gscRuinsEncounters} setEncounters={setDppRadarEncounters} setRadarActive={setRadarActive}/>
-      <DppTrophySection dpptTrophy={variables.dpptTrophy} encounters={dppRadarEncounters} setEncounters={setDppTrophyEncounters} pokemonArr={pokemonData}/>
-      <AbilitySection ability={variables.ability} encounters={dppTrophyEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive}/>
+      <DppTrophySection dppTrophy={variables.dppTrophy} encounters={dppRadarEncounters} setEncounters={setDppTrophyEncounters} pokemonArr={pokemonData}/>
+      <DppGreatMarshSection dppGreatMarsh={variables.dppGreatMarsh} encounters={dppTrophyEncounters} setEncounters={setDppGreatMarshEncounters} pokemonArr={pokemonData}/>
+      <DppSwarmSection dppSwarm={variables.dppSwarm} encounters={dppGreatMarshEncounters} setEncounters={setDppSwarmEncounters}/>
+      <DongleSection dongle={variables.dongle} encounters={dppSwarmEncounters} setEncounters={setDongleEncounters}/>
+      <AbilitySection ability={variables.ability} encounters={dongleEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive}/>
       <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive}/>
       <div id="processedEncounters"
         dangerouslySetInnerHTML={
