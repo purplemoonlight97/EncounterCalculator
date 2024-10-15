@@ -10,7 +10,7 @@ const findName = (num, arr) => {
       break;
     }
   };
-  return name;
+  return name.charAt(0).toUpperCase() + name.slice(1);
 };
 
 //converts an array of encounters into HTML for output
@@ -133,9 +133,16 @@ const RepelSection = (props) => {
     }
   }, [props.intimidateActive]);
 
+  useEffect(() => {
+    const repelInput = document.getElementById("repelLevelInput");
+    if (repelInput){
+      repelInput.disabled = props.radarActive;
+    };
+  }, [props.radarActive]);
+
   if (props.repel){
     return(
-      <div id="repelArea">
+      <div id="repelArea" class="modChunk">
         Repel Level: <input 
           id="repelLevelInput" 
           type='number' 
@@ -171,13 +178,20 @@ const TimeOfDaySection = (props) => {
   };
 
   useEffect(() => {
-    props.setEncounters(props.encounters);
-    props.setTodIndex(1);
+    if (props.tod){
+      const todIndex = 1;
+      const timeArray = props.tod.split("|");
+      props.setEncounters(processTod(props.encounters, timeArray[todIndex].split(",")));
+      props.setTodIndex(todIndex);
+    } else {
+      props.setEncounters(props.encounters);
+      props.setTodIndex(1);
+    }
   }, [props.encounters]);
 
   if (props.tod){
     return (
-      <div id="todArea">
+      <div id="todArea" class="modChunk">
         <span>Time of Day:</span>
         <select id="todInput" onChange={handleChange}>
           <option value="0">Morning</option>
@@ -224,7 +238,7 @@ const GscSwarmSection = (props) => {
 
   if (props.gscSwarm){
     return (
-      <div id="gscSwarmArea">
+      <div id="gscSwarmArea" class="modChunk">
         <label for="gscSwarmBox">Swarm?</label>
         <input type="checkbox" id="gscSwarmBox" onChange={handleChange}/>
       </div>
@@ -275,7 +289,7 @@ const RseSwarmSection = (props) => {
 
   if (props.rseSwarm){
     return (
-      <div id="rseSwarmArea">
+      <div id="rseSwarmArea" class="modChunk">
         <span>Swarm?</span>
         <select id="rseSwarmSelect" onChange={handleChange} dangerouslySetInnerHTML={{__html: rseSwarmHTML}}>
         </select>
@@ -349,7 +363,7 @@ const GscRuinsSection = (props) => {
 
   if (props.gscRuins){
     return(
-      <div id="gscRuinsArea">
+      <div id="gscRuinsArea" class="modChunk">
         <fieldset onChange={handleChange}>
           <legend>Select completed puzzles</legend>
           <label for="upper-right">Upper Right</label>
@@ -367,6 +381,102 @@ const GscRuinsSection = (props) => {
       </div>
     )
   }
+};
+
+const DppRadarSection = (props) => {
+
+  const handleChange = (event) => {
+    if(event.target.checked){
+      const tempArray = JSON.parse(JSON.stringify(props.encounters))
+      const radarEncountersArr = props.dppRadar.split(",");
+      tempArray[6].number = radarEncountersArr[0];
+      tempArray[7].number = radarEncountersArr[1];
+      tempArray[10].number = radarEncountersArr[2];
+      tempArray[11].number = radarEncountersArr[3];
+      props.setEncounters(tempArray);
+      props.setRadarActive(true);
+    } else {
+      props.setEncounters(props.encounters);
+      props.setRadarActive(false);
+    }
+  };
+
+  useEffect(() => {
+    props.setEncounters(props.encounters);
+  }, [props.encounters]);
+
+  if (props.dppRadar){
+    return(
+      <div id="dppRadarArea" class="modChunk">
+        <label for="radar">Radar?</label>
+        <input type="checkbox" id="radar" onChange={handleChange}/>
+      </div>
+    )
+  }
+
+};
+
+const DppTrophySection = (props) => {
+
+  const handleChange = () => {
+    const dailyPokemonArr = ["35", "39", "52", "113", "133", "137", "173", "174", "183", "298", "311", "312", "351", "438", "439", "440"];
+    if (document.getElementById("games").value === "platinum"){
+      dailyPokemonArr = ["35", "39", "52", "113", "132", "133", "173", "174", "183", "298", "311", "312", "351", "438", "439", "440"];
+    }
+    const currentSelect = document.getElementById("currentDaily");
+    const currentSelectValue = currentSelect.value;
+    const previousSelect = document.getElementById("yesterdayDaily");
+    let previousSelectValue = previousSelect.value;
+
+    let currentHTML = `<option value="0">None</option>`;
+    dailyPokemonArr.forEach(e => {
+      currentHTML += `<option value=${e}>${findName(e, props.pokemonArr)}</option>`
+    });
+    currentSelect.innerHTML = currentHTML;
+    currentSelect.value = currentSelectValue;
+
+    let previousHTML = `<option value="0">None</option>`;
+    if (currentSelectValue !== "0"){
+      previousSelect.disabled = false;
+      dailyPokemonArr.forEach(e => {
+        previousHTML += (e === currentSelectValue) ? `` : `<option value=${e}>${findName(e, props.pokemonArr)}</option>`;
+      });
+      previousSelectValue = (currentSelectValue === previousSelectValue) ? "0" : previousSelectValue;
+    } else {
+      previousSelect.disabled = true;
+      previousSelectValue = "0";
+    }
+    previousSelect.innerHTML = previousHTML;
+    previousSelect.value = previousSelectValue;
+    const tempArray = JSON.parse(JSON.stringify(props.encounters));
+    tempArray[6].number = (currentSelectValue === "0") ? tempArray[6].number : currentSelectValue;
+    tempArray[7].number = (previousSelectValue === "0") ? tempArray[7].number : previousSelectValue;
+    props.setEncounters(tempArray);
+  };
+
+  useEffect(() => {
+    if (props.dpptTrophy){
+      handleChange();
+    } else{
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters]);
+
+  if (props.dpptTrophy){
+    return(
+      <div id="dppTrophyArea" class="modChunk">
+        <label for="currentDaily">Current Daily: </label>
+        <select id="currentDaily" onChange={handleChange}>
+          <option value="0">None</option>
+        </select>
+        <label for="yesterdayDaily">Previous Daily: </label>
+        <select id="yesterdayDaily" disabled onChange={handleChange}>
+          <option value="0">None</option>
+        </select>
+      </div>
+    )
+  }
+
 };
 
 const AbilitySection = (props) => {
@@ -492,7 +602,7 @@ const AbilitySection = (props) => {
 
   if (props.ability){
     return (
-      <div id="abilityArea">
+      <div id="abilityArea" class="modChunk">
         <span>Ability?</span>
         <select id="abilitySelect" onChange={handleChange} dangerouslySetInnerHTML={{__html: abilityHTML}}>
         </select>
@@ -526,6 +636,8 @@ const App = () => {
   const [gscSwarmEncounters, setGscSwarmEncounters] = useState([]);//encounters modified by swarms in Gold, Silver, and Crystal
   const [rseSwarmEncounters, setRseSwarmEncounters] = useState([]);//encounters modified by swarms in Ruby, Sapphire, and Emerald
   const [gscRuinsEncounters, setGscRuinsEncounters] = useState([]); //encounters modified in the Ruins of Alph
+  const [dppRadarEncounters, setDppRadarEncounters] = useState([]); //encounters modified by Diamond, Pearl, and Platinum Radar
+  const [dppTrophyEncounters, setDppTrophyEncounters] = useState([]); //encounters modified by the DPP Trophy Garden
   const [abilityEncounters, setAbilityEncounters] = useState([]);//encounters modified by abilities such as static
   const [repelEncounters, setRepelEncounters] = useState([]); //encounters modified by repels
   //variables that come with the encounters such as if a repel can be used
@@ -533,6 +645,7 @@ const App = () => {
   //variables created by user inputs that have to be passed between componenents
   const [todIndex, setTodIndex] = useState(1);
   const [intimidateActive, setIntimidateActive] = useState(false);
+  const [radarActive, setRadarActive] = useState(false);
   //sprite extension based on game
   const [spriteExtension, setSpriteExtension] = useState('');
   //whether to use game specific sprites or just 3d models
@@ -583,43 +696,43 @@ const App = () => {
   const handleGameChange = (event) => {
     fetchEncounterData(event.target.value);
     clearEncounters();
-    if (useModels){
-      setSpriteExtension("gen6");
-    } else {
-      switch (event.target.value){
-        case "red":
-        case "blue - INT":
-        case "blue - JPN":
-          setSpriteExtension("gen1/rb");
-          break;
-        case "yellow":
-          setSpriteExtension("gen1/yellow");
-          break;
-        case "gold":
-        case "gold - JPN":
-          setSpriteExtension("gen2/gold");
-          break;
-        case "silver":
-        case "silver - JPN":
-          setSpriteExtension("gen2/silver");
-          break;
-        case "crystal":
-          setSpriteExtension("gen2/crystal");
-          break;
-        case "ruby":
-        case "sapphire":
-          setSpriteExtension("gen3/rs");
-          break;
-        case "emerald":
-          setSpriteExtension("gen3/emerald");
-          break;
-        case "firered":
-        case "leafgreen":
-          setSpriteExtension("gen3/frlg");
-          break;
-        default:
-          setSpriteExtension("gen6");
-      }
+    switch (event.target.value){
+      case "red":
+      case "blue - INT":
+      case "blue - JPN":
+        setSpriteExtension("gen1/rb");
+        break;
+      case "yellow":
+        setSpriteExtension("gen1/yellow");
+        break;
+      case "gold":
+      case "gold - JPN":
+        setSpriteExtension("gen2/gold");
+        break;
+      case "silver":
+      case "silver - JPN":
+        setSpriteExtension("gen2/silver");
+        break;
+      case "crystal":
+        setSpriteExtension("gen2/crystal");
+        break;
+      case "ruby":
+      case "sapphire":
+        setSpriteExtension("gen3/rs");
+        break;
+      case "emerald":
+        setSpriteExtension("gen3/emerald");
+        break;
+      case "firered":
+      case "leafgreen":
+        setSpriteExtension("gen3/frlg");
+        break;
+      case "diamond":
+      case "pearl":
+        setSpriteExtension("gen4/dp");
+        break;
+      default:
+        setSpriteExtension("gen6");
     }
     const methodElement = document.getElementById("methods");
     methodElement.innerHTML = `<option value="" selected disabled hidden>Choose Area First</option>`;
@@ -669,6 +782,7 @@ const App = () => {
           <option value="emerald">Emerald</option>
           <option value="firered">FireRed</option>
           <option value="leafgreen">LeafGreen</option>
+          <option value="diamond">Diamond</option>
         </select>
         <select id="areas" onChange={handleAreaChange} disabled>
           <option value="" selected disabled hidden>Choose Game First</option>
@@ -677,13 +791,15 @@ const App = () => {
           <option value="" selected disabled hidden>Choose Area First</option>
         </select>
       </div>
-      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(gscRuinsEncounters, spriteExtension, pokemonData)}></div>
+      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(dppTrophyEncounters, spriteExtension, pokemonData)}></div>
       <TimeOfDaySection tod={variables.tod} setTodIndex={setTodIndex} encounters={encounters} setEncounters={setTodEncounters}/>
       <GscSwarmSection gscSwarm={variables.gscSwarm} todIndex={todIndex} encounters={todEncounters} setEncounters={setGscSwarmEncounters}/>
       <RseSwarmSection rseSwarm={variables.rseSwarm} encounters={gscSwarmEncounters} setEncounters={setRseSwarmEncounters}/>
       <GscRuinsSection gscRuins={variables.gscRuins} encounters={rseSwarmEncounters} setEncounters={setGscRuinsEncounters}/>
-      <AbilitySection ability={variables.ability} encounters={gscRuinsEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive}/>
-      <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive}/>
+      <DppRadarSection dppRadar={variables.dppRadar} encounters={gscRuinsEncounters} setEncounters={setDppRadarEncounters} setRadarActive={setRadarActive}/>
+      <DppTrophySection dpptTrophy={variables.dpptTrophy} encounters={dppRadarEncounters} setEncounters={setDppTrophyEncounters} pokemonArr={pokemonData}/>
+      <AbilitySection ability={variables.ability} encounters={dppTrophyEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive}/>
+      <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive}/>
       <div id="processedEncounters"
         dangerouslySetInnerHTML={
           encounters.length === 0 ? 

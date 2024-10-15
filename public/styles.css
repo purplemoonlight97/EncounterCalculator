@@ -10,7 +10,7 @@ select, option, input, img, span{
     background-color: whitesmoke;
 }
 
-#abilityArea, #repelArea, #todArea, #gscSwarmArea, #rseSwarmArea, gscRuinsArea{
+.modChunk{
     width: 20%;
     margin: 10px auto;
 }
