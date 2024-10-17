@@ -651,6 +651,182 @@ const DongleSection = (props) => {
 
 };
 
+//The module for the HGSS safari zone
+//Certainly the most complicated module
+const HgssSafariZoneSection = (props) => {
+  //The five variables players in game can change to affect the encounter slots
+  const [plainsBlocks, setPlainsBlocks] = useState(0);
+  const [forestBlocks, setForestBlocks] = useState(0);
+  const [peakBlocks, setPeakBlocks] = useState(0);
+  const [waterBlocks, setWaterBlocks] = useState(0);
+  const [days, setDays] = useState(0);
+
+  //These are in terms of day. After a level is hit, the multiplier goes up
+  //e.g. after waiting 10 in game days, plains blocks are worth 2x instead of 1x
+  const plainsMultiplierArr = [10,50,100,150,200,250];
+  const forestMultiplierArr = [20,60,110,160,210,250];
+  const peakMultiplierArr = [30,70,120,170,220,250];
+  const waterMultiplierArr = [40,80,130,180,230,250];
+
+  //players can only place 30 blocks total
+  const maxBlocks = 30;
+
+  const totalBlocks = () => {
+    return plainsBlocks + forestBlocks + peakBlocks + waterBlocks;
+  };
+
+  const checkMax = (oldVal, newVal) => {
+    if (newVal < 0){
+      return 0;
+    } else if (totalBlocks() - oldVal + newVal > maxBlocks){
+      return (maxBlocks - (totalBlocks() - oldVal))
+    } else {
+      return newVal;
+    }
+  };
+
+  //sees what tier of multiplier the player has earned via days according to the various arrays
+  const multiplier = (arr) => {
+    for (let i = 0; i < arr.length; i++){
+      if (arr[i] > days){
+        return i + 1;
+      }
+    }
+    return 7;
+  };
+
+  const handlePlainsChange = (event) => {
+    setPlainsBlocks(checkMax(plainsBlocks, Number(event.target.value)));
+  };
+
+  const handleForestChange = (event) => {
+    setForestBlocks(checkMax(forestBlocks, Number(event.target.value)));
+  };
+
+  const handlePeakChange = (event) => {
+    setPeakBlocks(checkMax(peakBlocks, Number(event.target.value)));
+  };
+
+  const handleWaterChange = (event) => {
+    setWaterBlocks(checkMax(waterBlocks, Number(event.target.value)));
+  };
+
+  const handleDayChange = (event) => {
+    const daysTemp = Number(event.target.value);
+    if (daysTemp < 0){
+      setDays(0);
+    } else if (daysTemp > 250){
+      setDays(250);
+    } else {
+      setDays(daysTemp);
+    }
+  };
+
+  const handleChange = () => {
+    //calculates the number of points per type of block
+    const pointsArr = [
+      plainsBlocks * multiplier(plainsMultiplierArr), 
+      forestBlocks * multiplier(forestMultiplierArr),
+      peakBlocks * multiplier(peakMultiplierArr),
+      waterBlocks * multiplier(waterMultiplierArr)
+    ];
+    const safariBlocksArr = props.hgssSafariBlocks.split("|");
+    const safariSlots = props.hgssSafariSlots.split("|")[props.todIndex].split(",");
+    const tempArray = JSON.parse(JSON.stringify(props.encounters));
+    let currentIndex = 0;
+
+    //goes through each of the provided block thresholds
+    safariBlocksArr.forEach((e, i) => {
+      const individualBlocksArr = e.split(",");
+      let allBlocksEnough = true;
+      //checks each of the 4 types of blocks to see if there is enough points
+      for (let j = 0; j < individualBlocksArr.length; j++){
+        if (pointsArr[j] < individualBlocksArr[j]){
+          allBlocksEnough = false;
+        }
+      }
+      //if all 4 types of blocks are strong enough, replace the pokemon
+      //this will always replace the 0th slot first and then the 1st, etc.
+      if (allBlocksEnough){
+        tempArray[currentIndex].number = safariSlots[i * 2];
+        tempArray[currentIndex].minLevel = safariSlots[i * 2 + 1];
+        currentIndex++;
+      }
+    });
+    props.setEncounters(tempArray);
+  };
+
+  useEffect(() => {
+    if (props.hgssSafariBlocks){
+      handleChange();
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters, plainsBlocks, forestBlocks, peakBlocks, waterBlocks, days]);
+
+  useEffect(() => {
+    setPlainsBlocks(0);
+    setForestBlocks(0);
+    setPeakBlocks(0);
+    setWaterBlocks(0);
+    setDays(0);
+  }, [props.primeEncounters]);
+
+  if (props.hgssSafariBlocks){
+    return ( 
+      <fieldset>
+        <legend>Blocks {totalBlocks()}/{maxBlocks}</legend>
+        <div id="hgssSafariZoneArea" class="modChunk">
+          <label for="plainsInput">Plains Blocks:</label>
+          <input 
+            id="plainsInput" 
+            type='number' 
+            value={plainsBlocks.toString()} 
+            onChange={handlePlainsChange} 
+            onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
+          />
+          <br />
+          <label for="forestInput">Forest Blocks:</label>
+          <input 
+            id="forestInput" 
+            type='number' 
+            value={forestBlocks.toString()} 
+            onChange={handleForestChange} 
+            onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
+          />
+          <br />
+          <label for="peakInput">Peak Blocks:</label>
+          <input 
+            id="peakInput" 
+            type='number' 
+            value={peakBlocks.toString()} 
+            onChange={handlePeakChange} 
+            onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
+          />
+          <br />
+          <label for="waterInput">Water Blocks:</label>
+          <input 
+            id="waterInput" 
+            type='number' 
+            value={waterBlocks.toString()} 
+            onChange={handleWaterChange} 
+            onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
+          />
+          <br />
+          <label for="dayInput">Days:</label>
+          <input 
+            id="dayInput" 
+            type='number' 
+            value={days.toString()} 
+            onChange={handleDayChange} 
+            onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
+          />
+        </div>
+      </fieldset>
+    )
+  }
+};
+
 const AbilitySection = (props) => {
   const [abilityHTML, setAbilityHTML] = useState("");
   const [leadLevel, setLeadLevel] = useState();
@@ -818,6 +994,7 @@ const App = () => {
   const [dppGreatMarshEncounters, setDppGreatMarshEncounters] = useState([]); //encounters modified by the DPP Great Marsh daily spawns
   const [dppSwarmEncounters, setDppSwarmEncounters] = useState([]); //encounters modified by DPP Swarms
   const [dongleEncounters, setDongleEncounters] = useState([]); //encounters modified by GBA slot in DPP
+  const [hgssSafariEncounters, setHgssSafariEncounters] = useState([]); //encounters modified by blocks in the heartgold or soulsilver safari zone
   const [abilityEncounters, setAbilityEncounters] = useState([]);//encounters modified by abilities such as static
   const [repelEncounters, setRepelEncounters] = useState([]); //encounters modified by repels
   //variables that come with the encounters such as if a repel can be used
@@ -911,6 +1088,10 @@ const App = () => {
       case "pearl":
         setSpriteExtension("gen4/dp");
         break;
+      case "heartgold":
+      case "soulsilver":
+        setSpriteExtension("gen4/hgss");
+        break;
       default:
         setSpriteExtension("gen6");
     }
@@ -963,6 +1144,7 @@ const App = () => {
           <option value="firered">FireRed</option>
           <option value="leafgreen">LeafGreen</option>
           <option value="diamond">Diamond</option>
+          <option value="heartgold">HeartGold</option>
         </select>
         <select id="areas" onChange={handleAreaChange} disabled>
           <option value="" selected disabled hidden>Choose Game First</option>
@@ -971,7 +1153,7 @@ const App = () => {
           <option value="" selected disabled hidden>Choose Area First</option>
         </select>
       </div>
-      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(dongleEncounters, spriteExtension, pokemonData)}></div>
+      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(hgssSafariEncounters, spriteExtension, pokemonData)}></div>
       <TimeOfDaySection tod={variables.tod} setTodIndex={setTodIndex} encounters={encounters} setEncounters={setTodEncounters}/>
       <GscSwarmSection gscSwarm={variables.gscSwarm} todIndex={todIndex} encounters={todEncounters} setEncounters={setGscSwarmEncounters}/>
       <RseSwarmSection rseSwarm={variables.rseSwarm} encounters={gscSwarmEncounters} setEncounters={setRseSwarmEncounters}/>
@@ -981,7 +1163,8 @@ const App = () => {
       <DppGreatMarshSection dppGreatMarsh={variables.dppGreatMarsh} encounters={dppTrophyEncounters} setEncounters={setDppGreatMarshEncounters} pokemonArr={pokemonData}/>
       <DppSwarmSection dppSwarm={variables.dppSwarm} encounters={dppGreatMarshEncounters} setEncounters={setDppSwarmEncounters}/>
       <DongleSection dongle={variables.dongle} encounters={dppSwarmEncounters} setEncounters={setDongleEncounters}/>
-      <AbilitySection ability={variables.ability} encounters={dongleEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive}/>
+      <HgssSafariZoneSection hgssSafariBlocks={variables.hgssSafariBlocks} hgssSafariSlots={variables.hgssSafariSlots} todIndex={todIndex} primeEncounters={encounters} encounters={dongleEncounters} setEncounters={setHgssSafariEncounters}/>
+      <AbilitySection ability={variables.ability} encounters={hgssSafariEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive}/>
       <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive}/>
       <div id="processedEncounters"
         dangerouslySetInnerHTML={
