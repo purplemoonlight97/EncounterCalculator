@@ -308,10 +308,19 @@ const GscRuinsSection = (props) => {
     const ULcheck = document.getElementById("upper-left");
 
     if(URcheck){
-      const URarray = ["201-a", "201-b", "201-c", "201-d", "201-e", "201-f", "201-g", "201-h", "201-i", "201-j", "201-k"];
-      const LLarray = ["201-l", "201-m", "201-n", "201-o", "201-p", "201-q", "201-r"];
-      const LRarray = ["201-s", "201-t", "201-u", "201-v", "201-w"];
-      const ULarray = ["201-x", "201-y", "201-z"];
+      let URarray, LLarray, LRarray, ULarray;
+
+      if (props.gscRuins){
+        URarray = ["201-a", "201-b", "201-c", "201-d", "201-e", "201-f", "201-g", "201-h", "201-i", "201-j", "201-k"];
+        LLarray = ["201-l", "201-m", "201-n", "201-o", "201-p", "201-q", "201-r"];
+        LRarray = ["201-s", "201-t", "201-u", "201-v", "201-w"];
+        ULarray = ["201-x", "201-y", "201-z"];
+      } else {
+        URarray = ["201-a", "201-b", "201-c", "201-d", "201-e", "201-f", "201-g", "201-h", "201-i", "201-j"];
+        LLarray = ["201-k", "201-l", "201-m", "201-n", "201-o", "201-p", "201-q"];
+        LRarray = ["201-r", "201-s", "201-t", "201-u", "201-v"];
+        ULarray = ["201-w", "201-x", "201-y", "201-z"];
+      }
 
       const tempArray = [];
 
@@ -321,7 +330,7 @@ const GscRuinsSection = (props) => {
             {
               "number": e,
               "minLevel": 5,
-              "rate": e === "201-z" ? "0.0234375" : "0.0390625"
+              "rate": props.gscRuins ? e === "201-z" ? "0.0234375" : "0.0390625" : "0.038461538"
             }
           );
         });
@@ -356,12 +365,15 @@ const GscRuinsSection = (props) => {
   useEffect(() => {
     if(props.gscRuins){
       handleChange();
-    } else{
+    } else if(props.hgssRuins){
+      handleChange();
+    }  
+    else{
       props.setEncounters(props.encounters);
     }
   }, [props.encounters]);
 
-  if (props.gscRuins){
+  if (props.gscRuins || props.hgssRuins){
     return(
       <div id="gscRuinsArea" class="modChunk">
         <fieldset onChange={handleChange}>
@@ -774,9 +786,9 @@ const HgssSafariZoneSection = (props) => {
 
   if (props.hgssSafariBlocks){
     return ( 
-      <fieldset>
+      <fieldset class="modChunk">
         <legend>Blocks {totalBlocks()}/{maxBlocks}</legend>
-        <div id="hgssSafariZoneArea" class="modChunk">
+        <div id="hgssSafariZoneArea">
           <label for="plainsInput">Plains Blocks:</label>
           <input 
             id="plainsInput" 
@@ -823,6 +835,46 @@ const HgssSafariZoneSection = (props) => {
           />
         </div>
       </fieldset>
+    )
+  }
+};
+
+const HgssRadioSection = (props) => {
+  const handleSound = (arr) => {
+    const tempArray = JSON.parse(JSON.stringify(props.encounters));
+    arr.forEach((e, i) => {
+      tempArray[i + 2].number = e;
+    });
+    props.setEncounters(tempArray);
+  };
+
+  const handleChange = () => {
+    const sound = document.getElementById("radioSelect").value;
+    if (sound != "-1"){ //hoenn sound is 0. sinnoh sound is 1.
+      handleSound(props.radio.split("|")[sound].split(","));
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  };
+
+  useEffect(() => {
+    if (props.radio){
+      handleChange();
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters]);
+
+  if (props.radio){
+    return (
+      <div id="hgssRadioArea" class="modChunk">
+        <label for="radioSelect">Radio?</label>
+        <select id="radioSelect" onChange={handleChange}>
+          <option value="-1" selected>None</option>
+          <option value="0">Hoenn</option>
+          <option value="1">Sinnoh</option>
+        </select>
+      </div>
     )
   }
 };
@@ -988,13 +1040,14 @@ const App = () => {
   const [todEncounters, setTodEncounters] = useState([]);//encounters modified by time of day
   const [gscSwarmEncounters, setGscSwarmEncounters] = useState([]);//encounters modified by swarms in Gold, Silver, and Crystal
   const [rseSwarmEncounters, setRseSwarmEncounters] = useState([]);//encounters modified by swarms in Ruby, Sapphire, and Emerald
-  const [gscRuinsEncounters, setGscRuinsEncounters] = useState([]); //encounters modified in the Ruins of Alph
+  const [gscRuinsEncounters, setGscRuinsEncounters] = useState([]); //encounters modified in the Ruins of Alph in GSC
   const [dppRadarEncounters, setDppRadarEncounters] = useState([]); //encounters modified by Diamond, Pearl, and Platinum Radar
   const [dppTrophyEncounters, setDppTrophyEncounters] = useState([]); //encounters modified by the DPP Trophy Garden
   const [dppGreatMarshEncounters, setDppGreatMarshEncounters] = useState([]); //encounters modified by the DPP Great Marsh daily spawns
-  const [dppSwarmEncounters, setDppSwarmEncounters] = useState([]); //encounters modified by DPP Swarms
+  const [dppSwarmEncounters, setDppSwarmEncounters] = useState([]); //encounters modified by DPP or HGSS Swarms
   const [dongleEncounters, setDongleEncounters] = useState([]); //encounters modified by GBA slot in DPP
   const [hgssSafariEncounters, setHgssSafariEncounters] = useState([]); //encounters modified by blocks in the heartgold or soulsilver safari zone
+  const [hgssRadioEncounters, setHgssRadioEncounters] = useState([]); //ecounters modified by the radio in HGSS
   const [abilityEncounters, setAbilityEncounters] = useState([]);//encounters modified by abilities such as static
   const [repelEncounters, setRepelEncounters] = useState([]); //encounters modified by repels
   //variables that come with the encounters such as if a repel can be used
@@ -1153,18 +1206,19 @@ const App = () => {
           <option value="" selected disabled hidden>Choose Area First</option>
         </select>
       </div>
-      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(hgssSafariEncounters, spriteExtension, pokemonData)}></div>
+      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(hgssRadioEncounters, spriteExtension, pokemonData)}></div>
       <TimeOfDaySection tod={variables.tod} setTodIndex={setTodIndex} encounters={encounters} setEncounters={setTodEncounters}/>
       <GscSwarmSection gscSwarm={variables.gscSwarm} todIndex={todIndex} encounters={todEncounters} setEncounters={setGscSwarmEncounters}/>
       <RseSwarmSection rseSwarm={variables.rseSwarm} encounters={gscSwarmEncounters} setEncounters={setRseSwarmEncounters}/>
-      <GscRuinsSection gscRuins={variables.gscRuins} encounters={rseSwarmEncounters} setEncounters={setGscRuinsEncounters}/>
+      <GscRuinsSection gscRuins={variables.gscRuins} hgssRuins={variables.hgssRuins} encounters={rseSwarmEncounters} setEncounters={setGscRuinsEncounters}/>
       <DppRadarSection dppRadar={variables.dppRadar} encounters={gscRuinsEncounters} setEncounters={setDppRadarEncounters} setRadarActive={setRadarActive}/>
       <DppTrophySection dppTrophy={variables.dppTrophy} encounters={dppRadarEncounters} setEncounters={setDppTrophyEncounters} pokemonArr={pokemonData}/>
       <DppGreatMarshSection dppGreatMarsh={variables.dppGreatMarsh} encounters={dppTrophyEncounters} setEncounters={setDppGreatMarshEncounters} pokemonArr={pokemonData}/>
       <DppSwarmSection dppSwarm={variables.dppSwarm} encounters={dppGreatMarshEncounters} setEncounters={setDppSwarmEncounters}/>
       <DongleSection dongle={variables.dongle} encounters={dppSwarmEncounters} setEncounters={setDongleEncounters}/>
       <HgssSafariZoneSection hgssSafariBlocks={variables.hgssSafariBlocks} hgssSafariSlots={variables.hgssSafariSlots} todIndex={todIndex} primeEncounters={encounters} encounters={dongleEncounters} setEncounters={setHgssSafariEncounters}/>
-      <AbilitySection ability={variables.ability} encounters={hgssSafariEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive}/>
+      <HgssRadioSection radio={variables.radio} encounters={hgssSafariEncounters} setEncounters={setHgssRadioEncounters}/>
+      <AbilitySection ability={variables.ability} encounters={hgssRadioEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive}/>
       <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive}/>
       <div id="processedEncounters"
         dangerouslySetInnerHTML={

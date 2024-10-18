@@ -17,3 +17,7 @@ Static works consistently
 Removed Pressure/Hustle/Vital Spirit (These do NOT affect encounter rates)
 Swarms added
 Allow the use of Keen Eye/Intimidate and Repel at the same time
+
+Gen4:
+Trophy Garden Daily Pokemon
+HGSS safari works properly

@@ -1,4 +1,159 @@
 {
+    "Cerulean Cave - 1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true",
+                "tod": "||42,39,42,38,42,38,47,38,82,40,132,39,101,40,202,37,57,39,67,40,67,39,67,40",
+                "radio": "359,359,296,296|436,436,433,433",
+                "ability": "static|magnet pull|keen eye/intimidate"
+            },
+            "0": {
+                "number": "67",
+                "minLevel": "39",
+                "rate": "0.2"
+            },
+            "1": {
+                "number": "47",
+                "minLevel": "38",
+                "rate": "0.2"
+            },
+            "2": {
+                "number": "42",
+                "minLevel": "38",
+                "rate": "0.1"
+            },
+            "3": {
+                "number": "57",
+                "minLevel": "38",
+                "rate": "0.1"
+            },
+            "4": {
+                "number": "82",
+                "minLevel": "40",
+                "rate": "0.1"
+            },
+            "5": {
+                "number": "132",
+                "minLevel": "39",
+                "rate": "0.1"
+            },
+            "6": {
+                "number": "101",
+                "minLevel": "40",
+                "rate": "0.05"
+            },
+            "7": {
+                "number": "202",
+                "minLevel": "37",
+                "rate": "0.05"
+            },
+            "8": {
+                "number": "57",
+                "minLevel": "39",
+                "rate": "0.04"
+            },
+            "9": {
+                "number": "67",
+                "minLevel": "40",
+                "rate": "0.04"
+            },
+            "10": {
+                "number": "82",
+                "minLevel": "39",
+                "rate": "0.01"
+            },
+            "11": {
+                "number": "132",
+                "minLevel": "40",
+                "rate": "0.01"
+            }
+        }
+    },
+    "Mt. Mortar - 1F": {
+        "Walk": {
+            "variables": {
+                "repel": "true",
+                "tod": "||",
+                "dppSwarm": "183",
+                "radio": "359,359,296,296|436,436,433,433",
+                "ability": "static|magnet pull|keen eye/intimidate"
+            },
+            "0": {
+                "number": "41",
+                "minLevel": "13",
+                "rate": "0.2"
+            },
+            "1": {
+                "number": "41",
+                "minLevel": "15",
+                "rate": "0.2"
+            },
+            "2": {
+                "number": "41",
+                "minLevel": "13",
+                "rate": "0.1"
+            },
+            "3": {
+                "number": "41",
+                "minLevel": "15",
+                "rate": "0.1"
+            },
+            "4": {
+                "number": "66",
+                "minLevel": "14",
+                "rate": "0.1"
+            },
+            "5": {
+                "number": "66",
+                "minLevel": "14",
+                "rate": "0.1"
+            },
+            "6": {
+                "number": "19",
+                "minLevel": "14",
+                "rate": "0.05"
+            },
+            "7": {
+                "number": "19",
+                "minLevel": "14",
+                "rate": "0.05"
+            },
+            "8": {
+                "number": "74",
+                "minLevel": "14",
+                "rate": "0.04"
+            },
+            "9": {
+                "number": "19",
+                "minLevel": "16",
+                "rate": "0.04"
+            },
+            "10": {
+                "number": "74",
+                "minLevel": "14",
+                "rate": "0.01"
+            },
+            "11": {
+                "number": "183",
+                "minLevel": "15",
+                "rate": "0.01"
+            }
+        }
+    },
+    "Ruins Of Alph - Interior": {
+        "Walk": {
+            "variables": {
+                "repel": "true",
+                "hgssRuins": "true",
+                "ability": "static|magnet pull|keen eye/intimidate"
+            },
+            "0": {
+                "number": "0",
+                "minLevel": "5",
+                "rate": "0.0"
+            }
+        }
+    },
     "Safari Zone - Meadow": {
         "Walk": {
             "variables": {
@@ -119,9 +274,9 @@
         },
         "Old Rod": {
             "variables": {
-                "repel": "true",
                 "hgssSafariBlocks": "0,0,0,2|0,0,0,3",
-                "hgssSafariSlots": "|61,15,61,16|"
+                "hgssSafariSlots": "|61,15,61,16|",
+                "ability": "static|magnet pull|keen eye/intimidate"
             },
             "0": {
                 "number": "129",
@@ -176,9 +331,9 @@
         },
         "Good Rod": {
             "variables": {
-                "repel": "true",
                 "hgssSafariBlocks": "0,0,0,5|0,0,0,7",
-                "hgssSafariSlots": "|61,27,130,28|"
+                "hgssSafariSlots": "|61,27,130,28|",
+                "ability": "static|magnet pull|keen eye/intimidate"
             },
             "0": {
                 "number": "129",
@@ -233,9 +388,9 @@
         },
         "Super Rod": {
             "variables": {
-                "repel": "true",
                 "hgssSafariBlocks": "0,0,0,10|0,0,0,14",
-                "hgssSafariSlots": "|130,42,130,45|"
+                "hgssSafariSlots": "|130,42,130,45|",
+                "ability": "static|magnet pull|keen eye/intimidate"
             },
             "0": {
                 "number": "60",
