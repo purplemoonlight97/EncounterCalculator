@@ -75,7 +75,9 @@ const RepelSection = (props) => {
   const [repelLevel, setRepelLevel] = useState();
 
   //takes an array of encounters and repels out lower levels
-  const processRepels = (arr, num) => {
+  const processRepels = (arr, num, bool) => {
+    const game = document.getElementById("games").value;
+    const exemptGames = ["emerald", "diamond", "pearl", "platinum", "heartgold", "soulsilver"/*, "black", "black2", "white", "white2"*/];
     const tempArray = [];
     arr.forEach(e => {
       const minLevel = Number(e.minLevel);
@@ -85,7 +87,29 @@ const RepelSection = (props) => {
       } else if (maxLevel >= num && minLevel < num){
         const numLevels = (maxLevel - minLevel) + 1;
         const levelsRemoved = (num - minLevel);
-        const newRate = (1 - (levelsRemoved / numLevels)) * e.rate;
+        let newRate = 0;
+        if(bool){ //bool is for if hustle ability is active for nonwalking encounters such as surfing
+          if (exemptGames.includes(game)){ // exempt games handle hustle differently
+            alert(game)
+            //exempt games force the level to the max of its encounter slot half the time
+            newRate = (1 - ((levelsRemoved / numLevels) * 0.5)) * e.rate;
+          } else{
+            //other games add 5 to the level if the level is 5 less than the maximum of the species (not slot) in an area half the time
+            let maxOfSpecies = e.maxLevel;
+            arr.forEach(j => { //find the max level of the species on the route
+              if (j.number === e.number && j.maxLevel > e.maxLevel){
+                maxOfSpecies = j.maxLevel;
+              }
+            });
+            //only 5 levels can be elevated. Anything more than 5 levels below will still be repelled out
+            let numEligibleLevels = (maxOfSpecies - repelLevel < 5) ? maxOfSpecies - repelLevel : 5;
+            numEligibleLevels = numEligibleLevels < 0 ? 0 : numEligibleLevels;
+            numEligibleLevels = numEligibleLevels < levelsRemoved ? numEligibleLevels : levelsRemoved;
+            newRate = (1 - ((levelsRemoved - (numEligibleLevels * 0.5))/ numLevels)) * e.rate;
+          }
+        } else {
+          newRate = (1 - (levelsRemoved / numLevels)) * e.rate;
+        }
         tempArray.push({"number": e.number, "minLevel": num, "maxLevel": maxLevel, "rate": newRate});
       }
     });
@@ -104,17 +128,17 @@ const RepelSection = (props) => {
       holdRepelLevel = repelLevel;
     }
     setRepelLevel(holdRepelLevel);
-    props.setEncounters(processRepels(props.encounters, holdRepelLevel)); 
+    props.setEncounters(processRepels(props.encounters, holdRepelLevel, props.nonwalkHustleActive)); 
   };
 
   //if the encounters that feeds into repels has changed, it needs to reset everything inside
   useEffect(() => {
     if (props.repel){
-      props.setEncounters(processRepels(props.encounters, repelLevel));
+      props.setEncounters(processRepels(props.encounters, repelLevel, props.nonwalkHustleActive));
     } else{
       props.setEncounters(props.encounters);
     }
-  }, [props.encounters]);
+  }, [props.encounters, props.nonwalkHustleActive]);
   
   useEffect(() => {
     setRepelLevel("");
@@ -122,10 +146,10 @@ const RepelSection = (props) => {
   
   useEffect(() => {
     const repelInput = document.getElementById("repelLevelInput")
-    const game = document.getElementById("games").value;
     if(repelInput){
-      const exemptGames = ["emerald", "diamond", "pearl", "platinum", "heartgold", "soulsilver", "black", "black2", "white", "white2"];
-      if(!(exemptGames.includes(game))){
+      const game = document.getElementById("games").value;
+      const exemptGames = ["emerald", "diamond", "pearl", "platinum", "heartgold", "soulsilver"/*, "black", "black2", "white", "white2"*/];
+      if(!(exemptGames.includes(game))){ //exempt games can have intimidate and repel at the same time
         repelInput.disabled = props.intimidateActive;
       } else {
         repelInput.disabled = false;
@@ -937,8 +961,47 @@ const AbilitySection = (props) => {
     return tempArray;
   };
 
+  const hustleAbility = () => {
+    if (document.getElementById("methods").value === "Walk"){ //hustle affects walking encounters differently from all other encounters
+      const tempArray = JSON.parse(JSON.stringify(props.encounters));
+      const tempSpecies = [];
+      const tempRates = [];
+      const index = [];
+      //go through everything in the current encounters
+      tempArray.forEach((e, p) => {
+        e.rate = Number(e.rate)/2;
+        let newSpecies = true;
+        //check to see if this is the first of a species in the current encounters
+        tempSpecies.forEach((j, i) => {
+          if(j == e.number){
+            newSpecies = false;
+            tempRates[i] += Number(e.rate); //all rates need to be halved and later the one with the highest level of the species will get all the removed rates
+            if(Number(e.minLevel) > Number(tempArray[index[i]].minLevel)){ //find highest level of species
+              index[i] = p;
+            }
+          }
+        });
+        //if it is the first of a species save its species number, half its rate, and its index in encounters
+        if (newSpecies){
+          tempSpecies.push(e.number);
+          tempRates.push(Number(e.rate));
+          index.push(p);
+        }
+      });
+      
+      index.forEach((e, i) => {
+        tempArray[e].rate += Number(tempRates[i]); //add the removed rates to the highest level of each species
+      });
+      return tempArray;
+    }
+    //non walking encounters need to be handled by repels since they are affected by hustle per encounter slot instead of per species
+    props.setNonwalkHustleActive(true);
+    return props.encounters;
+  }
+
   const handleChange = () => {
     props.setIntimidateActive(false);
+    props.setNonwalkHustleActive(false);
     const leadLevelInput = document.getElementById("leadLevelInput");
     leadLevelInput.disabled = true;
     const dropdown = document.getElementById("abilitySelect");
@@ -962,6 +1025,9 @@ const AbilitySection = (props) => {
               leadLevelInput.value = "";
               props.setEncounters(props.encounters);
             }
+            break;
+          case "hustle/pressure/vital spirit":
+            props.setEncounters(hustleAbility());
             break;
           default:
             break;
@@ -1055,6 +1121,7 @@ const App = () => {
   //variables created by user inputs that have to be passed between componenents
   const [todIndex, setTodIndex] = useState(1);
   const [intimidateActive, setIntimidateActive] = useState(false);
+  const [nonwalkHustleActive, setNonwalkHustleActive] = useState(false);
   const [radarActive, setRadarActive] = useState(false);
   //sprite extension based on game
   const [spriteExtension, setSpriteExtension] = useState('');
@@ -1218,8 +1285,8 @@ const App = () => {
       <DongleSection dongle={variables.dongle} encounters={dppSwarmEncounters} setEncounters={setDongleEncounters}/>
       <HgssSafariZoneSection hgssSafariBlocks={variables.hgssSafariBlocks} hgssSafariSlots={variables.hgssSafariSlots} todIndex={todIndex} primeEncounters={encounters} encounters={dongleEncounters} setEncounters={setHgssSafariEncounters}/>
       <HgssRadioSection radio={variables.radio} encounters={hgssSafariEncounters} setEncounters={setHgssRadioEncounters}/>
-      <AbilitySection ability={variables.ability} encounters={hgssRadioEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive}/>
-      <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive}/>
+      <AbilitySection ability={variables.ability} encounters={hgssRadioEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} setNonwalkHustleActive={setNonwalkHustleActive} radarActive={radarActive}/>
+      <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} nonwalkHustleActive={nonwalkHustleActive} radarActive={radarActive}/>
       <div id="processedEncounters"
         dangerouslySetInnerHTML={
           encounters.length === 0 ? 

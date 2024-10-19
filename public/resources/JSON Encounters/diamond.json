@@ -7,7 +7,7 @@
                 "dppRadar": "290,290,290,290",
                 "dppSwarm": "287",
                 "dongle": "273,,204,11,14",
-                "ability": "static|magnet pull|keen eye/intimidate"
+                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
             },
             "0": {
                 "number": "265",
@@ -78,7 +78,7 @@
                 "tod": "||194,24,400,25,163,24,164,26,183,25,195,25,183,26,195,26,54,26,54,24,399,26,298,24",
                 "dongle": ",,,24,",
                 "dppGreatMarsh": "true",
-                "ability": "static|magnet pull|keen eye/intimidate"
+                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
             },
             "0": {
                 "number": "194",
@@ -148,7 +148,7 @@
                 "repel": "true",
                 "tod": "|397,17,315,16,397,16,397,16,315,17,402,17,25,18,172,16,25,18,172,16,25,18,172,16|397,17,315,16,402,16,402,16,315,17,402,17,25,18,172,16,25,18,172,16,25,18,172,16",
                 "dppTrophy": "true",
-                "ability": "static|magnet pull|keen eye/intimidate"
+                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
             },
             "0": {
                 "number": "397",
