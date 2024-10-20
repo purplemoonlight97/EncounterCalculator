@@ -5,7 +5,7 @@
                 "repel": "true",
                 "tod": "||42,39,42,38,42,38,47,38,82,40,132,39,101,40,202,37,57,39,67,40,67,39,67,40",
                 "radio": "359,359,296,296|436,436,433,433",
-                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vitial spirit"
             },
             "0": {
                 "number": "67",
@@ -76,7 +76,7 @@
                 "tod": "||",
                 "dppSwarm": "183",
                 "radio": "359,359,296,296|436,436,433,433",
-                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vitial spirit"
             },
             "0": {
                 "number": "41",
@@ -145,7 +145,7 @@
             "variables": {
                 "repel": "true",
                 "hgssRuins": "true",
-                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vitial spirit"
             },
             "0": {
                 "number": "0",
@@ -161,7 +161,7 @@
                 "tod": "39,15,187,15,187,15,39,16,187,16,39,16,39,17,187,17,39,17,188,17||39,15,183,15,194,15,39,16,183,16,194,16,39,17,183,17,194,17,35,17",
                 "hgssSafariBlocks": "5,0,0,0|12,0,0,0|35,0,0,0|0,8,0,0|0,28,0,0|0,35,0,0|0,0,3,0|0,0,35,0|0,28,42,0|0,0,0,3",
                 "hgssSafariSlots": "20,40,113,42,273,45,188,40,274,38,274,48,74,45,299,45,447,45,194,40|20,40,113,42,273,45,188,40,274,38,274,47,74,45,299,45,447,46,194,40|20,40,113,42,273,45,188,40,274,38,274,47,35,42,299,45,447,45,194,40",
-                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vitial spirit"
             },
             "0": {
                 "number": "39",
@@ -219,56 +219,66 @@
                 "repel": "true",
                 "hgssSafariBlocks": "0,0,0,3|0,0,0,10|0,0,0,14",
                 "hgssSafariSlots": "|188,47,284,42,284,46|",
-                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vitial spirit"
             },
             "0": {
                 "number": "129",
                 "minLevel": "15",
+                "maxLevel": "15",
                 "rate": "0.1"
             },
             "1": {
                 "number": "129",
                 "minLevel": "15",
+                "maxLevel": "15",
                 "rate": "0.1"
             },
             "2": {
                 "number": "129",
                 "minLevel": "16",
+                "maxLevel": "16",
                 "rate": "0.1"
             },
             "3": {
                 "number": "129",
                 "minLevel": "16",
+                "maxLevel": "16",
                 "rate": "0.1"
             },
             "4": {
                 "number": "129",
                 "minLevel": "17",
+                "maxLevel": "17",
                 "rate": "0.1"
             },
             "5": {
                 "number": "194",
                 "minLevel": "15",
+                "maxLevel": "15",
                 "rate": "0.1"
             },
             "6": {
                 "number": "194",
                 "minLevel": "16",
+                "maxLevel": "16",
                 "rate": "0.1"
             },
             "7": {
                 "number": "194",
                 "minLevel": "17",
+                "maxLevel": "17",
                 "rate": "0.1"
             },
             "8": {
                 "number": "183",
                 "minLevel": "16",
+                "maxLevel": "16",
                 "rate": "0.1"
             },
             "9": {
                 "number": "183",
                 "minLevel": "17",
+                "maxLevel": "17",
                 "rate": "0.1"
             }
         },
@@ -276,56 +286,66 @@
             "variables": {
                 "hgssSafariBlocks": "0,0,0,2|0,0,0,3",
                 "hgssSafariSlots": "|61,15,61,16|",
-                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vitial spirit"
             },
             "0": {
                 "number": "129",
                 "minLevel": "12",
+                "maxLevel": "12",
                 "rate": "0.1"
             },
             "1": {
                 "number": "129",
                 "minLevel": "12",
+                "maxLevel": "12",
                 "rate": "0.1"
             },
             "2": {
                 "number": "129",
                 "minLevel": "13",
+                "maxLevel": "13",
                 "rate": "0.1"
             },
             "3": {
                 "number": "129",
                 "minLevel": "13",
+                "maxLevel": "13",
                 "rate": "0.1"
             },
             "4": {
                 "number": "129",
                 "minLevel": "14",
+                "maxLevel": "14",
                 "rate": "0.1"
             },
             "5": {
                 "number": "129",
                 "minLevel": "15",
+                "maxLevel": "15",
                 "rate": "0.1"
             },
             "6": {
                 "number": "60",
                 "minLevel": "12",
+                "maxLevel": "12",
                 "rate": "0.1"
             },
             "7": {
                 "number": "60",
                 "minLevel": "13",
+                "maxLevel": "13",
                 "rate": "0.1"
             },
             "8": {
                 "number": "60",
                 "minLevel": "14",
+                "maxLevel": "14",
                 "rate": "0.1"
             },
             "9": {
                 "number": "60",
                 "minLevel": "15",
+                "maxLevel": "15",
                 "rate": "0.1"
             }
         },
@@ -333,56 +353,66 @@
             "variables": {
                 "hgssSafariBlocks": "0,0,0,5|0,0,0,7",
                 "hgssSafariSlots": "|61,27,130,28|",
-                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vitial spirit"
             },
             "0": {
                 "number": "129",
                 "minLevel": "22",
+                "maxLevel": "22",
                 "rate": "0.1"
             },
             "1": {
                 "number": "129",
                 "minLevel": "22",
+                "maxLevel": "22",
                 "rate": "0.1"
             },
             "2": {
                 "number": "129",
                 "minLevel": "23",
+                "maxLevel": "23",
                 "rate": "0.1"
             },
             "3": {
                 "number": "129",
                 "minLevel": "24",
+                "maxLevel": "24",
                 "rate": "0.1"
             },
             "4": {
                 "number": "60",
                 "minLevel": "22",
+                "maxLevel": "22",
                 "rate": "0.1"
             },
             "5": {
                 "number": "60",
                 "minLevel": "22",
+                "maxLevel": "22",
                 "rate": "0.1"
             },
             "6": {
                 "number": "60",
                 "minLevel": "23",
+                "maxLevel": "23",
                 "rate": "0.1"
             },
             "7": {
                 "number": "60",
                 "minLevel": "24",
+                "maxLevel": "24",
                 "rate": "0.1"
             },
             "8": {
                 "number": "61",
                 "minLevel": "24",
+                "maxLevel": "24",
                 "rate": "0.1"
             },
             "9": {
                 "number": "61",
                 "minLevel": "25",
+                "maxLevel": "25",
                 "rate": "0.1"
             }
         },
@@ -390,56 +420,66 @@
             "variables": {
                 "hgssSafariBlocks": "0,0,0,10|0,0,0,14",
                 "hgssSafariSlots": "|130,42,130,45|",
-                "ability": "static|magnet pull|keen eye/intimidate|hustle/pressure/vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vitial spirit"
             },
             "0": {
                 "number": "60",
                 "minLevel": "35",
+                "maxLevel": "35",
                 "rate": "0.1"
             },
             "1": {
                 "number": "60",
                 "minLevel": "35",
+                "maxLevel": "35",
                 "rate": "0.1"
             },
             "2": {
                 "number": "60",
                 "minLevel": "36",
+                "maxLevel": "36",
                 "rate": "0.1"
             },
             "3": {
                 "number": "60",
                 "minLevel": "36",
+                "maxLevel": "36",
                 "rate": "0.1"
             },
             "4": {
                 "number": "61",
                 "minLevel": "35",
+                "maxLevel": "35",
                 "rate": "0.1"
             },
             "5": {
                 "number": "61",
                 "minLevel": "35",
+                "maxLevel": "35",
                 "rate": "0.1"
             },
             "6": {
                 "number": "61",
                 "minLevel": "36",
+                "maxLevel": "36",
                 "rate": "0.1"
             },
             "7": {
                 "number": "61",
                 "minLevel": "36",
+                "maxLevel": "36",
                 "rate": "0.1"
             },
             "8": {
                 "number": "61",
                 "minLevel": "37",
+                "maxLevel": "37",
                 "rate": "0.1"
             },
             "9": {
                 "number": "61",
                 "minLevel": "38",
+                "maxLevel": "38",
                 "rate": "0.1"
             }
         }
