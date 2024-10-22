@@ -1280,6 +1280,7 @@ const App = () => {
           <option value="firered">FireRed</option>
           <option value="leafgreen">LeafGreen</option>
           <option value="diamond">Diamond</option>
+          <option value="pearl">Pearl</option>
           <option value="heartgold">HeartGold</option>
         </select>
         <select id="areas" onChange={handleAreaChange} disabled>

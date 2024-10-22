@@ -66,7 +66,7 @@
           "tod": "||396,2,399,2,399,3,399,3,396,3,399,3,396,3,399,3,396,2,399,2,396,2,399,2",
           "dppSwarm": "84",
           "dongle": "396,396,396,58,396",
-          "dppRadar": "29,29,32,32",
+          "dppRadar": "32,32,29,29",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       }
@@ -704,7 +704,7 @@
         "variables": {
           "repel": "true",
           "dongle": ",270,,,",
-          "dppRadar": "187,187,188,188",
+          "dppRadar": "79,79,79,79",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       },
@@ -1069,7 +1069,7 @@
           "rate": "0.2"
         },
         "1": {
-          "number": "434",
+          "number": "74",
           "minLevel": "14",
           "rate": "0.2"
         },
@@ -1109,7 +1109,7 @@
           "rate": "0.04"
         },
         "9": {
-          "number": "434",
+          "number": "74",
           "minLevel": "15",
           "rate": "0.04"
         },
@@ -1119,7 +1119,7 @@
           "rate": "0.01"
         },
         "11": {
-          "number": "434",
+          "number": "74",
           "minLevel": "16",
           "rate": "0.01"
         },
@@ -1200,7 +1200,7 @@
           "tod": "66,5,74,5,66,6,401,6,74,6,74,6,74,7,74,7,66,7,74,7,66,7,74,7||66,5,74,5,41,6,401,6,74,6,74,6,74,7,74,7,66,7,74,7,66,7,74,7",
           "dppSwarm": "231",
           "dongle": ",,207,,",
-          "dppRadar": "246,246,246,246",
+          "dppRadar": "234,234,234,234",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       }
@@ -1466,7 +1466,7 @@
           "rate": "0.04"
         },
         "9": {
-          "number": "439",
+          "number": "438",
           "minLevel": "16",
           "rate": "0.04"
         },
@@ -1476,16 +1476,16 @@
           "rate": "0.01"
         },
         "11": {
-          "number": "439",
+          "number": "438",
           "minLevel": "16",
           "rate": "0.01"
         },
         "variables": {
           "repel": "true",
-          "tod": "396,16,400,16,439,16,439,16,400,17,397,17,400,18,397,18,113,16,439,16,113,16,439,16||396,16,400,16,92,16,41,16,400,17,397,17,400,18,397,18,113,16,439,16,113,16,439,16",
+          "tod": "396,16,400,16,438,16,438,16,400,17,397,17,400,18,397,18,113,16,439,16,113,16,439,16||396,16,400,16,92,16,41,16,400,17,397,17,400,18,397,18,113,16,439,16,113,16,439,16",
           "dppSwarm": "209",
           "dongle": ",,,37,",
-          "dppRadar": "128,128,241,241",
+          "dppRadar": "241,241,128,128",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       },
@@ -1697,7 +1697,7 @@
           "repel": "true",
           "tod": "||54,25,400,24,163,24,164,25,307,25,66,26,67,26,307,25,67,26,307,26,67,26,307,26",
           "dongle": "335,336,,,",
-          "dppRadar": "352,352,352,352",
+          "dppRadar": "371,371,371,371",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       },
@@ -1891,7 +1891,7 @@
           "rate": "0.04"
         },
         "9": {
-          "number": "439",
+          "number": "438",
           "minLevel": "20",
           "rate": "0.04"
         },
@@ -1901,15 +1901,15 @@
           "rate": "0.01"
         },
         "11": {
-          "number": "439",
+          "number": "438",
           "minLevel": "20",
           "rate": "0.01"
         },
         "variables": {
           "repel": "true",
-          "tod": "77,19,74,19,439,18,439,18,74,19,402,19,77,18,77,20,113,18,439,20,113,20,439,20||77,19,74,19,402,18,402,18,74,19,402,19,77,18,77,20,113,18,439,20,113,20,439,20",
+          "tod": "77,19,74,19,438,18,438,18,74,19,402,19,77,18,77,20,113,18,439,20,113,20,439,20||77,19,74,19,402,18,402,18,74,19,402,19,77,18,77,20,113,18,439,20,113,20,439,20",
           "dongle": "273|274,,204,,",
-          "dppRadar": "128,128,241,241",
+          "dppRadar": "241,241,128,128",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       }
@@ -2714,7 +2714,7 @@
           "rate": "0.1"
         },
         "4": {
-          "number": "434",
+          "number": "185",
           "minLevel": "23",
           "rate": "0.1"
         },
@@ -2734,7 +2734,7 @@
           "rate": "0.05"
         },
         "8": {
-          "number": "434",
+          "number": "185",
           "minLevel": "24",
           "rate": "0.04"
         },
@@ -2744,7 +2744,7 @@
           "rate": "0.04"
         },
         "10": {
-          "number": "434",
+          "number": "185",
           "minLevel": "24",
           "rate": "0.01"
         },
@@ -2758,7 +2758,7 @@
           "tod": "||77,23,74,22,402,23,402,23,434,23,203,24,402,24,77,24,434,24,75,24,434,24,75,24",
           "dppSwarm": "325",
           "dongle": ",,207,37,",
-          "dppRadar": "262,262,262,262",
+          "dppRadar": "229,229,229,229",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       },
@@ -2971,7 +2971,7 @@
           "tod": "77,21,74,20,77,22,74,21,63,20,402,20,64,20,64,21,74,22,64,22,74,22,64,22||77,21,74,20,402,22,402,21,63,20,402,20,64,20,64,21,74,22,64,22,74,22,64,22",
           "dppSwarm": "96",
           "dongle": ",,207,,",
-          "dppRadar": "262,262,262,262",
+          "dppRadar": "229,229,229,229",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       }
@@ -3143,7 +3143,7 @@
           "rate": "0.1"
         },
         "4": {
-          "number": "122",
+          "number": "431",
           "minLevel": "29",
           "rate": "0.1"
         },
@@ -3163,7 +3163,7 @@
           "rate": "0.05"
         },
         "8": {
-          "number": "122",
+          "number": "431",
           "minLevel": "30",
           "rate": "0.04"
         },
@@ -3173,7 +3173,7 @@
           "rate": "0.04"
         },
         "10": {
-          "number": "122",
+          "number": "431",
           "minLevel": "30",
           "rate": "0.01"
         },
@@ -3625,7 +3625,7 @@
           "rate": "0.2"
         },
         "1": {
-          "number": "434",
+          "number": "423",
           "minLevel": "28",
           "rate": "0.2"
         },
@@ -3640,7 +3640,7 @@
           "rate": "0.1"
         },
         "4": {
-          "number": "435",
+          "number": "185",
           "minLevel": "29",
           "rate": "0.1"
         },
@@ -3660,7 +3660,7 @@
           "rate": "0.05"
         },
         "8": {
-          "number": "435",
+          "number": "185",
           "minLevel": "30",
           "rate": "0.04"
         },
@@ -3670,7 +3670,7 @@
           "rate": "0.04"
         },
         "10": {
-          "number": "435",
+          "number": "185",
           "minLevel": "30",
           "rate": "0.01"
         },
@@ -3682,7 +3682,7 @@
         "variables": {
           "repel": "true",
           "dppSwarm": "83",
-          "dppRadar": "30,30,33,33",
+          "dppRadar": "33,33,30,30",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       },
@@ -3836,7 +3836,7 @@
           "rate": "0.2"
         },
         "1": {
-          "number": "423-east",
+          "number": "431",
           "minLevel": "40",
           "rate": "0.2"
         },
@@ -3851,7 +3851,7 @@
           "rate": "0.1"
         },
         "4": {
-          "number": "122",
+          "number": "432",
           "minLevel": "41",
           "rate": "0.1"
         },
@@ -3871,7 +3871,7 @@
           "rate": "0.05"
         },
         "8": {
-          "number": "122",
+          "number": "432",
           "minLevel": "42",
           "rate": "0.04"
         },
@@ -3881,7 +3881,7 @@
           "rate": "0.04"
         },
         "10": {
-          "number": "122",
+          "number": "432",
           "minLevel": "42",
           "rate": "0.01"
         },
@@ -4425,7 +4425,7 @@
           "rate": "0.1"
         },
         "5": {
-          "number": "435",
+          "number": "315",
           "minLevel": "51",
           "rate": "0.1"
         },
@@ -4687,7 +4687,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "86",
+          "number": "363",
           "minLevel": "35",
           "maxLevel": "45",
           "rate": "0.3"
@@ -4699,13 +4699,13 @@
           "rate": "0.05"
         },
         "3": {
-          "number": "87",
+          "number": "364",
           "minLevel": "40",
           "maxLevel": "55",
           "rate": "0.04"
         },
         "4": {
-          "number": "87",
+          "number": "364",
           "minLevel": "40",
           "maxLevel": "55",
           "rate": "0.01"
@@ -5270,22 +5270,22 @@
           "rate": "0.1"
         },
         "4": {
-          "number": "314",
+          "number": "313",
           "minLevel": "50",
           "rate": "0.1"
         },
         "5": {
-          "number": "315",
+          "number": "432",
           "minLevel": "50",
           "rate": "0.1"
         },
         "6": {
-          "number": "123",
+          "number": "127",
           "minLevel": "52",
           "rate": "0.05"
         },
         "7": {
-          "number": "313",
+          "number": "314",
           "minLevel": "50",
           "rate": "0.05"
         },
@@ -5478,7 +5478,7 @@
           "rate": "0.1"
         },
         "3": {
-          "number": "267",
+          "number": "269",
           "minLevel": "51",
           "rate": "0.1"
         },
@@ -5537,7 +5537,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "86",
+          "number": "363",
           "minLevel": "35",
           "maxLevel": "45",
           "rate": "0.3"
@@ -5549,13 +5549,13 @@
           "rate": "0.05"
         },
         "3": {
-          "number": "87",
+          "number": "364",
           "minLevel": "40",
           "maxLevel": "55",
           "rate": "0.04"
         },
         "4": {
-          "number": "87",
+          "number": "364",
           "minLevel": "40",
           "maxLevel": "55",
           "rate": "0.01"
@@ -6179,7 +6179,7 @@
           "rate": "0.2"
         },
         "1": {
-          "number": "266",
+          "number": "268",
           "minLevel": "10",
           "rate": "0.2"
         },
@@ -6224,18 +6224,18 @@
           "rate": "0.04"
         },
         "10": {
-          "number": "267",
+          "number": "269",
           "minLevel": "12",
           "rate": "0.01"
         },
         "11": {
-          "number": "267",
+          "number": "269",
           "minLevel": "12",
           "rate": "0.01"
         },
         "variables": {
           "repel": "true",
-          "tod": "||265,10,266,10,198,11,198,10,427,10,406,11,427,11,406,12,406,12,427,12,267,12,267,12",
+          "tod": "||265,10,266,10,200,11,200,10,427,10,406,11,427,11,406,12,406,12,427,12,267,12,267,12",
           "dppRadar": "290,290,290,290",
           "dppSwarm": "287",
           "dongle": "273,,204,11,14",
@@ -6308,7 +6308,7 @@
         "variables": {
           "repel": "true",
           "dppSwarm": "81",
-          "dppRadar": "304,304,304,304",
+          "dppRadar": "187,187,188,188",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       },
@@ -8530,7 +8530,7 @@
         },
         "variables": {
           "repel": "true",
-          "tod": "||92,16,41,16,198,17,198,17,92,17,41,17,92,18,41,18,92,18,41,18,92,18,41,18",
+          "tod": "||92,16,41,16,200,17,200,17,92,17,41,17,92,18,41,18,92,18,41,18,92,18,41,18",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       }
@@ -8599,7 +8599,7 @@
         },
         "variables": {
           "repel": "true",
-          "tod": "||92,17,41,17,198,18,198,18,92,18,41,18,92,19,41,19,92,19,41,19,92,19,41,19",
+          "tod": "||92,17,41,17,200,18,200,18,92,18,41,18,92,19,41,19,92,19,41,19,92,19,41,19",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       }
@@ -8668,7 +8668,7 @@
         },
         "variables": {
           "repel": "true",
-          "tod": "||92,18,41,18,198,19,198,19,92,19,41,19,92,20,41,20,92,20,41,20,92,20,42,19",
+          "tod": "||92,18,41,18,200,19,200,19,92,19,41,19,92,20,41,20,92,20,41,20,92,20,42,19",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       }
@@ -8737,7 +8737,7 @@
         },
         "variables": {
           "repel": "true",
-          "tod": "||92,19,41,19,198,20,198,20,92,20,41,20,92,21,41,21,92,21,42,20,92,21,42,21",
+          "tod": "||92,19,41,19,200,20,200,20,92,20,41,20,92,21,41,21,92,21,42,20,92,21,42,21",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       }
@@ -8806,7 +8806,7 @@
         },
         "variables": {
           "repel": "true",
-          "tod": "||92,20,41,20,198,21,198,21,92,21,41,21,92,22,42,21,92,22,42,22,92,22,42,23",
+          "tod": "||92,20,41,20,200,21,200,21,92,21,41,21,92,22,42,21,92,22,42,22,92,22,42,23",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       }
@@ -13518,7 +13518,7 @@
         "variables": {
           "repel": "true",
           "tod": "||203,21,74,20,402,21,402,21,400,21,203,22,402,22,397,22,400,22,75,22,400,22,75,22",
-          "dppRadar": "30,30,33,33",
+          "dppRadar": "33,33,30,30",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
         }
       }
