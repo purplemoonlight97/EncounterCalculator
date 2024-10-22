@@ -631,7 +631,8 @@ const DongleSection = (props) => {
 
     if (dongleSelectValue != "-1"){
       const tempArray = JSON.parse(JSON.stringify(props.encounters));
-      let val1, val2 = dongleArr[dongleSelectValue];
+      let val1 = dongleArr[dongleSelectValue];
+      let val2 = dongleArr[dongleSelectValue];
       if (dongleArr[dongleSelectValue].includes("|")){
         [val1, val2] = dongleArr[dongleSelectValue].split("|");
       }
