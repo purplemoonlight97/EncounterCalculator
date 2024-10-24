@@ -7323,7 +7323,7 @@
           "rate": "0.29"
         },
         "3": {
-          "number": "266",
+          "number": "268",
           "minLevel": "5",
           "maxLevel": "15",
           "rate": "0.14"
@@ -7348,8 +7348,8 @@
         },
         "7": {
           "number": "0",
-          "minLevel": "5",
-          "maxLevel": "15",
+          "minLevel": "0",
+          "maxLevel": "0",
           "rate": "0.1"
         }
       },
@@ -7373,7 +7373,7 @@
           "rate": "0.115"
         },
         "3": {
-          "number": "266",
+          "number": "268",
           "minLevel": "5",
           "maxLevel": "15",
           "rate": "0.04"
@@ -7404,8 +7404,8 @@
         },
         "8": {
           "number": "0",
-          "minLevel": "5",
-          "maxLevel": "15",
+          "minLevel": "0",
+          "maxLevel": "0",
           "rate": "0.09"
         }
       }

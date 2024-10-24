@@ -7348,8 +7348,8 @@
         },
         "7": {
           "number": "0",
-          "minLevel": "5",
-          "maxLevel": "15",
+          "minLevel": "0",
+          "maxLevel": "0",
           "rate": "0.1"
         }
       },
@@ -7404,8 +7404,8 @@
         },
         "8": {
           "number": "0",
-          "minLevel": "5",
-          "maxLevel": "15",
+          "minLevel": "0",
+          "maxLevel": "0",
           "rate": "0.09"
         }
       }
@@ -10135,12 +10135,6 @@
           "maxLevel": "50",
           "rate": "0.005"
         },
-        "5": {
-          "number": "349",
-          "minLevel": "10",
-          "maxLevel": "20",
-          "rate": "0.5"
-        },
         "variables": {
           "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
         }
@@ -10175,6 +10169,12 @@
           "minLevel": "20",
           "maxLevel": "50",
           "rate": "0.01"
+        },
+        "5": {
+          "number": "349",
+          "minLevel": "10",
+          "maxLevel": "20",
+          "rate": "0.5"
         },
         "variables": {
           "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"

@@ -1224,6 +1224,9 @@ const App = () => {
       case "pearl":
         setSpriteExtension("gen4/dp");
         break;
+      case "platinum":
+        setSpriteExtension("gen4/platinum");
+        break;
       case "heartgold":
       case "soulsilver":
         setSpriteExtension("gen4/hgss");
@@ -1281,6 +1284,7 @@ const App = () => {
           <option value="leafgreen">LeafGreen</option>
           <option value="diamond">Diamond</option>
           <option value="pearl">Pearl</option>
+          <option value="platinum">Platinum</option>
           <option value="heartgold">HeartGold</option>
         </select>
         <select id="areas" onChange={handleAreaChange} disabled>
