@@ -10109,41 +10109,6 @@
           "number": "130",
           "minLevel": "30",
           "maxLevel": "40",
-          "rate": "0.2"
-        },
-        "1": {
-          "number": "340",
-          "minLevel": "30",
-          "maxLevel": "40",
-          "rate": "0.2"
-        },
-        "2": {
-          "number": "130",
-          "minLevel": "40",
-          "maxLevel": "55",
-          "rate": "0.075"
-        },
-        "3": {
-          "number": "340",
-          "minLevel": "20",
-          "maxLevel": "50",
-          "rate": "0.02"
-        },
-        "4": {
-          "number": "340",
-          "minLevel": "20",
-          "maxLevel": "50",
-          "rate": "0.005"
-        },
-        "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
-        }
-      },
-      "Super Rod - Feebas": {
-        "0": {
-          "number": "130",
-          "minLevel": "30",
-          "maxLevel": "40",
           "rate": "0.4"
         },
         "1": {
@@ -10169,6 +10134,41 @@
           "minLevel": "20",
           "maxLevel": "50",
           "rate": "0.01"
+        },
+        "variables": {
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+        }
+      },
+      "Super Rod - Feebas": {
+        "0": {
+          "number": "130",
+          "minLevel": "30",
+          "maxLevel": "40",
+          "rate": "0.2"
+        },
+        "1": {
+          "number": "340",
+          "minLevel": "30",
+          "maxLevel": "40",
+          "rate": "0.2"
+        },
+        "2": {
+          "number": "130",
+          "minLevel": "40",
+          "maxLevel": "55",
+          "rate": "0.075"
+        },
+        "3": {
+          "number": "340",
+          "minLevel": "20",
+          "maxLevel": "50",
+          "rate": "0.02"
+        },
+        "4": {
+          "number": "340",
+          "minLevel": "20",
+          "maxLevel": "50",
+          "rate": "0.005"
         },
         "5": {
           "number": "349",
