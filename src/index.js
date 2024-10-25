@@ -73,10 +73,10 @@ const processedEncountersHTMLGenerator = (arr, str, pokemonArr, genSpread) => {
       if (pokemon.gender === 0 || pokemon.gender === 8){ //all one gender pokemon
         male = malePercent[8-pokemon.gender];
         female = 1 - male;
-      } else if (e.genderBias === "male"){ //male cute charm bias
+      } else if (e.genderBias === "female"){ //male cute charm bias
         male = cuteCharmPercent + ((1-cuteCharmPercent) * malePercent[8-pokemon.gender]);
         female = 1 - male;
-      } else if (e.genderBias === "female"){ //female cute charm bias
+      } else if (e.genderBias === "male"){ //female cute charm bias
         male = (1-cuteCharmPercent) * malePercent[8-pokemon.gender];
         female = 1 - male;
       } else { //not a single gender pokemon and no cute charm
