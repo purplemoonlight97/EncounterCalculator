@@ -6,21 +6,22 @@ const findName = (num, arr) => {
   let name = "missingno."
   for (const e of arr){
     if (e.number === num){
-      name = e.name;
+      name = e;
       break;
     }
   };
-  return name.charAt(0).toUpperCase() + name.slice(1);
+  return name;//name.charAt(0).toUpperCase() + name.slice(1);
 };
 
 //converts an array of encounters into HTML for output
 const encounterHTMLGenerator = (arr, str, pokemonArr) => {
   let tempHTML = ``;
   arr.forEach(e => {
+    const pokemon = findName(e.number, pokemonArr);
     tempHTML += `
       <div class="encounterSlot">
         <img src="${process.env.PUBLIC_URL + '/resources/' + str + '/' + e.number + '.png'}" />
-        <span>Species: ${findName(e.number, pokemonArr)}</span>
+        <span>Species: ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
         <span>Level: ${e.minLevel}${('maxLevel' in e) ? "-" + e.maxLevel : ""}</span>
         <span>Rate: ${Math.round(e.rate * 10000)/100}%</span>
       </div>
@@ -30,19 +31,66 @@ const encounterHTMLGenerator = (arr, str, pokemonArr) => {
 };
 
 //converts an array of processed (repels, abilities, etc.) into HTML for output
-const processedEncountersHTMLGenerator = (arr, str, pokemonArr) => {
+const processedEncountersHTMLGenerator = (arr, str, pokemonArr, genSpread) => {
   let tempHTML = ``;
   let encounterRate = 0;
   arr.forEach(e => {
     encounterRate += Number(e.rate);
   });
   let modifier = 100/encounterRate;
+  //get male percentage
+  let malePercent = ["err"];
+  let cuteCharmPercent = 0;
+  switch (genSpread){
+    case 2:
+      malePercent = [1,0.875,0.75,"",0.5,"",0.25,"",0];
+      break;
+    case 3:
+    case 4: 
+      malePercent = [1,0.8789,0.7539,"",0.5039,"",0.2539,0.1211,0];
+      cuteCharmPercent = 0.667;
+      break;
+    case 5: 
+      malePercent = [1,0.8789,0.7539,"",0.5039,"",0.2539,0.1211,0];
+      cuteCharmPercent = 0.67;
+      break;
+    case 6:
+    case 7:
+      malePercent = [1,0.8810,0.7540,"",0.5,"",0.2460,0.1111,0];
+      cuteCharmPercent = 0.667;
+      break;
+    case 8: 
+      malePercent = [1,0.8814,0.7550,"",0.5020,"",0.2490,0.1146,0];
+      cuteCharmPercent = 0.66;
+      break;
+  }
   arr.forEach(e => {
+    const pokemon = findName(e.number, pokemonArr);
+    //calculate the gender split
+    let male = 0;
+    let female = 0;
+    if (malePercent[0] != "err" && pokemon.gender){ //gender to deal with
+      if (pokemon.gender === 0 || pokemon.gender === 8){ //all one gender pokemon
+        male = malePercent[8-pokemon.gender];
+        female = 1 - male;
+      } else if (e.genderBias === "male"){ //male cute charm bias
+        male = cuteCharmPercent + ((1-cuteCharmPercent) * malePercent[8-pokemon.gender]);
+        female = 1 - male;
+      } else if (e.genderBias === "female"){ //female cute charm bias
+        male = (1-cuteCharmPercent) * malePercent[8-pokemon.gender];
+        female = 1 - male;
+      } else { //not a single gender pokemon and no cute charm
+        male = malePercent[8-pokemon.gender];
+        female = 1 - male;
+      }
+    }
     tempHTML += `
       <div class="encounterSlot">
         <img src="${process.env.PUBLIC_URL + '/resources/' + str + '/' + e.number + '.png'}" />
-        <span>Species: ${findName(e.number, pokemonArr)}</span>
+        <span>Species: ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
         <span>Rate: ${Math.round(e.rate * modifier * 100)/100}%</span>
+        ${(male !== 0) ? `<span>Male: ${Math.round(male * 10000)/100}%</span>` : ``}
+        ${(female !== 0) ? `<span>Female: ${Math.round(female * 10000)/100}%</span>` : ``}
       </div>
     `;
   });
@@ -62,7 +110,7 @@ const condenseEncounters = (arr) => {
       }
     });
     if (!match){
-      smooshedArr.push({"number": e.number, "rate": Number(e.rate)});
+      smooshedArr.push({"number": e.number, "rate": Number(e.rate), "genderBias": e.genderBias});
     }
   });
   smooshedArr.sort((a,b) => b.rate - a.rate);
@@ -445,7 +493,8 @@ const DppTrophySection = (props) => {
 
     let currentHTML = `<option value="0">None</option>`;
     dailyPokemonArr.forEach(e => {
-      currentHTML += `<option value=${e}>${findName(e, props.pokemonArr)}</option>`
+      const pokemon = findName(e, props.pokemonArr);
+      currentHTML += `<option value=${e}>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</option>`
     });
     currentSelect.innerHTML = currentHTML;
     currentSelect.value = currentSelectValue;
@@ -454,7 +503,8 @@ const DppTrophySection = (props) => {
     if (currentSelectValue !== "0"){
       previousSelect.disabled = false;
       dailyPokemonArr.forEach(e => {
-        previousHTML += (e === currentSelectValue) ? `` : `<option value=${e}>${findName(e, props.pokemonArr)}</option>`;
+        const pokemon = findName(e, props.pokemonArr);
+        previousHTML += (e === currentSelectValue) ? `` : `<option value=${e}>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</option>`;
       });
       previousSelectValue = (currentSelectValue === previousSelectValue) ? "0" : previousSelectValue;
     } else {
@@ -892,14 +942,10 @@ const AbilitySection = (props) => {
     const foundType = [];
 
     tempArray.forEach((e) => {
-      for (const element of props.pokemonArr){
-        if (element.number === e.number){
-          if(element.type1 === type || element.type2 === type){
-            foundType.push(JSON.parse(JSON.stringify(e)));
-          }
-          break;
-        }
-      };
+      const pokemon = findName(e.number, props.pokemonArr);
+      if (pokemon.type1 === type || pokemon.type2 === type){
+        foundType.push(JSON.parse(JSON.stringify(e)));
+      }
     });
 
     if(foundType.length > 0){
@@ -1013,10 +1059,25 @@ const AbilitySection = (props) => {
     }
   }
 
+  const cuteCharmAbility = (gender) => {
+    const tempArray = JSON.parse(JSON.stringify(props.encounters));
+    tempArray.forEach(e => {
+      if(!e.genderBias){ //gender hasn't been set to default by swarms
+        //set the gender bias caused by cute charm
+        e.genderBias = gender;
+      }
+    });
+    return tempArray;
+  };
+
   const handleChange = () => {
     props.setIntimidateActive(false);
     const leadLevelInput = document.getElementById("leadLevelInput");
+    const leadLevelSection = document.getElementById("leadLevelSection");
+    const leadGenderSection = document.getElementById("leadGenderSection");
     leadLevelInput.disabled = true;
+    leadLevelSection.style.display = "none";
+    leadGenderSection.style.display = "none";
     const dropdown = document.getElementById("abilitySelect");
     if(dropdown && dropdown.value !== "none"){
       //sword and shield handle abilities differently
@@ -1032,6 +1093,7 @@ const AbilitySection = (props) => {
           case "intimidate":
             if (!props.radarActive){
               leadLevelInput.disabled = false;
+              leadLevelSection.style.display = "block";
               props.setEncounters(intimidateAbility(leadLevel));
               props.setIntimidateActive(true);
             } else {
@@ -1044,6 +1106,16 @@ const AbilitySection = (props) => {
           case "vital spirit":
             props.setEncounters(hustleAbility());
             break;
+          case "cute charm":
+            leadGenderSection.style.display = "block";
+            if (document.getElementById("maleGenderRadio").checked){ //male checked
+              props.setEncounters(cuteCharmAbility("male"));
+            } else if (document.getElementById("femaleGenderRadio").checked){ //female checked
+              props.setEncounters(cuteCharmAbility("female"));
+            } else { //neither checked
+              document.getElementById("maleGenderRadio").checked = true;
+              props.setEncounters(cuteCharmAbility("male"));
+            }
           default:
             break;
         }
@@ -1062,6 +1134,14 @@ const AbilitySection = (props) => {
     }
     setLeadLevel(holdLeadLevel);
     props.setEncounters(intimidateAbility(holdLeadLevel));
+  };
+
+  const handleGenderChange = () => {
+    let gender = "male";
+    if (document.getElementById("femaleGenderRadio").checked){
+      gender = "female";
+    }
+    props.setEncounters(cuteCharmAbility(gender));
   };
 
   useEffect(() => {
@@ -1092,8 +1172,8 @@ const AbilitySection = (props) => {
         <span>Ability?</span>
         <select id="abilitySelect" onChange={handleChange} dangerouslySetInnerHTML={{__html: abilityHTML}}>
         </select>
-        <div>
-          Lead Level: <input 
+        <div id="leadLevelSection">
+          <label for="leadLevelInput">Lead Level: </label><input 
             id="leadLevelInput" 
             type='number' 
             value={leadLevel} 
@@ -1101,6 +1181,15 @@ const AbilitySection = (props) => {
             onKeyDown={(evt) => ["e", "E", "+", "-", "."].includes(evt.key) && evt.preventDefault()}
             disabled
           />
+        </div>
+        <div id="leadGenderSection">
+          <fieldset onChange={handleGenderChange}>
+            <legend>Lead Gender: </legend>
+            <input type="radio" id="maleGenderRadio" name="genderRadio" value="male"/>
+            <label for="maleGenderRadio">Male</label><br />
+            <input type="radio" id="femaleGenderRadio" name="genderRadio" value="female" />
+            <label for="femaleGenderRadio">Female</label>
+          </fieldset>
         </div>
       </div>
     )
@@ -1142,6 +1231,8 @@ const App = () => {
   const [spriteExtension, setSpriteExtension] = useState('');
   //whether to use game specific sprites or just 3d models
   const [useModels, setUseModels] = useState(false);
+  //which gender spreads to use
+  const [genderSpread, setGenderSpread] = useState(0);
 
   //Function to get the pokemon species
   const fetchPokemonData = async () => {
@@ -1194,42 +1285,53 @@ const App = () => {
       case "blue - INT":
       case "blue - JPN":
         setSpriteExtension("gen1/rb");
+        setGenderSpread(1);
         break;
       case "yellow":
         setSpriteExtension("gen1/yellow");
+        setGenderSpread(1);
         break;
       case "gold":
       case "gold - JPN":
         setSpriteExtension("gen2/gold");
+        setGenderSpread(2);
         break;
       case "silver":
       case "silver - JPN":
         setSpriteExtension("gen2/silver");
+        setGenderSpread(2);
         break;
       case "crystal":
         setSpriteExtension("gen2/crystal");
+        setGenderSpread(2);
         break;
       case "ruby":
       case "sapphire":
         setSpriteExtension("gen3/rs");
+        setGenderSpread(3);
         break;
       case "emerald":
         setSpriteExtension("gen3/emerald");
+        setGenderSpread(3);
         break;
       case "firered":
       case "leafgreen":
         setSpriteExtension("gen3/frlg");
+        setGenderSpread(3);
         break;
       case "diamond":
       case "pearl":
         setSpriteExtension("gen4/dp");
+        setGenderSpread(4);
         break;
       case "platinum":
         setSpriteExtension("gen4/platinum");
+        setGenderSpread(4);
         break;
       case "heartgold":
       case "soulsilver":
         setSpriteExtension("gen4/hgss");
+        setGenderSpread(4);
         break;
       default:
         setSpriteExtension("gen6");
@@ -1312,7 +1414,7 @@ const App = () => {
         dangerouslySetInnerHTML={
           encounters.length === 0 ? 
           {__html: ""} : 
-          processedEncountersHTMLGenerator(condenseEncounters(repelEncounters), spriteExtension, pokemonData)
+          processedEncountersHTMLGenerator(condenseEncounters(repelEncounters), spriteExtension, pokemonData, genderSpread)
         }
       >
       </div>

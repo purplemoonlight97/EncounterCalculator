@@ -5,7 +5,7 @@
                 "repel": "true",
                 "tod": "||42,39,42,38,42,38,47,38,82,40,132,39,101,40,202,37,57,39,67,40,67,39,67,40",
                 "radio": "359,359,296,296|436,436,433,433",
-                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
             },
             "0": {
                 "number": "67",
@@ -76,7 +76,7 @@
                 "tod": "||",
                 "dppSwarm": "183",
                 "radio": "359,359,296,296|436,436,433,433",
-                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
             },
             "0": {
                 "number": "41",
@@ -145,7 +145,7 @@
             "variables": {
                 "repel": "true",
                 "hgssRuins": "true",
-                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
             },
             "0": {
                 "number": "0",
@@ -161,7 +161,7 @@
                 "tod": "39,15,187,15,187,15,39,16,187,16,39,16,39,17,187,17,39,17,188,17||39,15,183,15,194,15,39,16,183,16,194,16,39,17,183,17,194,17,35,17",
                 "hgssSafariBlocks": "5,0,0,0|12,0,0,0|35,0,0,0|0,8,0,0|0,28,0,0|0,35,0,0|0,0,3,0|0,0,35,0|0,28,42,0|0,0,0,3",
                 "hgssSafariSlots": "20,40,113,42,273,45,188,40,274,38,274,48,74,45,299,45,447,45,194,40|20,40,113,42,273,45,188,40,274,38,274,47,74,45,299,45,447,46,194,40|20,40,113,42,273,45,188,40,274,38,274,47,35,42,299,45,447,45,194,40",
-                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
             },
             "0": {
                 "number": "39",
@@ -219,7 +219,7 @@
                 "repel": "true",
                 "hgssSafariBlocks": "0,0,0,3|0,0,0,10|0,0,0,14",
                 "hgssSafariSlots": "|188,47,284,42,284,46|",
-                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
             },
             "0": {
                 "number": "129",
@@ -286,7 +286,7 @@
             "variables": {
                 "hgssSafariBlocks": "0,0,0,2|0,0,0,3",
                 "hgssSafariSlots": "|61,15,61,16|",
-                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
             },
             "0": {
                 "number": "129",
@@ -353,7 +353,7 @@
             "variables": {
                 "hgssSafariBlocks": "0,0,0,5|0,0,0,7",
                 "hgssSafariSlots": "|61,27,130,28|",
-                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
             },
             "0": {
                 "number": "129",
@@ -420,7 +420,7 @@
             "variables": {
                 "hgssSafariBlocks": "0,0,0,10|0,0,0,14",
                 "hgssSafariSlots": "|130,42,130,45|",
-                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
             },
             "0": {
                 "number": "60",

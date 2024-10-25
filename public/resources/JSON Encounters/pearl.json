@@ -67,7 +67,7 @@
           "dppSwarm": "84",
           "dongle": "396,396,396,58,396",
           "dppRadar": "32,32,29,29",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -139,7 +139,7 @@
           "dppSwarm": "263",
           "dongle": ",,,58,",
           "dppRadar": "161,161,161,161",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -211,7 +211,7 @@
           "dppSwarm": "104",
           "dongle": "273,270,204,,",
           "dppRadar": "280,280,280,281",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -247,7 +247,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -282,7 +282,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -317,7 +317,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -352,7 +352,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -423,7 +423,7 @@
           "tod": "396,6,399,6,406,6,401,6,406,6,403,6,406,7,403,7,396,8,399,8,396,8,399,8||396,6,399,6,41,6,401,6,406,6,403,6,406,7,403,7,396,8,399,8,396,8,399,8",
           "dongle": "273,270,204,,",
           "dppRadar": "191,191,191,191",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -494,7 +494,7 @@
           "tod": "396,4,399,4,406,4,401,4,406,4,403,4,406,5,403,5,396,6,399,6,396,6,399,6||396,4,399,4,41,4,401,4,406,4,403,4,406,5,403,5,396,6,399,6,396,6,399,6",
           "dongle": "273,270,204,10,13",
           "dppRadar": "280,280,280,281",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -530,7 +530,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -565,7 +565,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -600,7 +600,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -635,7 +635,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -705,7 +705,7 @@
           "repel": "true",
           "dongle": ",270,,,",
           "dppRadar": "79,79,79,79",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -741,7 +741,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -776,7 +776,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -811,7 +811,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -846,7 +846,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -916,7 +916,7 @@
           "repel": "true",
           "dongle": ",,,239,",
           "dppRadar": "187,187,188,188",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -952,7 +952,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -987,7 +987,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -1022,7 +1022,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -1057,7 +1057,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -1129,7 +1129,7 @@
           "dppSwarm": "299",
           "dongle": ",,207,,",
           "dppRadar": "343,343,343,343",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -1201,7 +1201,7 @@
           "dppSwarm": "231",
           "dongle": ",,207,,",
           "dppRadar": "234,234,234,234",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -1273,7 +1273,7 @@
           "dppSwarm": "206",
           "dongle": "335,336,,,",
           "dppRadar": "236,236,236,236",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -1309,7 +1309,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -1344,7 +1344,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -1379,7 +1379,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -1414,7 +1414,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -1486,7 +1486,7 @@
           "dppSwarm": "209",
           "dongle": ",,,37,",
           "dppRadar": "241,241,128,128",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -1522,7 +1522,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -1557,7 +1557,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -1592,7 +1592,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -1627,7 +1627,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -1698,7 +1698,7 @@
           "tod": "||54,25,400,24,163,24,164,25,307,25,66,26,67,26,307,25,67,26,307,26,67,26,307,26",
           "dongle": "335,336,,,",
           "dppRadar": "371,371,371,371",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -1734,7 +1734,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -1769,7 +1769,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -1804,7 +1804,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -1839,7 +1839,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -1910,7 +1910,7 @@
           "tod": "77,19,74,19,438,18,438,18,74,19,402,19,77,18,77,20,113,18,439,20,113,20,439,20||77,19,74,19,402,18,402,18,74,19,402,19,77,18,77,20,113,18,439,20,113,20,439,20",
           "dongle": "273|274,,204,,",
           "dppRadar": "241,241,128,128",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -1981,7 +1981,7 @@
           "tod": "||307,27,75,27,41,26,164,28,67,27,307,28,433,27,433,28,307,28,77,27,307,28,77,28",
           "dongle": ",,216,,",
           "dppRadar": "333,333,333,333",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -2052,7 +2052,7 @@
           "tod": "||307,13,399,13,41,12,163,14,74,13,77,13,433,13,433,13,399,12,307,14,399,12,307,14",
           "dongle": ",,216,,",
           "dppRadar": "236,236,236,236",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -2122,7 +2122,7 @@
           "repel": "true",
           "tod": "396,16,406,16,397,17,402,17,315,16,406,16,315,17,397,18,402,17,402,17,402,18,402,18||396,16,406,16,402,17,402,17,315,16,406,16,315,17,397,18,402,17,402,17,402,18,402,18",
           "dppRadar": "235,235,235,235",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -2158,7 +2158,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -2193,7 +2193,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -2228,7 +2228,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -2263,7 +2263,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -2334,7 +2334,7 @@
           "tod": "||194,18,400,18,402,19,402,19,402,18,315,18,315,20,194,18,400,20,194,18,400,20,194,18",
           "dongle": ",271|270,,23,",
           "dppRadar": "88,88,88,88",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -2370,7 +2370,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -2405,7 +2405,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -2440,7 +2440,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -2475,7 +2475,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -2546,7 +2546,7 @@
           "tod": "||418,20,422-east,20,418,21,422-east,20,422-east,21,278,20,419,22,422-east,22,419,22,422-east,22,419,22,422-east,22",
           "dppSwarm": "359",
           "dppRadar": "277,277,277,277",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -2582,7 +2582,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -2617,7 +2617,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -2652,7 +2652,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -2687,7 +2687,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -2759,7 +2759,7 @@
           "dppSwarm": "325",
           "dongle": ",,207,37,",
           "dppRadar": "229,229,229,229",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -2795,7 +2795,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -2830,7 +2830,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -2865,7 +2865,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -2900,7 +2900,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -2972,7 +2972,7 @@
           "dppSwarm": "96",
           "dongle": ",,207,,",
           "dppRadar": "229,229,229,229",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -3044,7 +3044,7 @@
           "dppSwarm": "225",
           "dongle": ",,217,,",
           "dppRadar": "361,361,361,361",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -3116,7 +3116,7 @@
           "dppSwarm": "220",
           "dongle": ",,217,,",
           "dppRadar": "361,361,361,361",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -3186,7 +3186,7 @@
           "repel": "true",
           "dppSwarm": "100",
           "dppRadar": "132,132,132,132",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -3222,7 +3222,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -3257,7 +3257,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -3292,7 +3292,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -3327,7 +3327,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -3365,7 +3365,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -3400,7 +3400,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -3435,7 +3435,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -3470,7 +3470,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -3508,7 +3508,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -3543,7 +3543,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -3578,7 +3578,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -3613,7 +3613,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -3683,7 +3683,7 @@
           "repel": "true",
           "dppSwarm": "83",
           "dppRadar": "33,33,30,30",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -3719,7 +3719,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -3754,7 +3754,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -3789,7 +3789,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -3824,7 +3824,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -3896,7 +3896,7 @@
           "dppSwarm": "300",
           "dongle": ",,213,,",
           "dppRadar": "180,180,180,180",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -3932,7 +3932,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -3967,7 +3967,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -4002,7 +4002,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -4037,7 +4037,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -4075,7 +4075,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -4110,7 +4110,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -4145,7 +4145,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -4180,7 +4180,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -4252,7 +4252,7 @@
           "dppSwarm": "177",
           "dongle": ",,213,,",
           "dppRadar": "356,356,355,355",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -4288,7 +4288,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -4323,7 +4323,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -4358,7 +4358,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -4393,7 +4393,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -4464,7 +4464,7 @@
           "tod": "||22,51,20,50,354,50,354,52,20,52,435,51,67,51,315,51,21,20,19,20,21,22,19,22",
           "dppSwarm": "296",
           "dppRadar": "57,57,56,56",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -4500,7 +4500,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -4535,7 +4535,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -4570,7 +4570,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -4605,7 +4605,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -4676,7 +4676,7 @@
           "tod": "||22,52,20,52,354,53,354,51,20,51,67,53,55,53,55,51,21,20,19,20,21,22,19,22",
           "dppSwarm": "98",
           "dppRadar": "57,57,56,56",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -4712,7 +4712,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -4747,7 +4747,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -4782,7 +4782,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -4817,7 +4817,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -4889,7 +4889,7 @@
           "dppSwarm": "327",
           "dongle": ",,207,240,",
           "dppRadar": "324,324,324,324",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -4925,7 +4925,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -4960,7 +4960,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -4995,7 +4995,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -5030,7 +5030,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -5102,7 +5102,7 @@
           "dppSwarm": "374",
           "dongle": ",,,28,",
           "dppRadar": "329,329,328,328",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -5138,7 +5138,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -5173,7 +5173,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -5208,7 +5208,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -5243,7 +5243,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -5315,7 +5315,7 @@
           "dppSwarm": "16",
           "dongle": "274,271,204,,",
           "dppRadar": "49,49,48,48",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -5351,7 +5351,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -5386,7 +5386,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -5421,7 +5421,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -5456,7 +5456,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -5526,7 +5526,7 @@
           "repel": "true",
           "dppSwarm": "222",
           "dppRadar": "175,175,175,175",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -5562,7 +5562,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -5597,7 +5597,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -5632,7 +5632,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -5667,7 +5667,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -5738,7 +5738,7 @@
           "tod": "||459,34,215,34,42,35,164,35,308,35,67,36,459,35,215,35,308,36,308,36,308,36,308,36",
           "dongle": ",,216,,",
           "dppRadar": "361,361,361,361",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -5776,7 +5776,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -5811,7 +5811,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -5846,7 +5846,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -5881,7 +5881,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -5919,7 +5919,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -5954,7 +5954,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -5989,7 +5989,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -6024,7 +6024,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -6062,7 +6062,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -6097,7 +6097,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -6132,7 +6132,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -6167,7 +6167,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -6239,7 +6239,7 @@
           "dppRadar": "290,290,290,290",
           "dppSwarm": "287",
           "dongle": "273,,204,11,14",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -6309,7 +6309,7 @@
           "repel": "true",
           "dppSwarm": "81",
           "dppRadar": "187,187,188,188",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -6345,7 +6345,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -6380,7 +6380,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -6415,7 +6415,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -6450,7 +6450,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -6521,7 +6521,7 @@
           "tod": "||194,24,400,25,163,24,164,26,183,25,195,25,183,26,195,26,54,26,54,24,399,26,298,24",
           "dongle": ",,,24,",
           "dppGreatMarsh": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -6557,7 +6557,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -6592,7 +6592,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -6627,7 +6627,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -6662,7 +6662,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -6733,7 +6733,7 @@
           "tod": "||194,22,400,23,163,22,163,24,183,23,195,23,183,24,195,24,54,24,54,22,399,24,298,22",
           "dongle": ",,,24,",
           "dppGreatMarsh": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -6769,7 +6769,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -6804,7 +6804,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -6839,7 +6839,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -6874,7 +6874,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -6945,7 +6945,7 @@
           "tod": "||194,20,400,21,163,20,163,22,183,21,195,21,183,22,195,22,399,22,298,20,399,22,298,20",
           "dongle": ",,,24,",
           "dppGreatMarsh": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -6981,7 +6981,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -7016,7 +7016,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -7051,7 +7051,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -7086,7 +7086,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -7157,7 +7157,7 @@
           "tod": "||194,20,400,21,163,20,163,22,183,21,195,21,183,22,195,22,54,22,54,20,399,22,298,20",
           "dongle": ",,,24,",
           "dppGreatMarsh": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -7193,7 +7193,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -7228,7 +7228,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -7263,7 +7263,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -7298,7 +7298,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -7474,7 +7474,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -7543,7 +7543,7 @@
         "variables": {
           "repel": "true",
           "dongle": "303,302,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -7612,7 +7612,7 @@
         "variables": {
           "repel": "true",
           "dongle": "303,302,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -7681,7 +7681,7 @@
         "variables": {
           "repel": "true",
           "dongle": "303,302,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -7719,7 +7719,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -7754,7 +7754,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -7789,7 +7789,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -7824,7 +7824,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -7896,7 +7896,7 @@
           "dppSwarm": "238",
           "dongle": "338,337,217,,",
           "dppRadar": "202,202,202,202",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -7932,7 +7932,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -7967,7 +7967,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -8002,7 +8002,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -8037,7 +8037,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -8108,7 +8108,7 @@
           "tod": "||400,34,400,36,164,34,164,36,54,35,54,36,433,35,433,36,400,35,397,35,400,35,397,35",
           "dppSwarm": "108",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -8144,7 +8144,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -8179,7 +8179,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -8214,7 +8214,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -8249,7 +8249,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -8321,7 +8321,7 @@
           "dppSwarm": "283",
           "dongle": "338,337,397|400,397|400,397|400",
           "dppRadar": "202,202,202,202",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -8357,7 +8357,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -8392,7 +8392,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -8427,7 +8427,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -8462,7 +8462,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -8531,7 +8531,7 @@
         "variables": {
           "repel": "true",
           "tod": "||92,16,41,16,200,17,200,17,92,17,41,17,92,18,41,18,92,18,41,18,92,18,41,18",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -8600,7 +8600,7 @@
         "variables": {
           "repel": "true",
           "tod": "||92,17,41,17,200,18,200,18,92,18,41,18,92,19,41,19,92,19,41,19,92,19,41,19",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -8669,7 +8669,7 @@
         "variables": {
           "repel": "true",
           "tod": "||92,18,41,18,200,19,200,19,92,19,41,19,92,20,41,20,92,20,41,20,92,20,42,19",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -8738,7 +8738,7 @@
         "variables": {
           "repel": "true",
           "tod": "||92,19,41,19,200,20,200,20,92,20,41,20,92,21,41,21,92,21,42,20,92,21,42,21",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -8807,7 +8807,7 @@
         "variables": {
           "repel": "true",
           "tod": "||92,20,41,20,200,21,200,21,92,21,41,21,92,22,42,21,92,22,42,22,92,22,42,23",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -8875,7 +8875,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -8943,7 +8943,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -9011,7 +9011,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -9081,7 +9081,7 @@
           "repel": "true",
           "tod": "307,13,74,13,173,12,173,12,66,13,41,13,433,13,433,13,307,14,173,12,307,14,173,12||",
           "dongle": ",173,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -9149,7 +9149,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -9218,7 +9218,7 @@
         "variables": {
           "repel": "true",
           "tod": "66,15,74,15,173,14,173,14,307,15,41,15,433,15,433,15,66,16,173,14,66,16,173,14||",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -9254,7 +9254,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -9289,7 +9289,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -9324,7 +9324,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -9359,7 +9359,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -9428,7 +9428,7 @@
         "variables": {
           "repel": "true",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -9497,7 +9497,7 @@
         "variables": {
           "repel": "true",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -9533,7 +9533,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -9568,7 +9568,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -9603,7 +9603,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -9638,7 +9638,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -9707,7 +9707,7 @@
         "variables": {
           "repel": "true",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -9776,7 +9776,7 @@
         "variables": {
           "repel": "true",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -9845,7 +9845,7 @@
         "variables": {
           "repel": "true",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -9913,7 +9913,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -9949,7 +9949,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -9984,7 +9984,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod - Feebas": {
@@ -10025,7 +10025,7 @@
           "rate": "0.5"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -10060,7 +10060,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod - Feebas": {
@@ -10101,7 +10101,7 @@
           "rate": "0.5"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -10142,7 +10142,7 @@
           "rate": "0.5"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod - Feebas": {
@@ -10177,7 +10177,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -10248,7 +10248,7 @@
           "dongle": "338,337,,,",
           "tod": "||459,38,460,40,41,39,164,39,308,40,67,40,433,39,433,40,437,39,35,38,437,40,35,39",
           "dppRadar": "294,294,294,294",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -10317,7 +10317,7 @@
         "variables": {
           "repel": "true",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -10386,7 +10386,7 @@
         "variables": {
           "repel": "true",
           "dongle": "93,93,93,93,93",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -10455,7 +10455,7 @@
         "variables": {
           "repel": "true",
           "dongle": "94|93,94|93,94|93,94|93,94|93",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -10523,7 +10523,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -10591,7 +10591,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -10627,7 +10627,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -10662,7 +10662,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -10697,7 +10697,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -10732,7 +10732,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -10800,7 +10800,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -10868,7 +10868,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -10906,7 +10906,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -10941,7 +10941,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -10976,7 +10976,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -11011,7 +11011,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -11049,7 +11049,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -11084,7 +11084,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -11119,7 +11119,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -11154,7 +11154,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -11222,7 +11222,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -11258,7 +11258,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -11293,7 +11293,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -11328,7 +11328,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -11363,7 +11363,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -11401,7 +11401,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -11436,7 +11436,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -11471,7 +11471,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -11506,7 +11506,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -11576,7 +11576,7 @@
           "repel": "true",
           "dppSwarm": "",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -11612,7 +11612,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -11647,7 +11647,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -11682,7 +11682,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -11717,7 +11717,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -11785,7 +11785,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -11853,7 +11853,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -11921,7 +11921,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -11989,7 +11989,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12057,7 +12057,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12125,7 +12125,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12193,7 +12193,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12261,7 +12261,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12329,7 +12329,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12397,7 +12397,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12465,7 +12465,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12534,7 +12534,7 @@
         "variables": {
           "repel": "true",
           "dongle": ",,,,240",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12605,7 +12605,7 @@
           "tod": "||323,55,112,55,354,54,42,54,22,55,110,55,227,56,75,56,322,22,111,22,322,24,111,24",
           "dppRadar": "324,324,324,324",
           "dongle": ",,207,,240",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12674,7 +12674,7 @@
         "variables": {
           "repel": "true",
           "dongle": ",,,,240",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12712,7 +12712,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -12747,7 +12747,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -12782,7 +12782,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -12817,7 +12817,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12887,7 +12887,7 @@
           "repel": "true",
           "tod": "397,17,315,16,172,16,172,16,315,17,402,17,25,18,172,16,25,18,172,16,25,18,172,16||397,17,315,16,402,16,402,16,315,17,402,17,25,18,172,16,25,18,172,16,25,18,172,16",
           "dppTrophy": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -12956,7 +12956,7 @@
         "variables": {
           "repel": "true",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -13025,7 +13025,7 @@
         "variables": {
           "repel": "true",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -13094,7 +13094,7 @@
         "variables": {
           "repel": "true",
           "dongle": "338,337,,,",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -13132,7 +13132,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -13167,7 +13167,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -13202,7 +13202,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -13237,7 +13237,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -13308,7 +13308,7 @@
           "dppSwarm": "309",
           "dongle": ",,,239,",
           "dppRadar": "179,179,179,179",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -13344,7 +13344,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -13379,7 +13379,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -13414,7 +13414,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -13449,7 +13449,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -13519,7 +13519,7 @@
           "repel": "true",
           "tod": "||203,21,74,20,402,21,402,21,400,21,203,22,402,22,397,22,400,22,75,22,400,22,75,22",
           "dppRadar": "33,33,30,30",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -13587,7 +13587,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -13655,7 +13655,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -13691,7 +13691,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -13726,7 +13726,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -13761,7 +13761,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -13796,7 +13796,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -13864,7 +13864,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -13932,7 +13932,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Surf": {
@@ -13968,7 +13968,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod": {
@@ -14003,7 +14003,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -14038,7 +14038,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -14073,7 +14073,7 @@
           "rate": "0.01"
         },
         "variables": {
-          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -14141,7 +14141,7 @@
         },
         "variables": {
           "repel": "true",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -14210,7 +14210,7 @@
         "variables": {
           "repel": "true",
           "dongle": ",,,,27",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     },
@@ -14279,7 +14279,7 @@
         "variables": {
           "repel": "true",
           "dongle": ",,,,27",
-          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit"
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
     }
