@@ -2682,6 +2682,9 @@
           "minLevel": "5",
           "maxLevel": "10",
           "rate": "0.3"
+        },
+        "variables": {
+          "ability": "hustle|pressure|vital spirit|cute charm"
         }
       },
       "Old Rod - Feebas": {
@@ -2702,6 +2705,9 @@
           "minLevel": "20",
           "maxLevel": "25",
           "rate": "0.5"
+        },
+        "variables": {
+          "ability": "hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod": {
@@ -2722,6 +2728,9 @@
           "minLevel": "10",
           "maxLevel": "30",
           "rate": "0.2"
+        },
+        "variables": {
+          "ability": "hustle|pressure|vital spirit|cute charm"
         }
       },
       "Good Rod - Feebas": {
@@ -2748,6 +2757,9 @@
           "minLevel": "10",
           "maxLevel": "30",
           "rate": "0.5"
+        },
+        "variables": {
+          "ability": "hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod": {
@@ -2780,6 +2792,9 @@
           "minLevel": "40",
           "maxLevel": "45",
           "rate": "0.01"
+        },
+        "variables": {
+          "ability": "hustle|pressure|vital spirit|cute charm"
         }
       },
       "Super Rod - Feebas": {
@@ -2818,6 +2833,9 @@
           "minLevel": "10",
           "maxLevel": "30",
           "rate": "0.5"
+        },
+        "variables": {
+          "ability": "hustle|pressure|vital spirit|cute charm"
         }
       }
     },

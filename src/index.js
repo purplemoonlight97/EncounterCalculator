@@ -84,13 +84,14 @@ const processedEncountersHTMLGenerator = (arr, str, pokemonArr, genSpread) => {
         female = 1 - male;
       }
     }
+    const finalRate = e.rate * modifier * 100;
     tempHTML += `
       <div class="encounterSlot">
         <img src="${process.env.PUBLIC_URL + '/resources/' + str + '/' + e.number + '.png'}" />
         <span>Species: ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
-        <span>Rate: ${Math.round(e.rate * modifier * 100)/100}%</span>
-        ${(male !== 0) ? `<span>Male: ${Math.round(male * 10000)/100}%</span>` : ``}
-        ${(female !== 0) ? `<span>Female: ${Math.round(female * 10000)/100}%</span>` : ``}
+        <span>Rate: ${Math.round(finalRate)/100}%</span>
+        ${(male !== 0) ? `<span>Male: ${Math.round(male * finalRate)/100}% (${Math.round(male * 10000)/100}%)</span>` : ``}
+        ${(female !== 0) ? `<span>Female: ${Math.round(female * finalRate)/100}% (${Math.round(female * 10000)/100}%)</span>` : ``}
       </div>
     `;
   });
@@ -259,6 +260,9 @@ const GscSwarmSection = (props) => {
       for (let i = 0; i < tempArray.length; i++){
         tempArray[i].number = newArr[i*2];
         tempArray[i].minLevel = newArr[i*2 + 1];
+        if (tempArray[1].maxLevel){
+          tempArray[i].maxLevel = newArr[i*2 + 1];
+        }
       }
       return tempArray;
     }
@@ -816,6 +820,9 @@ const HgssSafariZoneSection = (props) => {
       if (allBlocksEnough){
         tempArray[currentIndex].number = safariSlots[i * 2];
         tempArray[currentIndex].minLevel = safariSlots[i * 2 + 1];
+        if (tempArray[currentIndex].maxLevel){
+          tempArray[currentIndex].maxLevel = safariSlots[i * 2 + 1];
+        }
         currentIndex++;
       }
     });
@@ -828,7 +835,7 @@ const HgssSafariZoneSection = (props) => {
     } else {
       props.setEncounters(props.encounters);
     }
-  }, [props.encounters, plainsBlocks, forestBlocks, peakBlocks, waterBlocks, days]);
+  }, [props.encounters, props.todIndex, plainsBlocks, forestBlocks, peakBlocks, waterBlocks, days]);
 
   useEffect(() => {
     setPlainsBlocks(0);
@@ -1388,6 +1395,7 @@ const App = () => {
           <option value="pearl">Pearl</option>
           <option value="platinum">Platinum</option>
           <option value="heartgold">HeartGold</option>
+          <option value="soulsilver">SoulSilver</option>
         </select>
         <select id="areas" onChange={handleAreaChange} disabled>
           <option value="" selected disabled hidden>Choose Game First</option>
