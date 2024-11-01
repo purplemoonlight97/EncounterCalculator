@@ -20,15 +20,38 @@ const encounterHTMLGenerator = (arr, str, pokemonArr) => {
     const pokemon = findName(e.number, pokemonArr);
     tempHTML += `
       <div class="encounterSlot">
-        <img src="${process.env.PUBLIC_URL + '/resources/' + str + '/' + e.number + '.png'}" />
-        <span>Species: ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
-        <span>Level: ${e.minLevel}${('maxLevel' in e) ? "-" + e.maxLevel : ""}</span>
-        <span>Rate: ${Math.round(e.rate * 10000)/100}%</span>
+        <p>
+          <span><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
+          <span><b>${Math.round(e.rate * 10000)/100}%</b></span>
+        </p>
+        <img class="${pokemon.type1 ? pokemon.type1 : pokemon.type1}" src="${'./resources/' + str + '/' + e.number + '.png'}" alt="Pokemon sprite for ${pokemon.name}"/>
+        <span>Level: </span><span class="secondaryInfo">${e.minLevel}${('maxLevel' in e) ? "-" + e.maxLevel : ""}</span>
       </div>
     `;
   });
   return {__html: tempHTML};
 };
+
+//switch between the shiny and not shiny sprite
+const shinyFlip = (event) => {
+  let str = event.target.src.toString();
+  let index = str.length - 1;
+  //find the last / in the src
+  for (let i = index; i >= 0; i--){
+    if (str.charAt(i) === "/"){
+      index = i;
+      break;
+    }
+  }
+  if(str.includes("shiny")){
+    const indexLeft = index - 6;
+    const src = str.slice(0,indexLeft) + str.slice(index, str.length);
+    event.target.src = src;
+  } else {
+    const src = str.slice(0, index) + "/shiny/" + str.slice(index + 1, str.length);
+    event.target.src = src;
+  }
+}
 
 //converts an array of processed (repels, abilities, etc.) into HTML for output
 const processedEncountersHTMLGenerator = (arr, str, pokemonArr, genSpread) => {
@@ -85,17 +108,28 @@ const processedEncountersHTMLGenerator = (arr, str, pokemonArr, genSpread) => {
       }
     }
     const finalRate = e.rate * modifier * 100;
+    //${pokemon.type1}
     tempHTML += `
-      <div class="encounterSlot">
-        <img src="${process.env.PUBLIC_URL + '/resources/' + str + '/' + e.number + '.png'}" />
-        <span>Species: ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
-        <span>Rate: ${Math.round(finalRate)/100}%</span>
-        ${(male !== 0) ? `<span>Male: ${Math.round(male * finalRate)/100}% (${Math.round(male * 10000)/100}%)</span>` : ``}
-        ${(female !== 0) ? `<span>Female: ${Math.round(female * finalRate)/100}% (${Math.round(female * 10000)/100}%)</span>` : ``}
+      <div class="encounterSlot ${Math.floor(Math.random() * 1000) === 0 ? "ellipse" : ""}"> 
+        <p>
+          <span><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
+          <span><b>${Math.round(finalRate)/100}%</b></span>
+        </p>
+        <img class="${str.includes("gen1") ? "" : "shinyFlip"} ${pokemon.type1 ? pokemon.type1 : pokemon.type1} ${Math.floor(Math.random() * 100) === 0 ? "ellipse" : ""}" src="${'./resources/' + str + '/' + e.number + '.png'}" alt="Pokemon sprite for ${pokemon.name}"/>
+        ${(male !== 0) ? `<span class="genderHeader">Male: </span><span class="genderPercent">${Math.round(male * finalRate)/100}% (${Math.round(male * 10000)/100}%)</span>` : ``}
+        ${(female !== 0) ? `<span class="genderHeader">Female: </span><span class="genderPercent">${Math.round(female * finalRate)/100}% (${Math.round(female * 10000)/100}%)</span>` : ``}
+        ${(male === 0) && (female === 0) ? `<span class="genderHeader">Gender: </span><span class="genderPercent">Unknown</span>` : ``}
       </div>
     `;
   });
-  tempHTML += `<div class="encounterRate">${arr.length === 200 ? "" : Math.round(encounterRate * 10000)/100 + '%'} Encounter Rate</div>`
+  tempHTML += `<div class="encounterRate">
+                <div class="barChart" style="width: ${arr.length === 200 ? "" : Math.round(encounterRate * 10000)/100 + '%'}">
+                  <span>${arr.length === 200 ? "" : Math.round(encounterRate * 10000)/100 + '%'} Encounter Rate</span>
+                </div>
+              </div>
+              <div class="encounterRateNoBar">
+                <span>${arr.length === 200 ? "" : Math.round(encounterRate * 10000)/100 + '%'} Encounter Rate</span>
+              </div>`
   return {__html: tempHTML};
 };
 
@@ -191,7 +225,8 @@ const RepelSection = (props) => {
   if (props.repel){
     return(
       <div id="repelArea" class="modChunk">
-        Repel Level: <input 
+        <label for="repelLevelInput">Repel Level:</label>
+        <input 
           id="repelLevelInput" 
           type='number' 
           value={repelLevel} 
@@ -240,12 +275,14 @@ const TimeOfDaySection = (props) => {
   if (props.tod){
     return (
       <div id="todArea" class="modChunk">
-        <span>Time of Day:</span>
-        <select id="todInput" onChange={handleChange}>
-          <option value="0">Morning</option>
-          <option value="1" selected>Day</option>
-          <option value="2">Night</option>
-        </select>
+        <label for="todInput">Time of Day: </label>
+        <div class="select select--enabled">
+          <select id="todInput" onChange={handleChange}>
+            <option value="0">Morning</option>
+            <option value="1" selected>Day</option>
+            <option value="2">Night</option>
+          </select>
+        </div>
       </div>
     );
   }
@@ -341,9 +378,11 @@ const RseSwarmSection = (props) => {
   if (props.rseSwarm){
     return (
       <div id="rseSwarmArea" class="modChunk">
-        <span>Swarm?</span>
-        <select id="rseSwarmSelect" onChange={handleChange} dangerouslySetInnerHTML={{__html: rseSwarmHTML}}>
-        </select>
+        <label for="rseSwarmSelect">Swarm? </label>
+        <div class="select select--enabled">
+          <select id="rseSwarmSelect" onChange={handleChange} dangerouslySetInnerHTML={{__html: rseSwarmHTML}}>
+          </select>
+        </div>
       </div>
     )
   }
@@ -427,19 +466,24 @@ const GscRuinsSection = (props) => {
   if (props.gscRuins || props.hgssRuins){
     return(
       <div id="gscRuinsArea" class="modChunk">
-        <fieldset onChange={handleChange}>
+        <fieldset class="ruinsFieldset" onChange={handleChange}>
           <legend>Select completed puzzles</legend>
-          <label for="upper-right">Upper Right</label>
-          <input type="checkbox" id="upper-right"/>
-          <br/>
-          <label for="lower-left">Lower Left</label>
-          <input type="checkbox" id="lower-left"/>
-          <br/>
-          <label for="lower-right">Lower Right</label>
-          <input type="checkbox" id="lower-right"/>
-          <br/>
-          <label for="upper-left">Upper Left</label>
-          <input type="checkbox" id="upper-left"/>
+          <div>
+            <label for="upper-right">Upper Right: </label>
+            <input type="checkbox" id="upper-right"/>
+          </div>
+          <div>
+            <label for="lower-left">Lower Left: </label>
+            <input type="checkbox" id="lower-left"/>
+          </div>
+          <div>
+            <label for="lower-right">Lower Right: </label>
+            <input type="checkbox" id="lower-right"/>
+          </div>
+          <div>
+            <label for="upper-left">Upper Left: </label>
+            <input type="checkbox" id="upper-left"/>
+          </div>
         </fieldset>
       </div>
     )
@@ -476,7 +520,9 @@ const DppRadarSection = (props) => {
     return(
       <div id="dppRadarArea" class="modChunk">
         <label for="radar">Radar?</label>
-        <input type="checkbox" id="radar" onChange={handleChange}/>
+        <div class="checkboxDiv">
+          <input type="checkbox" id="radar" onChange={handleChange}/>
+        </div>
       </div>
     )
   }
@@ -493,6 +539,7 @@ const DppTrophySection = (props) => {
     const currentSelect = document.getElementById("currentDaily");
     const currentSelectValue = currentSelect.value;
     const previousSelect = document.getElementById("yesterdayDaily");
+    const previousDiv = document.getElementById("yesterdayDailyDiv");
     let previousSelectValue = previousSelect.value;
 
     let currentHTML = `<option value="0">None</option>`;
@@ -506,6 +553,7 @@ const DppTrophySection = (props) => {
     let previousHTML = `<option value="0">None</option>`;
     if (currentSelectValue !== "0"){
       previousSelect.disabled = false;
+      previousDiv.classList = "select select--enabled";
       dailyPokemonArr.forEach(e => {
         const pokemon = findName(e, props.pokemonArr);
         previousHTML += (e === currentSelectValue) ? `` : `<option value=${e}>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</option>`;
@@ -513,6 +561,7 @@ const DppTrophySection = (props) => {
       previousSelectValue = (currentSelectValue === previousSelectValue) ? "0" : previousSelectValue;
     } else {
       previousSelect.disabled = true;
+      previousDiv.classList = "select select--disabled";
       previousSelectValue = "0";
     }
     previousSelect.innerHTML = previousHTML;
@@ -535,13 +584,17 @@ const DppTrophySection = (props) => {
     return(
       <div id="dppTrophyArea" class="modChunk">
         <label for="currentDaily">Current Daily: </label>
-        <select id="currentDaily" onChange={handleChange}>
-          <option value="0">None</option>
-        </select>
+        <div class="select select--enabled">
+          <select id="currentDaily" onChange={handleChange}>
+            <option value="0">None</option>
+          </select>
+        </div>
         <label for="yesterdayDaily">Previous Daily: </label>
-        <select id="yesterdayDaily" disabled onChange={handleChange}>
-          <option value="0">None</option>
-        </select>
+        <div class="select select--disabled" id="yesterdayDailyDiv">
+          <select id="yesterdayDaily" disabled onChange={handleChange}>
+            <option value="0">None</option>
+          </select>
+        </div>
       </div>
     )
   }
@@ -574,54 +627,58 @@ const DppGreatMarshSection = (props) => {
       return (
         <div id="dppGreatMarshArea" class="modChunk">
           <label for="greatMarshSelect">Daily Spawn?</label>
-          <select id="greatMarshSelect" onChange={handleChange}>
-            <option value="0">None</option>
-            <option value="46">Paras</option>
-            <option value="55">Golduck</option>
-            <option value="102">Exeggcute</option>
-            <option value="115">Kangaskhan</option>
-            <option value="183">Marill</option>
-            <option value="193">Yanma</option>
-            <option value="194">Wooper</option>
-            <option value="195">Quagsire</option>
-            <option value="285">Shroomish</option>
-            <option value="298">Azurill</option>
-            <option value="315">Roselia</option>
-            <option value="316">Gulpin</option>
-            <option value="397">Staravia</option>
-            <option value="399">Bidoof</option>
-            <option value="400">Bibarel</option>
-            <option value="451">Skorupi</option>
-            <option value="452">Drapion</option>
-            <option value="453">Croagunk</option>
-            <option value="454">Toxicroak</option>
-            <option value="455">Carnivine</option>
-          </select>
+          <div class="select select--enabled">
+            <select id="greatMarshSelect" onChange={handleChange}>
+              <option value="0">None</option>
+              <option value="46">Paras</option>
+              <option value="55">Golduck</option>
+              <option value="102">Exeggcute</option>
+              <option value="115">Kangaskhan</option>
+              <option value="183">Marill</option>
+              <option value="193">Yanma</option>
+              <option value="194">Wooper</option>
+              <option value="195">Quagsire</option>
+              <option value="285">Shroomish</option>
+              <option value="298">Azurill</option>
+              <option value="315">Roselia</option>
+              <option value="316">Gulpin</option>
+              <option value="397">Staravia</option>
+              <option value="399">Bidoof</option>
+              <option value="400">Bibarel</option>
+              <option value="451">Skorupi</option>
+              <option value="452">Drapion</option>
+              <option value="453">Croagunk</option>
+              <option value="454">Toxicroak</option>
+              <option value="455">Carnivine</option>
+            </select>
+          </div>
         </div>
       )
     } else { //game is platinum
       return (
         <div id="dppGreatMarshArea" class="modChunk">
           <label for="greatMarshSelect">Daily Spawn?</label>
-          <select id="greatMarshSelect" onChange={handleChange}>
-            <option value="0">None</option>
-            <option value="46">Paras</option>
-            <option value="102">Exeggcute</option>
-            <option value="115">Kangaskhan</option>
-            <option value="114">Tangela</option>
-            <option value="193">Yanma</option>
-            <option value="194">Wooper</option>
-            <option value="195">Quagsire</option>
-            <option value="285">Shroomish</option>
-            <option value="316">Gulpin</option>
-            <option value="352">Kecleon</option>
-            <option value="357">Tropius</option>
-            <option value="451">Skorupi</option>
-            <option value="452">Drapion</option>
-            <option value="453">Croagunk</option>
-            <option value="454">Toxicroak</option>
-            <option value="455">Carnivine</option>
-          </select>
+          <div class="select select--enabled">
+            <select id="greatMarshSelect" onChange={handleChange}>
+              <option value="0">None</option>
+              <option value="46">Paras</option>
+              <option value="102">Exeggcute</option>
+              <option value="115">Kangaskhan</option>
+              <option value="114">Tangela</option>
+              <option value="193">Yanma</option>
+              <option value="194">Wooper</option>
+              <option value="195">Quagsire</option>
+              <option value="285">Shroomish</option>
+              <option value="316">Gulpin</option>
+              <option value="352">Kecleon</option>
+              <option value="357">Tropius</option>
+              <option value="451">Skorupi</option>
+              <option value="452">Drapion</option>
+              <option value="453">Croagunk</option>
+              <option value="454">Toxicroak</option>
+              <option value="455">Carnivine</option>
+            </select>
+          </div>
         </div>
       )
     }
@@ -653,7 +710,9 @@ const DppSwarmSection = (props) => {
     return (
       <div id="dppSwarmArea" class="modChunk">
         <label for="radar">Swarm?</label>
-        <input type="checkbox" id="dppSwarmCheckbox" onChange={handleChange}/>
+        <div class="checkboxDiv">
+          <input type="checkbox" id="dppSwarmCheckbox" onChange={handleChange}/>
+        </div>
       </div>
     )
   }
@@ -712,9 +771,11 @@ const DongleSection = (props) => {
     return (
       <div id="dongleArea" class="modChunk">
         <label for="dongleGameSelect">GBA game?</label>
-        <select id="dongleGameSelect" onChange={handleChange}>
-          <option value="-1">None</option>
-        </select>
+        <div class="select select--enabled">
+          <select id="dongleGameSelect" onChange={handleChange}>
+            <option value="-1">None</option>
+          </select>
+        </div>
       </div>
     )
   }
@@ -847,55 +908,63 @@ const HgssSafariZoneSection = (props) => {
 
   if (props.hgssSafariBlocks){
     return ( 
-      <fieldset class="modChunk">
-        <legend>Blocks {totalBlocks()}/{maxBlocks}</legend>
-        <div id="hgssSafariZoneArea">
-          <label for="plainsInput">Plains Blocks:</label>
-          <input 
-            id="plainsInput" 
-            type='number' 
-            value={plainsBlocks.toString()} 
-            onChange={handlePlainsChange} 
-            onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
-          />
-          <br />
-          <label for="forestInput">Forest Blocks:</label>
-          <input 
-            id="forestInput" 
-            type='number' 
-            value={forestBlocks.toString()} 
-            onChange={handleForestChange} 
-            onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
-          />
-          <br />
-          <label for="peakInput">Peak Blocks:</label>
-          <input 
-            id="peakInput" 
-            type='number' 
-            value={peakBlocks.toString()} 
-            onChange={handlePeakChange} 
-            onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
-          />
-          <br />
-          <label for="waterInput">Water Blocks:</label>
-          <input 
-            id="waterInput" 
-            type='number' 
-            value={waterBlocks.toString()} 
-            onChange={handleWaterChange} 
-            onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
-          />
-          <br />
-          <label for="dayInput">Days:</label>
-          <input 
-            id="dayInput" 
-            type='number' 
-            value={days.toString()} 
-            onChange={handleDayChange} 
-            onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
-          />
-        </div>
-      </fieldset>
+      <div class="modChunk">
+        <fieldset class="safariFieldset">
+          <legend>Blocks {totalBlocks()}/{maxBlocks}</legend>
+          <div id="hgssSafariZoneArea">
+            <div>
+              <label for="plainsInput">Plains Blocks:</label>
+              <input 
+                id="plainsInput" 
+                type='number' 
+                value={plainsBlocks.toString()} 
+                onChange={handlePlainsChange} 
+                onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
+              />
+            </div>
+            <div>
+              <label for="forestInput">Forest Blocks:</label>
+              <input 
+                id="forestInput" 
+                type='number' 
+                value={forestBlocks.toString()} 
+                onChange={handleForestChange} 
+                onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
+              />
+            </div>
+            <div>
+              <label for="peakInput">Peak Blocks:</label>
+              <input 
+                id="peakInput" 
+                type='number' 
+                value={peakBlocks.toString()} 
+                onChange={handlePeakChange} 
+                onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
+              />
+            </div>
+            <div>
+              <label for="waterInput">Water Blocks:</label>
+              <input 
+                id="waterInput" 
+                type='number' 
+                value={waterBlocks.toString()} 
+                onChange={handleWaterChange} 
+                onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
+              />
+            </div>
+            <div>
+              <label for="dayInput">Days:</label>
+              <input 
+                id="dayInput" 
+                type='number' 
+                value={days.toString()} 
+                onChange={handleDayChange} 
+                onKeyDown={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "Backspace"].includes(evt.key)) && evt.preventDefault()}
+              />
+            </div>
+          </div>
+        </fieldset>
+      </div>
     )
   }
 };
@@ -930,11 +999,13 @@ const HgssRadioSection = (props) => {
     return (
       <div id="hgssRadioArea" class="modChunk">
         <label for="radioSelect">Radio?</label>
-        <select id="radioSelect" onChange={handleChange}>
-          <option value="-1" selected>None</option>
-          <option value="0">Hoenn</option>
-          <option value="1">Sinnoh</option>
-        </select>
+        <div class="select select--enabled">
+          <select id="radioSelect" onChange={handleChange}>
+            <option value="-1" selected>None</option>
+            <option value="0">Hoenn</option>
+            <option value="1">Sinnoh</option>
+          </select>
+        </div>
       </div>
     )
   }
@@ -1100,7 +1171,7 @@ const AbilitySection = (props) => {
           case "intimidate":
             if (!props.radarActive){
               leadLevelInput.disabled = false;
-              leadLevelSection.style.display = "block";
+              leadLevelSection.style.display = "flex";
               props.setEncounters(intimidateAbility(leadLevel));
               props.setIntimidateActive(true);
             } else {
@@ -1176,11 +1247,14 @@ const AbilitySection = (props) => {
   if (props.ability){
     return (
       <div id="abilityArea" class="modChunk">
-        <span>Ability?</span>
-        <select id="abilitySelect" onChange={handleChange} dangerouslySetInnerHTML={{__html: abilityHTML}}>
-        </select>
-        <div id="leadLevelSection">
-          <label for="leadLevelInput">Lead Level: </label><input 
+        <label for="abilitySelect">Ability: </label>
+        <div class="select select--enabled">
+          <select id="abilitySelect" onChange={handleChange} dangerouslySetInnerHTML={{__html: abilityHTML}}>
+          </select>
+        </div>
+        <div id="leadLevelSection" class="innerDiv">
+          <label for="leadLevelInput">Lead Level: </label>
+          <input 
             id="leadLevelInput" 
             type='number' 
             value={leadLevel} 
@@ -1189,7 +1263,7 @@ const AbilitySection = (props) => {
             disabled
           />
         </div>
-        <div id="leadGenderSection">
+        <div id="leadGenderSection" class="innerDiv">
           <fieldset onChange={handleGenderChange}>
             <legend>Lead Gender: </legend>
             <input type="radio" id="maleGenderRadio" name="genderRadio" value="male"/>
@@ -1264,8 +1338,11 @@ const App = () => {
         areasHTML += `<option value="${e}">${e}</option>`
       });
       const areasElement = document.getElementById("areas");
+      const areasDiv = document.getElementById("areasDiv");
       areasElement.innerHTML = areasHTML;
       areasElement.disabled = false;
+      areasDiv.classList.remove("select--disabled");
+      areasDiv.classList.add("select--enabled");
     } catch {
       alert("problem collecting encounter data");
     }
@@ -1280,6 +1357,8 @@ const App = () => {
   const clearEncounters = () => {
     setEncouters([]);
     setVariables({});
+    document.getElementById("encounterSlots").style.display = "none";
+    document.getElementById("processedEncounters").style.display = "none";
   };
 
   //which game has been selected has changed
@@ -1346,6 +1425,7 @@ const App = () => {
     const methodElement = document.getElementById("methods");
     methodElement.innerHTML = `<option value="" selected disabled hidden>Choose Area First</option>`;
     methodElement.disabled = true;
+    document.getElementById("methodsDiv").classList = ("select select--enabled");
   };
 
   //Once an area is selected, load the available encounter methods such as walking, fishing, surfing
@@ -1359,71 +1439,121 @@ const App = () => {
       methodsHTML += `<option value="${e}">${e}</option>`;
     });
     const methodElement = document.getElementById("methods");
+    const methodsDiv = document.getElementById("methodsDiv");
     methodElement.innerHTML = methodsHTML;
     methodElement.disabled = false;
+    methodsDiv.classList = ("select select--enabled");
   };
 
   //which method of encounters has changed (walking, surfing, fishing, etc.)
   const handleMethodChange = (event) => {
     let tempArray = Object.values(encounterData[selectedArea][event.target.value]);
     clearEncounters();
+    document.getElementById("encounterSlots").style.display = "flex";
+    document.getElementById("processedEncounters").style.display = "flex";
     setVariables(Object.keys(encounterData[selectedArea][event.target.value])[tempArray.length - 1] === "variables" ? tempArray.pop() : {});
     setEncouters(tempArray);
+    const methodsDiv = document.getElementById("methodsDiv");
+    const methods = document.getElementById("methods");
+
+    if (methods.value.includes("Walk")){
+      methodsDiv.classList = ("select select--walk");
+    } else if(methods.value.includes("Rod")) {
+      methodsDiv.classList = ("select select--fishing");
+    } else if(methods.value.includes("Surf")){
+      methodsDiv.classList = ("select select--surf");
+    } else if(methods.value.includes("Smash")){
+      methodsDiv.classList = ("select select--rsmash");
+    } else if(methods.value.includes("butt")){
+      methodsDiv.classList = ("select select--headbutt");
+    }else {
+      methodsDiv.classList = ("select select--enabled");
+    }
+  };
+
+  const handleProcessedImagesChange = () => {
+    const images = document.querySelectorAll('[class^="shiny"]');
+    images.forEach(e => {
+      e.addEventListener("click", shinyFlip);
+    })
   };
 
   return(
     <div>
-      <h2>Game and Area:</h2>
-      <div id="selections">
-        <select id="games" onChange={handleGameChange}>
-          <option value="" selected disabled hidden>Choose Game</option>
-          <option value="red">Red</option>
-          <option value="blue - INT">Blue - INT/Green - JPN</option>
-          <option value="blue - JPN">Blue - JPN</option>
-          <option value="yellow">Yellow</option>
-          <option value="gold">Gold - INT</option>
-          <option value="gold - JPN">Gold - JPN/KOR</option>
-          <option value="silver">Silver - INT</option>
-          <option value="silver - JPN">Silver - JPN/KOR</option>
-          <option value="crystal">Crystal</option>
-          <option value="ruby">Ruby</option>
-          <option value="sapphire">Sapphire</option>
-          <option value="emerald">Emerald</option>
-          <option value="firered">FireRed</option>
-          <option value="leafgreen">LeafGreen</option>
-          <option value="diamond">Diamond</option>
-          <option value="pearl">Pearl</option>
-          <option value="platinum">Platinum</option>
-          <option value="heartgold">HeartGold</option>
-          <option value="soulsilver">SoulSilver</option>
-        </select>
-        <select id="areas" onChange={handleAreaChange} disabled>
-          <option value="" selected disabled hidden>Choose Game First</option>
-        </select>
-        <select id="methods" onChange={handleMethodChange} disabled>
-          <option value="" selected disabled hidden>Choose Area First</option>
-        </select>
+      <h2>Pokemon Encounter Calculator Remastered:</h2>
+      <div class="imageHolder">
+        <img src="./resources/images/Hildawalkdown.png" alt='trainer'/>
+        <img src="./resources/images/Dawn.png" alt='trainer'/>
+        <img src="./resources/images/Lyra.png" alt='trainer'/>
+        <img src="./resources/images/Ethan.png" alt='trainer'/>
+        <img src="./resources/images/Lucas.png" alt='trainer'/>
       </div>
-      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(hgssRadioEncounters, spriteExtension, pokemonData)}></div>
-      <TimeOfDaySection tod={variables.tod} setTodIndex={setTodIndex} encounters={encounters} setEncounters={setTodEncounters}/>
-      <GscSwarmSection gscSwarm={variables.gscSwarm} todIndex={todIndex} encounters={todEncounters} setEncounters={setGscSwarmEncounters}/>
-      <RseSwarmSection rseSwarm={variables.rseSwarm} encounters={gscSwarmEncounters} setEncounters={setRseSwarmEncounters}/>
-      <GscRuinsSection gscRuins={variables.gscRuins} hgssRuins={variables.hgssRuins} encounters={rseSwarmEncounters} setEncounters={setGscRuinsEncounters}/>
-      <DppRadarSection dppRadar={variables.dppRadar} encounters={gscRuinsEncounters} setEncounters={setDppRadarEncounters} setRadarActive={setRadarActive}/>
-      <DppTrophySection dppTrophy={variables.dppTrophy} encounters={dppRadarEncounters} setEncounters={setDppTrophyEncounters} pokemonArr={pokemonData} game={game}/>
-      <DppGreatMarshSection dppGreatMarsh={variables.dppGreatMarsh} encounters={dppTrophyEncounters} setEncounters={setDppGreatMarshEncounters} pokemonArr={pokemonData} props={game}/>
-      <DppSwarmSection dppSwarm={variables.dppSwarm} encounters={dppGreatMarshEncounters} setEncounters={setDppSwarmEncounters}/>
-      <DongleSection dongle={variables.dongle} encounters={dppSwarmEncounters} setEncounters={setDongleEncounters}/>
-      <HgssSafariZoneSection hgssSafariBlocks={variables.hgssSafariBlocks} hgssSafariSlots={variables.hgssSafariSlots} todIndex={todIndex} primeEncounters={encounters} encounters={dongleEncounters} setEncounters={setHgssSafariEncounters}/>
-      <HgssRadioSection radio={variables.radio} encounters={hgssSafariEncounters} setEncounters={setHgssRadioEncounters}/>
-      <AbilitySection ability={variables.ability} encounters={hgssRadioEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive} game={game}/>
-      <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive} game={game}/>
+      <div id="selections">
+        <label for="games">Game: </label>
+        <div class="select select--enabled">
+          <select id="games" onChange={handleGameChange}>
+            <option value="" selected disabled hidden>Choose Game</option>
+            <option value="red">Red</option>
+            <option value="blue - INT">Blue - INT/Green - JPN</option>
+            <option value="blue - JPN">Blue - JPN</option>
+            <option value="yellow">Yellow</option>
+            <option value="gold">Gold - INT</option>
+            <option value="gold - JPN">Gold - JPN/KOR</option>
+            <option value="silver">Silver - INT</option>
+            <option value="silver - JPN">Silver - JPN/KOR</option>
+            <option value="crystal">Crystal</option>
+            <option value="ruby">Ruby</option>
+            <option value="sapphire">Sapphire</option>
+            <option value="emerald">Emerald</option>
+            <option value="firered">FireRed</option>
+            <option value="leafgreen">LeafGreen</option>
+            <option value="diamond">Diamond</option>
+            <option value="pearl">Pearl</option>
+            <option value="platinum">Platinum</option>
+            <option value="heartgold">HeartGold</option>
+            <option value="soulsilver">SoulSilver</option>
+          </select>
+          <span class="focus"></span>
+        </div>
+        <label for="areas">Area: </label>
+        <div class="select select--disabled" id="areasDiv">
+          <select id="areas" onChange={handleAreaChange} disabled>
+            <option value="" selected disabled hidden>Choose Game First</option>
+          </select>
+          <span class="focus"></span>
+        </div>
+        <label for="methods">Method: </label>
+        <div class="select select--disabled" id="methodsDiv">
+          <select id="methods" onChange={handleMethodChange} disabled>
+            <option value="" selected disabled hidden>Choose Area First</option>
+          </select>
+          <span class="focus"></span>
+        </div>
+      </div>
+      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(hgssRadioEncounters, spriteExtension, pokemonData)} style={{display: "none"}}></div>
+      <div class="modChunkHolder">
+        <TimeOfDaySection tod={variables.tod} setTodIndex={setTodIndex} encounters={encounters} setEncounters={setTodEncounters}/>
+        <GscSwarmSection gscSwarm={variables.gscSwarm} todIndex={todIndex} encounters={todEncounters} setEncounters={setGscSwarmEncounters}/>
+        <RseSwarmSection rseSwarm={variables.rseSwarm} encounters={gscSwarmEncounters} setEncounters={setRseSwarmEncounters}/>
+        <GscRuinsSection gscRuins={variables.gscRuins} hgssRuins={variables.hgssRuins} encounters={rseSwarmEncounters} setEncounters={setGscRuinsEncounters}/>
+        <DppRadarSection dppRadar={variables.dppRadar} encounters={gscRuinsEncounters} setEncounters={setDppRadarEncounters} setRadarActive={setRadarActive}/>
+        <DppTrophySection dppTrophy={variables.dppTrophy} encounters={dppRadarEncounters} setEncounters={setDppTrophyEncounters} pokemonArr={pokemonData} game={game}/>
+        <DppGreatMarshSection dppGreatMarsh={variables.dppGreatMarsh} encounters={dppTrophyEncounters} setEncounters={setDppGreatMarshEncounters} pokemonArr={pokemonData} props={game}/>
+        <DppSwarmSection dppSwarm={variables.dppSwarm} encounters={dppGreatMarshEncounters} setEncounters={setDppSwarmEncounters}/>
+        <DongleSection dongle={variables.dongle} encounters={dppSwarmEncounters} setEncounters={setDongleEncounters}/>
+        <HgssSafariZoneSection hgssSafariBlocks={variables.hgssSafariBlocks} hgssSafariSlots={variables.hgssSafariSlots} todIndex={todIndex} primeEncounters={encounters} encounters={dongleEncounters} setEncounters={setHgssSafariEncounters}/>
+        <HgssRadioSection radio={variables.radio} encounters={hgssSafariEncounters} setEncounters={setHgssRadioEncounters}/>
+        <AbilitySection ability={variables.ability} encounters={hgssRadioEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive} game={game}/>
+        <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive} game={game}/>
+      </div>
       <div id="processedEncounters"
         dangerouslySetInnerHTML={
           encounters.length === 0 ? 
           {__html: ""} : 
           processedEncountersHTMLGenerator(condenseEncounters(repelEncounters), spriteExtension, pokemonData, genderSpread)
         }
+        style={{display: "none"}}
+        onMouseEnter={handleProcessedImagesChange}
       >
       </div>
     </div>
