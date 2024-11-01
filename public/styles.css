@@ -70,6 +70,7 @@ select::-ms-expand {
     grid-template-areas: "select";
     align-items: center;
     position: relative;
+    margin: auto 0;
 }
 
 .select--enabled::after { 
@@ -254,6 +255,7 @@ fieldset > label {
 .safariFieldset > div > div {
     display: flex;
     justify-content: space-between;
+    margin: 5px 0;
 }
 
 .safariFieldset > div > div > input {

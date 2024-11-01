@@ -1353,6 +1353,11 @@ const App = () => {
     fetchPokemonData();
   }, []);
 
+  useEffect(() => {
+    //update the images so they can be clicked for shiny/not shiny
+    handleProcessedImagesChange();
+  }, [repelEncounters]);
+
   //reset everything
   const clearEncounters = () => {
     setEncouters([]);
@@ -1471,6 +1476,8 @@ const App = () => {
     }
   };
 
+  //Get all the images in the processed html section.
+  //These need to be made clickable so that they can alternate between shiny and not shiny.
   const handleProcessedImagesChange = () => {
     const images = document.querySelectorAll('[class^="shiny"]');
     images.forEach(e => {
@@ -1548,12 +1555,11 @@ const App = () => {
       </div>
       <div id="processedEncounters"
         dangerouslySetInnerHTML={
-          encounters.length === 0 ? 
+          repelEncounters.length === 0 ? 
           {__html: ""} : 
           processedEncountersHTMLGenerator(condenseEncounters(repelEncounters), spriteExtension, pokemonData, genderSpread)
         }
         style={{display: "none"}}
-        onMouseEnter={handleProcessedImagesChange}
       >
       </div>
     </div>
