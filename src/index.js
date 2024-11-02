@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import * as d3 from 'd3';
 import ReactDOM from 'react-dom/client';
 
 //takes a number and returns the species name of a pokemon
@@ -21,10 +22,10 @@ const encounterHTMLGenerator = (arr, str, pokemonArr) => {
     tempHTML += `
       <div class="encounterSlot">
         <p>
-          <span><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
-          <span><b>${Math.round(e.rate * 10000)/100}%</b></span>
+          <span class="pokemonName fullLength"><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
         </p>
         <img class="${pokemon.type1 ? pokemon.type1 : pokemon.type1}" src="${'./resources/' + str + '/' + e.number + '.png'}" alt="Pokemon sprite for ${pokemon.name}"/>
+        <span>Rate: </span><span class="secondaryInfo">${Math.round(e.rate * 10000)/100}%</span>
         <span>Level: </span><span class="secondaryInfo">${e.minLevel}${('maxLevel' in e) ? "-" + e.maxLevel : ""}</span>
       </div>
     `;
@@ -112,8 +113,8 @@ const processedEncountersHTMLGenerator = (arr, str, pokemonArr, genSpread) => {
     tempHTML += `
       <div class="encounterSlot ${Math.floor(Math.random() * 1000) === 0 ? "ellipse" : ""}"> 
         <p>
-          <span><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
-          <span><b>${Math.round(finalRate)/100}%</b></span>
+          <span class="pokemonName"><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
+          <span calss="pokemonRate"><b>${Math.round(finalRate)/100}%</b></span>
         </p>
         <img class="${str.includes("gen1") ? "" : "shinyFlip"} ${pokemon.type1 ? pokemon.type1 : pokemon.type1} ${Math.floor(Math.random() * 100) === 0 ? "ellipse" : ""}" src="${'./resources/' + str + '/' + e.number + '.png'}" alt="Pokemon sprite for ${pokemon.name}"/>
         ${(male !== 0) ? `<span class="genderHeader">Male: </span><span class="genderPercent">${Math.round(male * finalRate)/100}% (${Math.round(male * 10000)/100}%)</span>` : ``}
@@ -709,7 +710,7 @@ const DppSwarmSection = (props) => {
   if (props.dppSwarm){
     return (
       <div id="dppSwarmArea" class="modChunk">
-        <label for="radar">Swarm?</label>
+        <label for="dppSwarmCheckbox">Swarm?</label>
         <div class="checkboxDiv">
           <input type="checkbox" id="dppSwarmCheckbox" onChange={handleChange}/>
         </div>
@@ -1277,6 +1278,67 @@ const AbilitySection = (props) => {
   }
 };
 
+//pie chart of encounter percentages
+const PieChart = (props) => {
+  const svgRef = useRef();
+
+  useEffect(() => {
+    d3.select('#pie-container')
+      .select('svg')
+      .remove();
+
+    //set up svg container
+    const w = window.innerHeight * 0.45;
+    const h = window.innerHeight * 0.45;
+    const radius = w / 2;
+    const svg = d3.select('#pie-container')
+      .append('svg')
+      .attr('width', w)
+      .attr('height', h)
+      .style('overflow', 'visible')
+      .style('margin', 'auto');
+
+    //set up chart
+    const formattedData = d3.pie().value(d => d.rate)(props.data);
+    const arcGenerator = d3.arc().innerRadius(0).outerRadius(radius);
+    const color = d3.scaleOrdinal().range(d3.schemeSet2);
+    color.domain([0,100]);
+
+    //set up svg data
+    svg.selectAll()
+      .data(formattedData)
+      .join('path')
+        .attr('d', arcGenerator)
+        .attr('fill', d => color(Math.round(d.data.rate * 10000) / 100))
+        .attr('transform', 'translate(' + w/2 + ',' + h/2 + ')')
+        .style('opacity', 1.0)
+        .style('stroke', "black")
+        .style('stroke-width', "2px");
+
+    //set up annotation
+    svg.selectAll()
+      .data(formattedData)
+      .join('text')
+        .text(d => {
+          const name = findName(d.data.number, props.pokemonArr).name
+          return name.charAt(0).toUpperCase() + name.slice(1)
+        })
+        .attr("transform", function(d){
+          return 'translate(' + w/2 + ',' + h/2 + ') translate(' + arcGenerator.centroid(d) + ')';
+        })
+        .style('text-anchor', 'middle')
+        .style('font-family', 'Roboto');
+  }, [props.data]);
+
+  if (props.data.length > 0){
+    return (
+      <div id="pie-container" class="pieChartDiv">
+        <svg ref={svgRef}></svg>
+      </div>
+    );
+  }
+}
+
 const App = () => {
 
   //State variables for program
@@ -1562,6 +1624,7 @@ const App = () => {
         style={{display: "none"}}
       >
       </div>
+      <PieChart data={condenseEncounters(repelEncounters)} pokemonArr={pokemonData}/>
     </div>
   )
 };

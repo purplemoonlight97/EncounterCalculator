@@ -1,7 +1,9 @@
 :root {
     --primary: #0A0F0D;
     --text: #F2F4F3;
-    --secondary: #587792;
+    /* --primary: #F2F4F3; */
+    /* --text: #0A0F0D;; */
+    --secondary: #0091AD;
     --tertiary: #A31621;
     --highlight: #EA3788;
     --select-border: var(--secondary);
@@ -34,6 +36,10 @@ label {
 
 select, option, input{
     background-color: var(--text);
+}
+
+option {
+    color: var(--primary);
 }
 
 select {
@@ -314,7 +320,7 @@ fieldset > label {
 
 .encounterSlot{
     background-color: var(--text);
-    color: black;
+    color: var(--primary);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 80;
     display: flex;
@@ -348,11 +354,38 @@ fieldset > label {
     padding: 0;
     margin: 0;
     z-index: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.encounterSlot > p > span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .encounterSlot > span {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     z-index: 1;
+}
+
+.pokemonName, .pokemonRate {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.pokemonName {
+    max-width: 70%;
+}
+
+.fullLength {
+    max-width: 100%;
+}
+
+.pokemonRate {
+    max-width: 30%;
 }
 
 .genderPercent, .secondaryInfo {
@@ -521,6 +554,25 @@ fieldset > label {
     margin-left: 5px;
   }
 
+  .pieChartDiv {
+    background-color: var(--secondary);
+    border: 2px solid var(--highlight);
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 0;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   @media screen and (max-width: 600px) {
     .encounterRate {
       display: none;
@@ -534,6 +586,10 @@ fieldset > label {
 
     #selections {
         font-size: 1em;
+    }
+
+    .encounterSlot > p {
+        font-size: 0.75em;
     }
   }
 
