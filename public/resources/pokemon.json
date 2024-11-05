@@ -3103,32 +3103,32 @@
     },
     {
         "number": "421",
-        "name": "cherrim-sunshine",
+        "name": "cherrim-sun",
         "type1": "grass",
         "gender": "4"
     },
     {
         "number": "422",
-        "name": "shellos west sea",
+        "name": "shellos w",
         "type1": "water",
         "gender": "4"
     },
     {
         "number": "422-east",
-        "name": "shellos east sea",
+        "name": "shellos e",
         "type1": "water",
         "gender": "4"
     },
     {
         "number": "423",
-        "name": "gastrodon west sea",
+        "name": "gastrodon w",
         "type1": "water",
         "type2": "ground",
         "gender": "4"
     },
     {
         "number": "423-east",
-        "name": "gastrodon east sea",
+        "name": "gastrodon e",
         "type1": "water",
         "type2": "ground",
         "gender": "4"

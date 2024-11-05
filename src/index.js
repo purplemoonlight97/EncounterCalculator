@@ -15,7 +15,7 @@ const findName = (num, arr) => {
 };
 
 //converts an array of encounters into HTML for output
-const encounterHTMLGenerator = (arr, str, pokemonArr) => {
+const encounterHTMLGenerator = (arr, str, pokemonArr, bool, modelStr) => {
   let tempHTML = ``;
   arr.forEach(e => {
     const pokemon = findName(e.number, pokemonArr);
@@ -24,7 +24,7 @@ const encounterHTMLGenerator = (arr, str, pokemonArr) => {
         <p>
           <span class="pokemonName fullLength"><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
         </p>
-        <img class="${pokemon.type1 ? pokemon.type1 : pokemon.type1}" src="${'./resources/' + str + '/' + e.number + '.png'}" alt="Pokemon sprite for ${pokemon.name}"/>
+        <img class="${pokemon.type1 ? pokemon.type1 : pokemon.type1}" src="${'./resources/' + (modelStr === "sprites" ? str : modelStr) + '/' + (((str.includes("gen1") && modelStr === "sprites") || !bool) ? "" : "shiny/") + e.number + '.png'}" alt="Pokemon sprite for ${pokemon.name}"/>
         <span>Rate: </span><span class="secondaryInfo">${Math.round(e.rate * 10000)/100}%</span>
         <span>Level: </span><span class="secondaryInfo">${e.minLevel}${('maxLevel' in e) ? "-" + e.maxLevel : ""}</span>
       </div>
@@ -55,7 +55,7 @@ const shinyFlip = (event) => {
 }
 
 //converts an array of processed (repels, abilities, etc.) into HTML for output
-const processedEncountersHTMLGenerator = (arr, str, pokemonArr, genSpread) => {
+const processedEncountersHTMLGenerator = (arr, str, pokemonArr, genSpread, bool, modelStr) => {
   let tempHTML = ``;
   let encounterRate = 0;
   arr.forEach(e => {
@@ -116,7 +116,35 @@ const processedEncountersHTMLGenerator = (arr, str, pokemonArr, genSpread) => {
           <span class="pokemonName"><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
           <span calss="pokemonRate"><b>${Math.round(finalRate)/100}%</b></span>
         </p>
-        <img class="${str.includes("gen1") ? "" : "shinyFlip"} ${pokemon.type1 ? pokemon.type1 : pokemon.type1} ${Math.floor(Math.random() * 100) === 0 ? "ellipse" : ""}" src="${'./resources/' + str + '/' + e.number + '.png'}" alt="Pokemon sprite for ${pokemon.name}"/>
+        <img 
+          class="${
+            (str.includes("gen1") && modelStr === "sprites") ? 
+            "" :
+            "shinyFlip"
+          } ${
+            pokemon.type1 ? 
+            pokemon.type1 : 
+            pokemon.type1
+          } ${
+            Math.floor(Math.random() * 100) === 0 ? 
+            "ellipse" : 
+            ""
+          }" 
+          src="${
+            './resources/' + 
+            (modelStr === "sprites" ?
+               str : 
+               modelStr
+              ) +
+              '/' + 
+              (((str.includes("gen1") && modelStr === "sprites") || !bool) ? 
+              "" : 
+              "shiny/") + 
+              e.number + 
+              '.png'
+            }" 
+          alt="Pokemon sprite for ${pokemon.name}"
+        />
         ${(male !== 0) ? `<span class="genderHeader">Male: </span><span class="genderPercent">${Math.round(male * finalRate)/100}% (${Math.round(male * 10000)/100}%)</span>` : ``}
         ${(female !== 0) ? `<span class="genderHeader">Female: </span><span class="genderPercent">${Math.round(female * finalRate)/100}% (${Math.round(female * 10000)/100}%)</span>` : ``}
         ${(male === 0) && (female === 0) ? `<span class="genderHeader">Gender: </span><span class="genderPercent">Unknown</span>` : ``}
@@ -1291,6 +1319,7 @@ const PieChart = (props) => {
     const w = window.innerHeight * 0.45;
     const h = window.innerHeight * 0.45;
     const radius = w / 2;
+    const innerRadius = w / 4;
     const svg = d3.select('#pie-container')
       .append('svg')
       .attr('width', w)
@@ -1300,7 +1329,7 @@ const PieChart = (props) => {
 
     //set up chart
     const formattedData = d3.pie().value(d => d.rate)(props.data);
-    const arcGenerator = d3.arc().innerRadius(0).outerRadius(radius);
+    const arcGenerator = d3.arc().innerRadius(innerRadius).outerRadius(radius);
     const color = d3.scaleOrdinal().range(d3.schemeSet2);
     color.domain([0,100]);
 
@@ -1334,6 +1363,7 @@ const PieChart = (props) => {
     return (
       <div id="pie-container" class="pieChartDiv">
         <svg ref={svgRef}></svg>
+        {/* <img class="pokeballTop" src="./resources/images/pokeball.png" alt="Pokeball Image"/> */}
       </div>
     );
   }
@@ -1372,8 +1402,10 @@ const App = () => {
   const [radarActive, setRadarActive] = useState(false);
   //sprite extension based on game
   const [spriteExtension, setSpriteExtension] = useState('');
-  //whether to use game specific sprites or just 3d models
-  const [useModels, setUseModels] = useState(false);
+  //whether to use game specific sprites or just 3d home models
+  const [useModels, setUseModels] = useState("sprites");
+  //whether to use shiny sprites or regular
+  const [useShiny, setUseShiny] = useState(false);
   //which gender spreads to use
   const [genderSpread, setGenderSpread] = useState(0);
 
@@ -1412,13 +1444,44 @@ const App = () => {
 
   //on load
   useEffect(() => {
+    //load in the pokemon data
     fetchPokemonData();
+
+    //settings dropdowns
+    const themeSelect = document.getElementById("themeSelect");
+    const shinySelect = document.getElementById("shinySelect");
+    const modelSelect = document.getElementById("modelSelect");
+
+    //load in the theme
+    const themeValue = localStorage.getItem("theme");
+    if (themeValue){
+      themeSelect.value = themeValue;
+      changeTheme(themeValue);
+    }
+
+    //load in the shiny setting
+    const shinyValue = localStorage.getItem("shiny");
+    if (shinyValue){
+      shinySelect.value = shinyValue;
+      changeShiny(shinyValue);
+    } else{
+      changeShiny(false);
+    }
+
+    //load in the appropriate models
+    const modelValue = localStorage.getItem("model");
+    if (modelValue){
+      modelSelect.value = modelValue;
+      changeModel(modelValue);
+    } else{
+      changeModel("sprites");
+    }
   }, []);
 
   useEffect(() => {
     //update the images so they can be clicked for shiny/not shiny
     handleProcessedImagesChange();
-  }, [repelEncounters]);
+  }, [repelEncounters, useModels, useShiny]);
 
   //reset everything
   const clearEncounters = () => {
@@ -1426,6 +1489,15 @@ const App = () => {
     setVariables({});
     document.getElementById("encounterSlots").style.display = "none";
     document.getElementById("processedEncounters").style.display = "none";
+  };
+
+  //Get all the images in the processed html section.
+  //These need to be made clickable so that they can alternate between shiny and not shiny.
+  const handleProcessedImagesChange = () => {
+    const images = document.querySelectorAll('[class^="shinyFlip"]');
+    images.forEach(e => {
+      e.addEventListener("click", shinyFlip);
+    })
   };
 
   //which game has been selected has changed
@@ -1538,13 +1610,50 @@ const App = () => {
     }
   };
 
-  //Get all the images in the processed html section.
-  //These need to be made clickable so that they can alternate between shiny and not shiny.
-  const handleProcessedImagesChange = () => {
-    const images = document.querySelectorAll('[class^="shiny"]');
-    images.forEach(e => {
-      e.addEventListener("click", shinyFlip);
-    })
+  const changeTheme = (str) => {
+    //colors are in the order of primary, primarylight, text,
+    //textlight, secondary, tertiary, highlight
+    let colorsArr = ["#F2F4F3", "#0A0F0D", "#0A0F0D", "#F2F4F3", "#0091AD", "#A31621", "#EA3788"];
+    const colorVar = ["--primary", "--primaryLight", "--text", "--textLight", "--secondary", "--tertiary", "--highlight"];
+
+    switch (str){
+      case "light":
+        break;
+      case "dark":
+        colorsArr = ["#0A0F0D", "#F2F4F3", "#F2F4F3", "#0A0F0D", "#0091AD", "#A31621", "#EA3788"];
+        break;
+    }
+
+    const root = document.documentElement;
+    colorVar.forEach((e, i) => {
+      root.style.setProperty(e, colorsArr[i]);
+    });
+  };
+
+  const handleThemeChange = (event) => {
+    const value = event.target.value;
+    localStorage.setItem("theme", value);
+    changeTheme(value);
+  };
+
+  const changeShiny = (str) => {
+    setUseShiny(str === "shiny");
+  };
+
+  const handleShinyChange = (event) => {
+    const value = event.target.value;
+    localStorage.setItem("shiny", value);
+    changeShiny(value);
+  };
+
+  const changeModel = (str) => {
+    setUseModels(str);
+  };
+
+  const handleModelChange = (event) => {
+    const value = event.target.value;
+    localStorage.setItem("model", value);
+    changeModel(value);
   };
 
   return(
@@ -1557,49 +1666,88 @@ const App = () => {
         <img src="./resources/images/Ethan.png" alt='trainer'/>
         <img src="./resources/images/Lucas.png" alt='trainer'/>
       </div>
-      <div id="selections">
-        <label for="games">Game: </label>
-        <div class="select select--enabled">
-          <select id="games" onChange={handleGameChange}>
-            <option value="" selected disabled hidden>Choose Game</option>
-            <option value="red">Red</option>
-            <option value="blue - INT">Blue - INT/Green - JPN</option>
-            <option value="blue - JPN">Blue - JPN</option>
-            <option value="yellow">Yellow</option>
-            <option value="gold">Gold - INT</option>
-            <option value="gold - JPN">Gold - JPN/KOR</option>
-            <option value="silver">Silver - INT</option>
-            <option value="silver - JPN">Silver - JPN/KOR</option>
-            <option value="crystal">Crystal</option>
-            <option value="ruby">Ruby</option>
-            <option value="sapphire">Sapphire</option>
-            <option value="emerald">Emerald</option>
-            <option value="firered">FireRed</option>
-            <option value="leafgreen">LeafGreen</option>
-            <option value="diamond">Diamond</option>
-            <option value="pearl">Pearl</option>
-            <option value="platinum">Platinum</option>
-            <option value="heartgold">HeartGold</option>
-            <option value="soulsilver">SoulSilver</option>
-          </select>
-          <span class="focus"></span>
+      <div id="controls" class="controlsHolder">
+        <div id="selections" class="controlsDiv">
+          <div>
+            <label for="games">Game: </label>
+            <div class="select select--enabled">
+              <select id="games" onChange={handleGameChange}>
+                <option value="" selected disabled hidden>Choose Game</option>
+                <option value="red">Red</option>
+                <option value="blue - INT">Blue - INT/Green - JPN</option>
+                <option value="blue - JPN">Blue - JPN</option>
+                <option value="yellow">Yellow</option>
+                <option value="gold">Gold - INT</option>
+                <option value="gold - JPN">Gold - JPN/KOR</option>
+                <option value="silver">Silver - INT</option>
+                <option value="silver - JPN">Silver - JPN/KOR</option>
+                <option value="crystal">Crystal</option>
+                <option value="ruby">Ruby</option>
+                <option value="sapphire">Sapphire</option>
+                <option value="emerald">Emerald</option>
+                <option value="firered">FireRed</option>
+                <option value="leafgreen">LeafGreen</option>
+                <option value="diamond">Diamond</option>
+                <option value="pearl">Pearl</option>
+                <option value="platinum">Platinum</option>
+                <option value="heartgold">HeartGold</option>
+                <option value="soulsilver">SoulSilver</option>
+              </select>
+              <span class="focus"></span>
+            </div>
+          </div>
+          <div>
+            <label for="areas">Area: </label>
+            <div class="select select--disabled" id="areasDiv">
+              <select id="areas" onChange={handleAreaChange} disabled>
+                <option value="" selected disabled hidden>Choose Game First</option>
+              </select>
+              <span class="focus"></span>
+            </div>
+          </div>
+          <div>
+            <label for="methods">Method: </label>
+            <div class="select select--disabled" id="methodsDiv">
+              <select id="methods" onChange={handleMethodChange} disabled>
+                <option value="" selected disabled hidden>Choose Area First</option>
+              </select>
+              <span class="focus"></span>
+            </div>
+          </div>
         </div>
-        <label for="areas">Area: </label>
-        <div class="select select--disabled" id="areasDiv">
-          <select id="areas" onChange={handleAreaChange} disabled>
-            <option value="" selected disabled hidden>Choose Game First</option>
-          </select>
-          <span class="focus"></span>
-        </div>
-        <label for="methods">Method: </label>
-        <div class="select select--disabled" id="methodsDiv">
-          <select id="methods" onChange={handleMethodChange} disabled>
-            <option value="" selected disabled hidden>Choose Area First</option>
-          </select>
-          <span class="focus"></span>
+        <div id="settings"  class="controlsDiv">
+          <div>
+            <label for="themeSelect">Theme: </label>
+            <div id="themeSelectDiv" class="select select--enabled">
+              <select id="themeSelect" onChange={handleThemeChange}>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+              </select>
+              <span class="focus"></span>
+            </div>
+          </div>
+          <div>
+            <label for="shinySelect">Color: </label>
+            <div id="shinySelectDiv" class="select select--enabled">
+              <select id="shinySelect" onChange={handleShinyChange}>
+                <option value="normal">Normal</option>
+                <option value="shiny">Shiny</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="modelSelect">Models: </label>
+            <div id="modelSelectDiv" class="select select--enabled">
+              <select id="modelSelect" onChange={handleModelChange}>
+                <option value="sprites">In-Game</option>
+                <option value="home">Home</option>
+                <option value="official">Official Artwork</option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(hgssRadioEncounters, spriteExtension, pokemonData)} style={{display: "none"}}></div>
+      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(hgssRadioEncounters, spriteExtension, pokemonData, useShiny, useModels)} style={{display: "none"}}></div>
       <div class="modChunkHolder">
         <TimeOfDaySection tod={variables.tod} setTodIndex={setTodIndex} encounters={encounters} setEncounters={setTodEncounters}/>
         <GscSwarmSection gscSwarm={variables.gscSwarm} todIndex={todIndex} encounters={todEncounters} setEncounters={setGscSwarmEncounters}/>
@@ -1619,7 +1767,7 @@ const App = () => {
         dangerouslySetInnerHTML={
           repelEncounters.length === 0 ? 
           {__html: ""} : 
-          processedEncountersHTMLGenerator(condenseEncounters(repelEncounters), spriteExtension, pokemonData, genderSpread)
+          processedEncountersHTMLGenerator(condenseEncounters(repelEncounters), spriteExtension, pokemonData, genderSpread, useShiny, useModels)
         }
         style={{display: "none"}}
       >
