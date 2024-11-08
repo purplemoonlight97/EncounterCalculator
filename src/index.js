@@ -11,20 +11,32 @@ const findName = (num, arr) => {
       break;
     }
   };
-  return name;//name.charAt(0).toUpperCase() + name.slice(1);
+  return name;
 };
 
 //converts an array of encounters into HTML for output
 const encounterHTMLGenerator = (arr, str, pokemonArr, bool, modelStr) => {
   let tempHTML = ``;
   arr.forEach(e => {
+
+    //check for N's pokemon. Uses special sprite rules
+    let npokemon = false;
+    if (e.number.includes("n") && e.number.length === 4){
+      npokemon = true;
+    }
+
     const pokemon = findName(e.number, pokemonArr);
     tempHTML += `
       <div class="encounterSlot">
         <p>
           <span class="pokemonName fullLength"><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
         </p>
-        <img class="${pokemon.type1 ? pokemon.type1 : pokemon.type1}" src="${'./resources/' + (modelStr === "sprites" ? str : modelStr) + '/' + (((str.includes("gen1") && modelStr === "sprites") || !bool) ? "" : "shiny/") + e.number + '.png'}" alt="Pokemon sprite for ${pokemon.name}"/>
+        <img class="${pokemon.type1} ${npokemon ? "nPokemon" : ""}" src="${'./resources/' + (modelStr === "sprites" ? str : modelStr) + '/' + 
+          (((str.includes("gen1") && modelStr === "sprites") || !bool || npokemon) ?
+          "" : "shiny/") + 
+          (npokemon ? e.number.slice(0,3) : e.number) 
+          + '.png'}" alt="Pokemon sprite for ${pokemon.name}"
+        />
         <span>Rate: </span><span class="secondaryInfo">${Math.round(e.rate * 10000)/100}%</span>
         <span>Level: </span><span class="secondaryInfo">${e.minLevel}${('maxLevel' in e) ? "-" + e.maxLevel : ""}</span>
       </div>
@@ -53,114 +65,6 @@ const shinyFlip = (event) => {
     event.target.src = src;
   }
 }
-
-//converts an array of processed (repels, abilities, etc.) into HTML for output
-const processedEncountersHTMLGenerator = (arr, str, pokemonArr, genSpread, bool, modelStr) => {
-  let tempHTML = ``;
-  let encounterRate = 0;
-  arr.forEach(e => {
-    encounterRate += Number(e.rate);
-  });
-  let modifier = 100/encounterRate;
-  //get male percentage
-  let malePercent = ["err"];
-  let cuteCharmPercent = 0;
-  switch (genSpread){
-    case 2:
-      malePercent = [1,0.875,0.75,"",0.5,"",0.25,"",0];
-      break;
-    case 3:
-    case 4: 
-      malePercent = [1,0.8789,0.7539,"",0.5039,"",0.2539,0.1211,0];
-      cuteCharmPercent = 0.667;
-      break;
-    case 5: 
-      malePercent = [1,0.8789,0.7539,"",0.5039,"",0.2539,0.1211,0];
-      cuteCharmPercent = 0.67;
-      break;
-    case 6:
-    case 7:
-      malePercent = [1,0.8810,0.7540,"",0.5,"",0.2460,0.1111,0];
-      cuteCharmPercent = 0.667;
-      break;
-    case 8: 
-      malePercent = [1,0.8814,0.7550,"",0.5020,"",0.2490,0.1146,0];
-      cuteCharmPercent = 0.66;
-      break;
-  }
-  arr.forEach(e => {
-    const pokemon = findName(e.number, pokemonArr);
-    //calculate the gender split
-    let male = 0;
-    let female = 0;
-    if (malePercent[0] != "err" && pokemon.gender){ //gender to deal with
-      if (pokemon.gender === 0 || pokemon.gender === 8){ //all one gender pokemon
-        male = malePercent[8-pokemon.gender];
-        female = 1 - male;
-      } else if (e.genderBias === "female"){ //male cute charm bias
-        male = cuteCharmPercent + ((1-cuteCharmPercent) * malePercent[8-pokemon.gender]);
-        female = 1 - male;
-      } else if (e.genderBias === "male"){ //female cute charm bias
-        male = (1-cuteCharmPercent) * malePercent[8-pokemon.gender];
-        female = 1 - male;
-      } else { //not a single gender pokemon and no cute charm
-        male = malePercent[8-pokemon.gender];
-        female = 1 - male;
-      }
-    }
-    const finalRate = e.rate * modifier * 100;
-    //${pokemon.type1}
-    tempHTML += `
-      <div class="encounterSlot ${Math.floor(Math.random() * 1000) === 0 ? "ellipse" : ""}"> 
-        <p>
-          <span class="pokemonName"><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
-          <span calss="pokemonRate"><b>${Math.round(finalRate)/100}%</b></span>
-        </p>
-        <img 
-          class="${
-            (str.includes("gen1") && modelStr === "sprites") ? 
-            "" :
-            "shinyFlip"
-          } ${
-            pokemon.type1 ? 
-            pokemon.type1 : 
-            pokemon.type1
-          } ${
-            Math.floor(Math.random() * 100) === 0 ? 
-            "ellipse" : 
-            ""
-          }" 
-          src="${
-            './resources/' + 
-            (modelStr === "sprites" ?
-               str : 
-               modelStr
-              ) +
-              '/' + 
-              (((str.includes("gen1") && modelStr === "sprites") || !bool) ? 
-              "" : 
-              "shiny/") + 
-              e.number + 
-              '.png'
-            }" 
-          alt="Pokemon sprite for ${pokemon.name}"
-        />
-        ${(male !== 0) ? `<span class="genderHeader">Male: </span><span class="genderPercent">${Math.round(male * finalRate)/100}% (${Math.round(male * 10000)/100}%)</span>` : ``}
-        ${(female !== 0) ? `<span class="genderHeader">Female: </span><span class="genderPercent">${Math.round(female * finalRate)/100}% (${Math.round(female * 10000)/100}%)</span>` : ``}
-        ${(male === 0) && (female === 0) ? `<span class="genderHeader">Gender: </span><span class="genderPercent">Unknown</span>` : ``}
-      </div>
-    `;
-  });
-  tempHTML += `<div class="encounterRate">
-                <div class="barChart" style="width: ${arr.length === 200 ? "" : Math.round(encounterRate * 10000)/100 + '%'}">
-                  <span>${arr.length === 200 ? "" : Math.round(encounterRate * 10000)/100 + '%'} Encounter Rate</span>
-                </div>
-              </div>
-              <div class="encounterRateNoBar">
-                <span>${arr.length === 200 ? "" : Math.round(encounterRate * 10000)/100 + '%'} Encounter Rate</span>
-              </div>`
-  return {__html: tempHTML};
-};
 
 //takes an array of encounters and combines slots of the same species (number)
 const condenseEncounters = (arr) => {
@@ -498,20 +402,20 @@ const GscRuinsSection = (props) => {
         <fieldset class="ruinsFieldset" onChange={handleChange}>
           <legend>Select completed puzzles</legend>
           <div>
-            <label for="upper-right">Upper Right: </label>
             <input type="checkbox" id="upper-right"/>
+            <label for="upper-right">Upper Right </label>
           </div>
           <div>
-            <label for="lower-left">Lower Left: </label>
-            <input type="checkbox" id="lower-left"/>
+            <input type="checkbox" id="lower-left"/> 
+            <label for="lower-left">Lower Left </label>
           </div>
           <div>
-            <label for="lower-right">Lower Right: </label>
             <input type="checkbox" id="lower-right"/>
+            <label for="lower-right">Lower Right </label>
           </div>
           <div>
-            <label for="upper-left">Upper Left: </label>
             <input type="checkbox" id="upper-left"/>
+            <label for="upper-left">Upper Left </label>
           </div>
         </fieldset>
       </div>
@@ -1027,18 +931,468 @@ const HgssRadioSection = (props) => {
   if (props.radio){
     return (
       <div id="hgssRadioArea" class="modChunk">
-        <label for="radioSelect">Radio?</label>
+        <label for="radioSelect">Radio: </label>
         <div class="select select--enabled">
           <select id="radioSelect" onChange={handleChange}>
             <option value="-1" selected>None</option>
             <option value="0">Hoenn</option>
             <option value="1">Sinnoh</option>
           </select>
+          <span class="focus"></span>
         </div>
       </div>
     )
   }
 };
+
+const SeasonSection = (props) => {
+
+  const handleChange = () => {
+    const value = document.getElementById("seasonSelect").value;
+    const seasonsArr = props.season.split("|");
+    if (seasonsArr[value].length === 0){
+      props.setEncounters(props.encounters);
+    } else{
+      const tempArray = JSON.parse(JSON.stringify(props.encounters));
+      const individualSeasonArr = seasonsArr[value].split(",");
+
+      individualSeasonArr.forEach((e,i) => {
+        tempArray[i].number = e;
+      });
+
+      props.setEncounters(tempArray);
+    }
+  }
+
+  useEffect(() => {
+    if (props.season){
+      handleChange();
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters]);
+
+  if(props.season){
+    return (
+      <div id="seasonArea" class="modChunk">
+        <label for="seasonSelect">Season: </label>
+        <div class="select select--enabled">
+          <select id="seasonSelect" onChange={handleChange}>
+            <option value="0" selected>Spring</option>
+            <option value="1">Summer</option>
+            <option value="2">Autumn</option>
+            <option value="3">Winter</option>
+          </select>
+          <span class="focus"></span>
+        </div>
+      </div>
+    )
+  }
+};
+
+const LuckyPowerSection = (props) => {
+
+  const handleChange = () => {
+    const value = document.getElementById("luckySelect").value;
+    if (value === "0"){
+      props.setEncounters(props.encounters);
+    }else{
+      let newRates;
+      const tempArray = JSON.parse(JSON.stringify(props.encounters));
+      switch (tempArray[0].rate){
+        case "0.2": //encounters are walking or equivalent
+          switch (value){
+            case "1":
+              newRates = [".1",".1",".1",".1",".1",".1",".1",".1","0.05","0.05","0.05","0.05"];
+              break;
+            case "2":
+              newRates = ["0.05","0.05","0.05","0.05",".1",".1",".1",".1",".1",".1",".1",".1"];
+              break;
+            case "3":
+              newRates = ["0.01", "0.01", "0.04", "0.04", "0.05", "0.05", "0.1", "0.1", "0.1", "0.1", "0.2", "0.2"];
+              break;
+          }
+          break;
+        case "0.6": //encounters are surfing or equivalent
+          switch (value){
+            case "1":
+              newRates = ["0.5", "0.3", "0.1", "0.05", "0.05"];
+              break;
+            case "2":
+              newRates = ["0.4", "0.3", "0.1", "0.1", "0.1"];
+              break;
+            case "3":
+              newRates = ["0.3", "0.2", "0.1", "0.2", "0.2"];
+              break;
+          }
+          break;
+        case "0.4": //encounters are fishing or equivalent
+          switch (value){
+            case "1":
+              newRates = ["0.4", "0.35", "0.15", "0.5", "0.5"];
+              break;
+            case "2":
+              newRates = ["0.3", "0.3", "0.2", "0.1", "0.1"];
+              break;
+            case "3":
+              newRates = ["0.2", "0.2", "0.2", "0.2", "0.2"];
+              break;
+          }
+          break;
+      }
+
+      tempArray.forEach((e, i) => {
+        e.rate = newRates[i];
+      });
+      props.setEncounters(tempArray);
+    }
+  }
+
+  useEffect(() => {
+    if (props.lucky){
+      handleChange();
+    } else{
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters]);
+
+  if (props.lucky){
+    return (
+      <div id="luckyArea" class="modChunk">
+        <label for="luckySelect">Lucky Power: </label>
+        <div class="select select--enabled">
+          <select id="luckySelect" onChange={handleChange}>
+            <option value="0" selected>None</option>
+            <option value="1">Lucky Power 1</option>
+            <option value="2">Lucky Power 2</option>
+            <option value="3">Lucky Power 3</option>
+            <option value="3">Lucky Power S</option>
+            <option value="3">Lucky Power Max</option>
+          </select>
+          <span class="focus"></span>
+        </div>
+      </div>
+    )
+  }
+};
+
+const BwSwarmSection = (props) => {
+
+  const handleChange = () => {
+    if(document.getElementById("bwSwarmCheck").checked){
+      const tempArray = JSON.parse(JSON.stringify(props.encounters));
+      const swarm = props.bwSwarm.split(","); //given in species num, min level, max level array
+      
+      tempArray.forEach(e => {
+        e.rate *= 0.6;
+      });
+
+      tempArray.push({"number": swarm[0], "minLevel": swarm[1], "maxLevel": swarm[2], "rate": "0.4", "skipType": "true"});
+      props.setEncounters(tempArray);
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  };
+
+  useEffect(() => {
+    if (props.bwSwarm){
+      handleChange();
+    } else{
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters]);
+
+  if (props.bwSwarm){
+    return (
+      <div id="bwSwarmArea" class="modChunk">
+        <label for="bwSwarmCheck">Swarm?</label>
+        <div class="checkboxDiv">
+          <input type="checkbox" id="bwSwarmCheck" onChange={handleChange} />
+        </div>
+      </div>
+    )
+  }
+}
+
+const NPokemonSection = (props) => {
+
+  const handleChange = () => {
+    const tempArray = JSON.parse(JSON.stringify(props.encounters));
+    const nPokemonArr = props.nPokemon.split("|")
+    const originalLength = tempArray.length;
+    let activeCount = 0;
+
+    for (let i = 0; i < nPokemonArr.length; i++){
+      //go through each check box to see which ones are check
+      //these are the ones that need to be added to the encounters
+      if (document.getElementById("nPokemon" + i).checked){
+        const nPokemon = nPokemonArr[i].split(","); //format of number, level
+        tempArray.push({"number": nPokemon[0], "minLevel": nPokemon[1], "rate": "0.01", "skipType": "true"});
+        activeCount++;
+      }
+    }
+
+    for (let i = 0; i < originalLength; i++){
+      tempArray[i].rate *= (1 - (activeCount/100));
+    }
+
+    props.setEncounters(tempArray);
+  };
+
+  useEffect(() => {
+    if (props.nPokemon){
+      handleChange();
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters]);
+
+  if (props.nPokemon){
+    return (
+      <div id="nPokemonArea" class="modChunk">
+        <fieldset class="nFieldset">
+          <legend>N's Active Pokemon</legend>
+          {
+            props.nPokemon.split("|").map((e, i) => {
+              const nPokemon = e.split(",");
+
+              return (
+                <div>
+                  <input type="checkbox" id={"nPokemon" + i} onChange={handleChange}/>
+                  <label for={"nPokemon" + i}>{findName(nPokemon[0], props.pokemonArr).name}</label>
+                </div>
+              );
+            })
+          }
+        </fieldset>
+      </div>
+    )
+  }
+};
+
+const WhiteForestSection = (props) => {
+
+  const walkingFromCheckboxArr = ["16", "29", "32", "43", "63", "66", "69", "81", "92", "111", "137", "175", "179", "187", "239", "240", "265", "270", "273", "280", "287", "293", "298", "304", "328", "371", "396", "403", "406", "440"];
+  const surfingFromCheckboxArr = ["283", "270", "341", "283", "270", "270", "283", "270", "283", "283", "194", "283", "283", "283", "283", "341", "283", "283", "283", "194", "270", "270", "270", "283", "270", "194", "341", "270", "194", "341"];
+
+  const pushEncounters = (arr1, arr2) => {
+    const tempArray = [];
+    const tempRate = 1/arr2.length
+    
+    arr2.forEach((e) => {
+      tempArray.push({"number": arr1[e], "minLevel": "5", "rate": tempRate});
+    });
+
+    props.setEncounters(tempArray);
+  };
+
+  const [prevChecked, setPrevChecked] = useState([]);
+  //if more than 10 are checked, one must be unchecked
+  const handleChange = () => {
+    const checkboxArr = document.getElementsByClassName("whiteForestTrainerCheckbox");
+    let currentChecked = [];
+
+    for (let i = 0; i < checkboxArr.length; i++){
+      if (checkboxArr[i].checked){
+        currentChecked.push(i);
+      }
+    }
+
+    if (currentChecked.length === 11){ //one too many, go back to the last checked
+      currentChecked = prevChecked;
+    } else if (currentChecked.length > 11){ //uncheck all, error too many
+      currentChecked = [];
+    }
+
+    for (let i = 0; i < checkboxArr.length; i++){
+      if (currentChecked.includes(i)){
+        checkboxArr[i].checked = true;
+      } else {
+        checkboxArr[i].checked = false;
+      }
+    }
+
+    setPrevChecked(currentChecked);
+
+    if (currentChecked.length === 0){ //nothing checked
+      props.setEncounters(props.encounters);
+    } else { //something is checked, populate encounters
+      if (props.whiteForeset === "walk"){ //use walking array
+        pushEncounters(walkingFromCheckboxArr, currentChecked);
+      } else { //use surfing array
+        pushEncounters(surfingFromCheckboxArr, currentChecked);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (props.whiteForeset){
+      handleChange();
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters]);
+
+  if (props.whiteForeset){
+    return(
+      <div id="whiteForestArea" class="modChunk">
+        <fieldset class="whiteForestFieldset">
+          <legend>Active Trainers</legend>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox0" type="checkbox" value="0" onChange={handleChange}/>
+            <label for="trainer0">Leo</label>
+            <img alt="trainer0 sprite" src="./resources/images/WhiteForest/Leo.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox1" type="checkbox" value="1" onChange={handleChange}/>
+            <label for="trainer1">Jacques</label>
+            <img alt="trainer1 sprite" src="./resources/images/WhiteForest/Jacques.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox2" type="checkbox" value="2" onChange={handleChange}/>
+            <label for="trainer2">Ken</label>
+            <img alt="trainer2 sprite" src="./resources/images/WhiteForest/Ken.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox3" type="checkbox" value="3" onChange={handleChange}/>
+            <label for="trainer3">Lynette</label>
+            <img alt="trainer3 sprite" src="./resources/images/WhiteForest/Lynette.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox4" type="checkbox" value="4" onChange={handleChange}/>
+            <label for="trainer4">Collin</label>
+            <img alt="trainer4 sprite" src="./resources/images/WhiteForest/Collin.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox5" type="checkbox" value="5" onChange={handleChange}/>
+            <label for="trainer5">Ryder</label>
+            <img alt="trainer5 sprite" src="./resources/images/WhiteForest/Ryder.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox6" type="checkbox" value="6" onChange={handleChange}/>
+            <label for="trainer6">Piper</label>
+            <img alt="trainer6 sprite" src="./resources/images/WhiteForest/Piper.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox7" type="checkbox" value="7" onChange={handleChange}/>
+            <label for="trainer7">Marie</label>
+            <img alt="trainer7 sprite" src="./resources/images/WhiteForest/Marie.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox8" type="checkbox" value="8" onChange={handleChange}/>
+            <label for="trainer8">Dave</label>
+            <img alt="trainer8 sprite" src="./resources/images/WhiteForest/Dave.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox9" type="checkbox" value="9" onChange={handleChange}/>
+            <label for="trainer9">Shane</label>
+            <img alt="trainer9 sprite" src="./resources/images/WhiteForest/Shane.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox10" type="checkbox" value="10" onChange={handleChange}/>
+            <label for="trainer10">Herman</label>
+            <img alt="trainer10 sprite" src="./resources/images/WhiteForest/Herman.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox11" type="checkbox" value="11" onChange={handleChange}/>
+            <label for="trainer11">Miki</label>
+            <img alt="trainer11 sprite" src="./resources/images/WhiteForest/Miki.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox12" type="checkbox" value="12" onChange={handleChange}/>
+            <label for="trainer12">Pierce</label>
+            <img alt="trainer12 sprite" src="./resources/images/WhiteForest/Pierce.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox13" type="checkbox" value="13" onChange={handleChange}/>
+            <label for="trainer13">Britney</label>
+            <img alt="trainer13 sprite" src="./resources/images/WhiteForest/Britney.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox14" type="checkbox" value="14" onChange={handleChange}/>
+            <label for="trainer14">Robbie</label>
+            <img alt="trainer14 sprite" src="./resources/images/WhiteForest/Robbie.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox16" type="checkbox" value="15" onChange={handleChange}/>
+            <label for="trainer16">Vincent</label>
+            <img alt="trainer16 sprite" src="./resources/images/WhiteForest/Vincent.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox17" type="checkbox" value="16" onChange={handleChange}/>
+            <label for="trainer17">Silvia</label>
+            <img alt="trainer17 sprite" src="./resources/images/WhiteForest/Silvia.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox18" type="checkbox" value="17" onChange={handleChange}/>
+            <label for="trainer18">Ralph</label>
+            <img alt="trainer18 sprite" src="./resources/images/WhiteForest/Ralph.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox19" type="checkbox" value="18" onChange={handleChange}/>
+            <label for="trainer19">Miho</label>
+            <img alt="trainer19 sprite" src="./resources/images/WhiteForest/Miho.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox20" type="checkbox" value="19" onChange={handleChange}/>
+            <label for="trainer20">Lena</label>
+            <img alt="trainer20 sprite" src="./resources/images/WhiteForest/Lena.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox21" type="checkbox" value="20" onChange={handleChange}/>
+            <label for="trainer21">Karenna</label>
+            <img alt="trainer21 sprite" src="./resources/images/WhiteForest/Karenna.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox22" type="checkbox" value="21" onChange={handleChange}/>
+            <label for="trainer22">Rosa</label>
+            <img alt="trainer22 sprite" src="./resources/images/WhiteForest/Rosa.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox23" type="checkbox" value="22" onChange={handleChange}/>
+            <label for="trainer23">Molly</label>
+            <img alt="trainer23 sprite" src="./resources/images/WhiteForest/Molly.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox24" type="checkbox" value="23" onChange={handleChange}/>
+            <label for="trainer24">Gene</label>
+            <img alt="trainer24 sprite" src="./resources/images/WhiteForest/Gene.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox25" type="checkbox" value="24" onChange={handleChange}/>
+            <label for="trainer25">Eliza</label>
+            <img alt="trainer25 sprite" src="./resources/images/WhiteForest/Eliza.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox26" type="checkbox" value="25" onChange={handleChange}/>
+            <label for="trainer26">Grace</label>
+            <img alt="trainer26 sprite" src="./resources/images/WhiteForest/Grace.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox27" type="checkbox" value="26" onChange={handleChange}/>
+            <label for="trainer27">Carlos</label>
+            <img alt="trainer27 sprite" src="./resources/images/WhiteForest/Carlos.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox28" type="checkbox" value="27" onChange={handleChange}/>
+            <label for="trainer28">Doug</label>
+            <img alt="trainer28 sprite" src="./resources/images/WhiteForest/Doug.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox29" type="checkbox" value="28" onChange={handleChange}/>
+            <label for="trainer29">Frederic</label>
+            <img alt="trainer29 sprite" src="./resources/images/WhiteForest/Frederic.png"/>
+          </div>
+          <div class="whiteForestTrainerDiv">
+            <input class="whiteForestTrainerCheckbox" id="whiteForestTrainerCheckbox30" type="checkbox" value="29" onChange={handleChange}/>
+            <label for="trainer30">Emi</label>
+            <img alt="trainer30 sprite" src="./resources/images/WhiteForest/Emi.png"/>
+          </div>
+        </fieldset>
+      </div>
+    )
+  }
+}
 
 const AbilitySection = (props) => {
   const [abilityHTML, setAbilityHTML] = useState("");
@@ -1050,16 +1404,21 @@ const AbilitySection = (props) => {
 
     tempArray.forEach((e) => {
       const pokemon = findName(e.number, props.pokemonArr);
-      if (pokemon.type1 === type || pokemon.type2 === type){
+      if (!e.skipType && (pokemon.type1 === type || pokemon.type2 === type)){ //skip type is for certain pokemon like N's pokemon and swarms in BWB2W2
         foundType.push(JSON.parse(JSON.stringify(e)));
       }
     });
 
+    let skippedRate = 0;
     if(foundType.length > 0){
       tempArray.forEach((e) => {
-        e.rate = e.rate * (1-rate);
+        if(e.skipType){ //check for a slot that isn't changed by type mods such as N's pokemon
+          skippedRate += e.rate;
+        } else{
+          e.rate = e.rate * (1-rate);
+        }
       });
-      const additionalRate = rate/foundType.length;
+      const additionalRate = (rate * (1-skippedRate))/foundType.length;
       foundType.forEach((e) => {
         e.rate = additionalRate;
         tempArray.push(e);
@@ -1106,7 +1465,7 @@ const AbilitySection = (props) => {
         let newSpecies = true;
         //check to see if this is the first of a species in the current encounters
         tempSpecies.forEach((j, i) => {
-          if(j == e.number){
+          if(j === e.number){
             newSpecies = false;
             tempRates[i] += Number(e.rate); //all rates need to be halved and later the one with the highest level of the species will get all the removed rates
             if(Number(e.minLevel) > Number(tempArray[index[i]].minLevel)){ //find highest level of species
@@ -1223,6 +1582,7 @@ const AbilitySection = (props) => {
               document.getElementById("maleGenderRadio").checked = true;
               props.setEncounters(cuteCharmAbility("male"));
             }
+            break;
           default:
             break;
         }
@@ -1380,7 +1740,7 @@ const App = () => {
   const [selectedArea, setSelectedArea] = useState("");
   const [game, setGame] = useState("");
   //The arrays of encounters
-  const [encounters, setEncouters] = useState([]); //The raw encounter data
+  const [encounters, setEncounters] = useState([]); //The raw encounter data
   const [todEncounters, setTodEncounters] = useState([]);//encounters modified by time of day
   const [gscSwarmEncounters, setGscSwarmEncounters] = useState([]);//encounters modified by swarms in Gold, Silver, and Crystal
   const [rseSwarmEncounters, setRseSwarmEncounters] = useState([]);//encounters modified by swarms in Ruby, Sapphire, and Emerald
@@ -1391,7 +1751,12 @@ const App = () => {
   const [dppSwarmEncounters, setDppSwarmEncounters] = useState([]); //encounters modified by DPP or HGSS Swarms
   const [dongleEncounters, setDongleEncounters] = useState([]); //encounters modified by GBA slot in DPP
   const [hgssSafariEncounters, setHgssSafariEncounters] = useState([]); //encounters modified by blocks in the heartgold or soulsilver safari zone
-  const [hgssRadioEncounters, setHgssRadioEncounters] = useState([]); //ecounters modified by the radio in HGSS
+  const [hgssRadioEncounters, setHgssRadioEncounters] = useState([]); //encounters modified by the radio in HGSS
+  const [seasonEncounters, setSeasonEncounters] = useState([]); //encounters modified by seasons
+  const [luckyEncounters, setLuckyEncounters] = useState([]); //encounters modified by lucky power in B2W2
+  const [bwSwarmEncounters, setBwSwarmEncounters] = useState([]); //encounters modified by swarms in BWB2W2
+  const [nPokemonEncounters, setNPokemonEncounters] = useState([]); //encounters modified by N's pokemon in B2W2
+  const [whiteForestEncounters, setWhiteForestEncounters] = useState([]); //encounters modified by White Forest
   const [abilityEncounters, setAbilityEncounters] = useState([]);//encounters modified by abilities such as static
   const [repelEncounters, setRepelEncounters] = useState([]); //encounters modified by repels
   //variables that come with the encounters such as if a repel can be used
@@ -1457,6 +1822,8 @@ const App = () => {
     if (themeValue){
       themeSelect.value = themeValue;
       changeTheme(themeValue);
+    } else{
+      themeSelect.value = "dark";
     }
 
     //load in the shiny setting
@@ -1483,9 +1850,76 @@ const App = () => {
     handleProcessedImagesChange();
   }, [repelEncounters, useModels, useShiny]);
 
+  //variables for output HTML
+  const [condensedArr, setCondensedArr] = useState([]);
+  const [encounterRate, setEncounterRate] = useState();
+  const [modifier, setModifier] = useState();
+  const [malePercent, setMalePercent] = useState(["err"]);
+  const [cuteCharmPercent, setCuteCharmPercent] = useState();
+  const [pged, setPged] = useState();
+
+  //update variables for output HTML
+  useEffect(() => {
+    const tempArray = condenseEncounters(repelEncounters);
+    setCondensedArr(tempArray);
+    let tempEncRate = 0
+    tempArray.forEach(e => {
+      tempEncRate += Number(e.rate);
+    })
+    setModifier(100/tempEncRate);
+    setEncounterRate(tempEncRate);
+
+    //get male percentage
+    switch (genderSpread){
+      case 2:
+        setMalePercent([1,0.875,0.75,"",0.5,"",0.25,"",0]);
+        setCuteCharmPercent();
+        break;
+      case 3:
+      case 4: 
+        setMalePercent([1,0.8789,0.7539,"",0.5039,"",0.2539,0.1211,0]);
+        setCuteCharmPercent(0.667);
+        break;
+      case 5: 
+        setMalePercent([1,0.8789,0.7539,"",0.5039,"",0.2539,0.1211,0]);
+        setCuteCharmPercent(0.67);
+        break;
+      case 6:
+      case 7:
+        setMalePercent([1,0.8810,0.7540,"",0.5,"",0.2460,0.1111,0]);
+        setCuteCharmPercent(0.667);
+        break;
+      case 8: 
+        setMalePercent([1,0.8814,0.7550,"",0.5020,"",0.2490,0.1146,0]);
+        setCuteCharmPercent(0.66);
+        break;
+      default:
+        setMalePercent(["err"]);
+        setCuteCharmPercent();
+        break;
+    }
+
+    //set percent that will be double battles
+    if (variables.double){
+      //probability of single encounter
+      const pse = 0.6 * tempEncRate + 0.4 * (((1-tempEncRate) * tempEncRate) * 2);
+      //probability of a double encounter
+      const pde = 0.4 * tempEncRate * tempEncRate;
+      //percent that will be double battles
+      if (pde === 0){
+        alert()
+        setPged(0);
+      } else {
+        setPged(Number(pde / (pse + pde)));
+      }
+    } else { //not double/dark grass
+      setPged();
+    }
+  }, [repelEncounters]);
+
   //reset everything
   const clearEncounters = () => {
-    setEncouters([]);
+    setEncounters([]);
     setVariables({});
     document.getElementById("encounterSlots").style.display = "none";
     document.getElementById("processedEncounters").style.display = "none";
@@ -1558,6 +1992,13 @@ const App = () => {
         setSpriteExtension("gen4/hgss");
         setGenderSpread(4);
         break;
+      case "black":
+      case "white":
+      case "black2":
+      case "white2":
+        setSpriteExtension("gen5");
+        setGenderSpread(5);  
+        break;
       default:
         setSpriteExtension("gen6");
     }
@@ -1591,7 +2032,7 @@ const App = () => {
     document.getElementById("encounterSlots").style.display = "flex";
     document.getElementById("processedEncounters").style.display = "flex";
     setVariables(Object.keys(encounterData[selectedArea][event.target.value])[tempArray.length - 1] === "variables" ? tempArray.pop() : {});
-    setEncouters(tempArray);
+    setEncounters(tempArray);
     const methodsDiv = document.getElementById("methodsDiv");
     const methods = document.getElementById("methods");
 
@@ -1605,7 +2046,13 @@ const App = () => {
       methodsDiv.classList = ("select select--rsmash");
     } else if(methods.value.includes("butt")){
       methodsDiv.classList = ("select select--headbutt");
-    }else {
+    } else if(methods.value.includes("Dark")){
+      methodsDiv.classList = ("select select--darkgrass");
+    } else if(methods.value.includes("Phenomenon")){
+      methodsDiv.classList = ("select select--shaking");
+    } else if (methods.value.includes("Rippling")){
+      methodsDiv.classList = ("select select--rippling");
+    } else {
       methodsDiv.classList = ("select select--enabled");
     }
   };
@@ -1673,25 +2120,37 @@ const App = () => {
             <div class="select select--enabled">
               <select id="games" onChange={handleGameChange}>
                 <option value="" selected disabled hidden>Choose Game</option>
-                <option value="red">Red</option>
-                <option value="blue - INT">Blue - INT/Green - JPN</option>
-                <option value="blue - JPN">Blue - JPN</option>
-                <option value="yellow">Yellow</option>
-                <option value="gold">Gold - INT</option>
-                <option value="gold - JPN">Gold - JPN/KOR</option>
-                <option value="silver">Silver - INT</option>
-                <option value="silver - JPN">Silver - JPN/KOR</option>
-                <option value="crystal">Crystal</option>
-                <option value="ruby">Ruby</option>
-                <option value="sapphire">Sapphire</option>
-                <option value="emerald">Emerald</option>
-                <option value="firered">FireRed</option>
-                <option value="leafgreen">LeafGreen</option>
-                <option value="diamond">Diamond</option>
-                <option value="pearl">Pearl</option>
-                <option value="platinum">Platinum</option>
-                <option value="heartgold">HeartGold</option>
-                <option value="soulsilver">SoulSilver</option>
+                <optgroup label="Generation 1">
+                  <option value="red">Red</option>
+                  <option value="blue - INT">Blue - INT/Green - JPN</option>
+                  <option value="blue - JPN">Blue - JPN</option>
+                  <option value="yellow">Yellow</option>
+                </optgroup>
+                <optgroup label="Generation 2">
+                  <option value="gold">Gold - INT</option>
+                  <option value="gold - JPN">Gold - JPN/KOR</option>
+                  <option value="silver">Silver - INT</option>
+                  <option value="silver - JPN">Silver - JPN/KOR</option>
+                  <option value="crystal">Crystal</option>
+                </optgroup>
+                <optgroup label="Generation 3">
+                  <option value="ruby">Ruby</option>
+                  <option value="sapphire">Sapphire</option>
+                  <option value="emerald">Emerald</option>
+                  <option value="firered">FireRed</option>
+                  <option value="leafgreen">LeafGreen</option>
+                </optgroup>
+                <optgroup label="Generation 4">
+                  <option value="diamond">Diamond</option>
+                  <option value="pearl">Pearl</option>
+                  <option value="platinum">Platinum</option>
+                  <option value="heartgold">HeartGold</option>
+                  <option value="soulsilver">SoulSilver</option>
+                </optgroup>
+                <optgroup label="Generation 5">
+                  <option value="white">White</option>
+                  <option value="black2">Black 2</option>
+                </optgroup>
               </select>
               <span class="focus"></span>
             </div>
@@ -1747,7 +2206,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(hgssRadioEncounters, spriteExtension, pokemonData, useShiny, useModels)} style={{display: "none"}}></div>
+      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(whiteForestEncounters, spriteExtension, pokemonData, useShiny, useModels)} style={{display: "none"}}></div>
       <div class="modChunkHolder">
         <TimeOfDaySection tod={variables.tod} setTodIndex={setTodIndex} encounters={encounters} setEncounters={setTodEncounters}/>
         <GscSwarmSection gscSwarm={variables.gscSwarm} todIndex={todIndex} encounters={todEncounters} setEncounters={setGscSwarmEncounters}/>
@@ -1760,17 +2219,84 @@ const App = () => {
         <DongleSection dongle={variables.dongle} encounters={dppSwarmEncounters} setEncounters={setDongleEncounters}/>
         <HgssSafariZoneSection hgssSafariBlocks={variables.hgssSafariBlocks} hgssSafariSlots={variables.hgssSafariSlots} todIndex={todIndex} primeEncounters={encounters} encounters={dongleEncounters} setEncounters={setHgssSafariEncounters}/>
         <HgssRadioSection radio={variables.radio} encounters={hgssSafariEncounters} setEncounters={setHgssRadioEncounters}/>
-        <AbilitySection ability={variables.ability} encounters={hgssRadioEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive} game={game}/>
+        <SeasonSection season={variables.season} encounters={hgssRadioEncounters} setEncounters={setSeasonEncounters}/>
+        <LuckyPowerSection lucky={variables.lucky} encounters={seasonEncounters} setEncounters={setLuckyEncounters}/>
+        <BwSwarmSection bwSwarm={variables.bwSwarm} encounters={luckyEncounters} setEncounters={setBwSwarmEncounters}/>
+        <NPokemonSection nPokemon={variables.nPokemon} encounters={bwSwarmEncounters} setEncounters={setNPokemonEncounters} pokemonArr={pokemonData}/>
+        <WhiteForestSection whiteForeset={variables.whiteforest} encounters={nPokemonEncounters} setEncounters={setWhiteForestEncounters}/>
+        <AbilitySection ability={variables.ability} encounters={whiteForestEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive} game={game}/>
         <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive} game={game}/>
       </div>
-      <div id="processedEncounters"
-        dangerouslySetInnerHTML={
-          repelEncounters.length === 0 ? 
-          {__html: ""} : 
-          processedEncountersHTMLGenerator(condenseEncounters(repelEncounters), spriteExtension, pokemonData, genderSpread, useShiny, useModels)
+      <div id="processedEncounters">
+        {
+          condensedArr.map((e, i) => {
+            const pokemon = findName(e.number, pokemonData);
+            //calculate gender split
+            let male = 0;
+            let female = 0;
+            if (malePercent[0] !== "err" && pokemon.gender){ //gender to deal with
+              if (pokemon.gender === 0 || pokemon.gender === 8){ //all one gender pokemon
+                male = malePercent[8-pokemon.gender];
+                female = 1 - male;
+              } else if (e.genderBias === "female"){ //male cute charm bias
+                male = cuteCharmPercent + ((1-cuteCharmPercent) * malePercent[8-pokemon.gender]);
+                female = 1 - male;
+              } else if (e.genderBias === "male"){ //female cute charm bias
+                male = (1-cuteCharmPercent) * malePercent[8-pokemon.gender];
+                female = 1 - male;
+              } else { //not a single gender pokemon and no cute charm
+                male = malePercent[8-pokemon.gender];
+                female = 1 - male;
+              }
+            }
+            const finalRate = e.rate * modifier * 100;
+            
+            //check for N's pokemon. Uses special sprite rules
+            let npokemon = false;
+            if (e.number.includes("n") && e.number.length === 4){
+              npokemon = true;
+            }
+
+            return (
+              <div class={"encounterSlot " + (Math.floor(Math.random() * 1000) === 0 ? "ellipse" : "")}>
+                <p>
+                  <span class="pokemonName"><b>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
+                  <span class="pokemonRate"><b>{Math.round(finalRate)/100}%</b></span>
+                </p>
+                <img 
+                  class={`
+                      ${((spriteExtension.includes("gen1") && useModels === "sprites") || npokemon) ? "" :"shinyFlip"}
+                      ${pokemon.type1}
+                      ${Math.floor(Math.random() * 100) === 0 ? "ellipse" : ""} 
+                      ${npokemon ? "nPokemon" : ""}
+                  `}
+                  src={`./resources/${useModels === "sprites" ? spriteExtension : useModels}/${(((spriteExtension.includes("gen1") && useModels === "sprites") || !useShiny || npokemon) ? "" : "shiny/")}${npokemon ? e.number.slice(0,3) : e.number}.png`}
+                  alt={"Pokemon sprite for " + pokemon.name}
+                  onClick={((spriteExtension.includes("gen1") && useModels === "sprites") || npokemon) ? null : shinyFlip}
+                />
+                {(male !== 0) ? <div><span class="genderHeader">Male: </span><span class="genderPercent">{Math.round(male * finalRate)/100}% ({Math.round(male * 10000)/100}%)</span></div> : ""}
+                {(female !== 0) ? <div><span class="genderHeader">Female: </span><span class="genderPercent">{Math.round(female * finalRate)/100}% ({Math.round(female * 10000)/100}%)</span></div> : ""}
+                {(male === 0) && (female === 0) ? <div><span class="genderHeader">Gender: </span><span class="genderPercent">Unknown</span></div> : ""}
+              </div>
+            )
+          })
         }
-        style={{display: "none"}}
-      >
+        <div class="encounterRate">
+          <div class="barChart" style={{width: Math.round(encounterRate * 10000)/100 + "%"}}>
+            <span>{Math.round(encounterRate * 10000)/100 + "% Encounter Rate"}</span>
+          </div>
+        </div>
+        <div class="encounterRateNoBar">
+          <span>{Math.round(encounterRate * 10000)/100 + "% Encounter Rate"}</span>
+        </div>
+        <div class={variables.double ? "encounterRate" : "hidden"}>
+          <div class="barChart" style={{width: Math.round(pged * 10000)/100 + "%"}}>
+            <span>{Math.round(pged * 10000)/100 + "% Double Battle Percent"}</span>
+          </div>
+        </div>
+        <div class={variables.double ? "encounterRateNoBar" : "hidden"}>
+          <span>{Math.round(pged * 10000)/100 + "% Double Battle Percent"}</span>
+        </div>
       </div>
       <PieChart data={condenseEncounters(repelEncounters)} pokemonArr={pokemonData}/>
     </div>

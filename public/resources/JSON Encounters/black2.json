@@ -1,0 +1,213 @@
+{
+  "Route 7": {
+      "Walk": {
+        "0": {
+          "number": "520",
+          "minLevel": "30",
+          "rate": "0.2"
+        },
+        "1": {
+          "number": "585",
+          "minLevel": "30",
+          "rate": "0.2"
+        },
+        "2": {
+          "number": "505",
+          "minLevel": "31",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "523",
+          "minLevel": "31",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "520",
+          "minLevel": "32",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "523",
+          "minLevel": "33",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "335",
+          "minLevel": "32",
+          "rate": "0.05"
+        },
+        "7": {
+          "number": "336",
+          "minLevel": "32",
+          "rate": "0.05"
+        },
+        "8": {
+          "number": "505",
+          "minLevel": "33",
+          "rate": "0.04"
+        },
+        "9": {
+          "number": "590",
+          "minLevel": "33",
+          "rate": "0.04"
+        },
+        "10": {
+          "number": "505",
+          "minLevel": "33",
+          "rate": "0.01"
+        },
+        "11": {
+          "number": "590",
+          "minLevel": "33",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "bwSwarm": "162,40,55",
+          "lucky": "true",
+          "season": "|520,585-summer,505,523,520,523,335,336,505,590,505,590|520,585-autumn,505,523,520,523,335,336,505,590,505,590|613,585-winter,505,523,520,523,335,336,613,590,613,590",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Dark Grass": {
+        "0": {
+          "number": "520",
+          "minLevel": "33",
+          "rate": "0.2"
+        },
+        "1": {
+          "number": "585",
+          "minLevel": "33",
+          "rate": "0.2"
+        },
+        "2": {
+          "number": "505",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "523",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "520",
+          "minLevel": "33",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "523",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "335",
+          "minLevel": "35",
+          "rate": "0.05"
+        },
+        "7": {
+          "number": "336",
+          "minLevel": "35",
+          "rate": "0.05"
+        },
+        "8": {
+          "number": "505",
+          "minLevel": "36",
+          "rate": "0.04"
+        },
+        "9": {
+          "number": "590",
+          "minLevel": "36",
+          "rate": "0.04"
+        },
+        "10": {
+          "number": "505",
+          "minLevel": "36",
+          "rate": "0.01"
+        },
+        "11": {
+          "number": "590",
+          "minLevel": "36",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "lucky": "true",
+          "double": "true",
+          "season": "|520,585-summer,505,523,520,523,335,336,505,590,505,590|520,585-autumn,505,523,520,523,335,336,505,590,505,590|613,585-winter,505,523,520,523,335,336,613,590,613,590",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Desert Resort": {
+      "Walk": {
+        "0": {
+          "number": "551",
+          "minLevel": "18",
+          "rate": "0.2"
+        },
+        "1": {
+          "number": "554",
+          "minLevel": "18",
+          "rate": "0.2"
+        },
+        "2": {
+          "number": "551",
+          "minLevel": "19",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "27",
+          "minLevel": "19",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "556",
+          "minLevel": "19",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "561",
+          "minLevel": "19",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "27",
+          "minLevel": "20",
+          "rate": "0.05"
+        },
+        "7": {
+          "number": "557",
+          "minLevel": "19",
+          "rate": "0.05"
+        },
+        "8": {
+          "number": "328",
+          "minLevel": "21",
+          "rate": "0.04"
+        },
+        "9": {
+          "number": "557",
+          "minLevel": "21",
+          "rate": "0.04"
+        },
+        "10": {
+          "number": "328",
+          "minLevel": "21",
+          "rate": "0.01"
+        },
+        "11": {
+          "number": "557",
+          "minLevel": "21",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "bwSwarm": "450,40,55",
+          "nPokemon": "551n,22|554n,22|555n,35|559n,22|561n,22",
+          "lucky": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    }
+}

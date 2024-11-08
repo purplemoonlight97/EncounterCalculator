@@ -38,6 +38,11 @@ select, option, input{
     background-color: var(--primaryLight);
 }
 
+optgroup{
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
 option {
     color: var(--textLight);
 }
@@ -92,7 +97,10 @@ select::-ms-expand {
 .select--rsmash::after, 
 .select--surf::after, 
 .select--walk::after,
-.select--headbutt::after{
+.select--headbutt::after,
+.select--darkgrass::after,
+.select--shaking::after,
+.select--rippling::after{
     content: "";
     display: block;
     width: 1em;
@@ -120,6 +128,18 @@ select::-ms-expand {
 
 .select--headbutt::after{
     background-image: url(./resources/images/headbutt.png);
+}
+
+.select--darkgrass::after{
+    background-image: url(./resources//images/darkgrass.png);
+}
+
+.select--shaking::after{
+    background-image: url(./resources//images/shakinggrass.png);
+}
+
+.select--rippling::after{
+    background-image: url(./resources//images/ripplingwater.png);
 }
 
 .select--disabled {
@@ -191,7 +211,6 @@ input[type=number] {
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
     font-size: 1.25rem;
-    cursor: pointer;
     line-height: 1.1;
     background-color: var(--primaryLight);
     background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
@@ -234,17 +253,18 @@ fieldset > label {
     font-size: 1.25em;
 }
 
-.ruinsFieldset{
-    margin: 0 auto;
+.ruinsFieldset, .nFieldset, .whiteForestFieldset{
+    width: 100%;
 }
 
-.ruinsFieldset > div{
+.ruinsFieldset > div, .nFieldset > div{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    column-gap: 10px;
 }
 
-.ruinsFieldset > div > label {
+.ruinsFieldset > div > label, .nFieldset > div > label {
     color: var(--textLight);
     font-family: Roboto;
     font-size: 1.25em;
@@ -272,6 +292,26 @@ fieldset > label {
     color: var(--textLight);
     font-size: 1.25em;
     font-family: Roboto;
+}
+
+.whiteForestFieldset{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.whiteForestTrainerDiv {
+    width: 0.25%;
+    min-width: 150px;
+    display: flex;
+    justify-content: left;
+}
+
+.whiteForestTrainerDiv > label {
+    color: var(--textLight);
+    font-family: Roboto;
+    font-size: 1.25em;
 }
 
 .controlsHolder {
@@ -320,7 +360,7 @@ fieldset > label {
 
 #encounterSlots, #processedEncounters{
     width: 90%;
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     justify-content: center;
     margin: 10px auto;
@@ -362,6 +402,8 @@ fieldset > label {
     z-index: 1;
 }
 
+
+
 .shinyFlip:hover{
     cursor: pointer;
 }
@@ -379,11 +421,16 @@ fieldset > label {
     white-space: nowrap;
 }
 
+.encounterSlot > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .encounterSlot > p > span {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.encounterSlot > span {
+.genderHeader {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     z-index: 1;
 }
@@ -396,7 +443,8 @@ fieldset > label {
 }
 
 .pokemonName {
-    max-width: 70%;
+    max-width: 60%;
+    font-size: 0.8em;
 }
 
 .fullLength {
@@ -404,12 +452,18 @@ fieldset > label {
 }
 
 .pokemonRate {
-    max-width: 30%;
+    max-width: 40%;
+    font-size: 0.8em;
+}
+
+.genderHeader {
+    width: 100%;
 }
 
 .genderPercent, .secondaryInfo {
     font-family: Futura;
     font-size: 0.8em;
+    width: 100%;
 }
 
 .grass {
@@ -484,6 +538,13 @@ fieldset > label {
     background-color: #81b9ef;
 }
 
+.nPokemon{
+    background-image: url(./resources/images/N.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+}
+
 .ellipse {
     position: relative;
     background: radial-gradient(
@@ -543,7 +604,7 @@ fieldset > label {
     z-index: -1;
   }
 
-  .encounterRate {
+  .encounterRate{
     width: 90%;
     height: 20px;
     background-color: var(--primary);
@@ -571,6 +632,15 @@ fieldset > label {
 
   .barChart > span {
     margin-left: 5px;
+    font-family: Roboto;
+  }
+
+  .encounterRateNoBar > span {
+    font-family: Roboto;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .pieChartDiv {
@@ -618,7 +688,7 @@ fieldset > label {
 
   @media screen and (max-width: 800px) {
     .modChunk > label {
-        font-size: 1em;
+        font-size: 0.75em;
     }
   }
 
