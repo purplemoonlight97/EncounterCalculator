@@ -1080,6 +1080,11 @@ const BwSwarmSection = (props) => {
 
   const handleChange = () => {
     if(document.getElementById("bwSwarmCheck").checked){
+
+      if (props.encounters[0].number === "0"){//season is zero and can't have encounters so no swarm
+        props.setEncounters(props.encounters);
+        return;
+      }
       const tempArray = JSON.parse(JSON.stringify(props.encounters));
       const swarm = props.bwSwarm.split(","); //given in species num, min level, max level array
       
@@ -2148,6 +2153,7 @@ const App = () => {
                   <option value="soulsilver">SoulSilver</option>
                 </optgroup>
                 <optgroup label="Generation 5">
+                  <option value="black">Black</option>
                   <option value="white">White</option>
                   <option value="black2">Black 2</option>
                 </optgroup>
