@@ -956,9 +956,20 @@ const SeasonSection = (props) => {
       const tempArray = JSON.parse(JSON.stringify(props.encounters));
       const individualSeasonArr = seasonsArr[value].split(",");
 
-      individualSeasonArr.forEach((e,i) => {
-        tempArray[i].number = e;
-      });
+      if(individualSeasonArr.length === 10){ //there are levels that change
+        for (let i = 0; i < individualSeasonArr.length/2; i++){
+          tempArray[i].number = individualSeasonArr[i*2];
+          const levelArr = individualSeasonArr[1*2 + 1].split("-");
+          tempArray[i].minLevel = levelArr[0];
+          if (levelArr.length !== 1){ //there is a max level
+            tempArray[i].maxLevel = levelArr[1];
+          }
+        }
+      } else{ //no levels change
+        individualSeasonArr.forEach((e,i) => {
+          tempArray[i].number = e;
+        });
+      }
 
       props.setEncounters(tempArray);
     }

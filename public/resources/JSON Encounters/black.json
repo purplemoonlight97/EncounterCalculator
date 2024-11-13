@@ -63,7 +63,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "83,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -131,7 +131,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -198,7 +198,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -236,7 +236,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -273,7 +273,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -310,7 +310,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -347,7 +347,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -416,7 +416,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "360,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -484,7 +484,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -553,7 +553,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "313,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -621,7 +621,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -688,7 +688,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -726,7 +726,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -763,7 +763,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -800,7 +800,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -837,7 +837,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -906,7 +906,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "449,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -944,7 +944,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -981,7 +981,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -1018,7 +1018,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -1055,7 +1055,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -1124,7 +1124,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "235,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -1192,7 +1192,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -1259,7 +1259,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -1329,7 +1329,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "311,15,55",
           "season": "|585-summer,588,520,590,585-summer,541,585-summer,588,520,590,520,590|585-autumn,588,520,590,585-autumn,541,585-autumn,588,520,590,520,590|585-winter,588,582,590,585-winter,541,585-winter,588,582,590,582,590",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
@@ -1398,7 +1398,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|||531,531,587,587,531,531,531,531,531,542,531,542",
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
@@ -1466,7 +1466,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "season": "|585-summer,588,520,590,585-summer,541,585-summer,588,520,590,520,590|585-autumn,588,520,590,585-autumn,541,585-autumn,588,520,590,520,590|585-winter,588,582,590,585-winter,541,585-winter,588,582,590,582,590",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
@@ -1505,7 +1505,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -1542,7 +1542,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -1579,7 +1579,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -1616,7 +1616,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -1685,7 +1685,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "161,15,55",
           "season": "|520,585-summer,505,523,520,523,505,590,505,590,505,590|520,585-autumn,505,523,520,523,505,590,505,590,505,590|613,585-winter,505,523,613,523,505,590,505,590,505,590",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
@@ -1754,7 +1754,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|||531,531,587,531,531,531,531,531,531,531,531,531",
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
@@ -1822,7 +1822,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "season": "|520,585-summer,505,523,520,523,505,590,505,590,505,590|20,585-autumn,505,523,520,523,505,590,505,590,505,590|613,585-winter,505,523,613,523,505,590,505,590,505,590",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
@@ -1893,7 +1893,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "453,15,55",
           "season": "|||0,0,0,0,0,0,0,0,0,0,0,0",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
@@ -1932,7 +1932,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -1969,7 +1969,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -2006,7 +2006,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -2043,7 +2043,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -2112,7 +2112,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "228,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -2180,7 +2180,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -2247,7 +2247,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -2317,7 +2317,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "236,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -2385,7 +2385,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -2452,7 +2452,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -2522,7 +2522,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "285,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -2590,7 +2590,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -2657,7 +2657,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -2695,7 +2695,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -2732,7 +2732,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -2769,7 +2769,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -2806,7 +2806,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -2875,7 +2875,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "84,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -2943,7 +2943,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -3010,7 +3010,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -3080,7 +3080,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "353,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -3148,7 +3148,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -3215,7 +3215,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -3253,7 +3253,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -3290,7 +3290,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -3327,7 +3327,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -3364,7 +3364,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -3433,7 +3433,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "193,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -3501,7 +3501,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -3568,7 +3568,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -3606,7 +3606,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -3643,7 +3643,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -3680,7 +3680,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -3717,7 +3717,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -3786,7 +3786,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "56,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -3854,7 +3854,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -3921,7 +3921,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -3991,7 +3991,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "204,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -4059,7 +4059,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4126,7 +4126,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -4166,7 +4166,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4203,7 +4203,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4240,7 +4240,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4277,7 +4277,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -4346,7 +4346,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "bwSwarm": "102,15,55",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -4414,7 +4414,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4481,7 +4481,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -4519,7 +4519,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4556,7 +4556,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4593,7 +4593,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4630,7 +4630,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -4699,7 +4699,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4766,7 +4766,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4833,7 +4833,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -4871,7 +4871,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4908,7 +4908,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4945,7 +4945,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -4982,7 +4982,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -5051,7 +5051,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -5120,7 +5120,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -5189,7 +5189,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -5258,7 +5258,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -5327,7 +5327,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -5394,7 +5394,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -5463,7 +5463,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -5530,7 +5530,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -5599,7 +5599,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -5666,7 +5666,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -5703,7 +5703,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -5740,7 +5740,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -5777,7 +5777,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -5814,7 +5814,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -5883,7 +5883,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -5950,7 +5950,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -6019,7 +6019,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -6086,7 +6086,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -6155,7 +6155,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -6222,7 +6222,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -6289,7 +6289,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -6359,7 +6359,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -6428,7 +6428,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -6497,7 +6497,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -6566,7 +6566,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -6635,7 +6635,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|520,585-summer,619,585-summer,619,520,619,621,619,621,619,621|520,585-autumn,619,585-autumn,619,520,619,621,619,621,619,621|582,585-winter,619,585-winter,619,613,619,582,619,582,619,582",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -6703,7 +6703,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|||531,531,587,531,531,531,531,531,531,531,531,531",
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
@@ -6771,7 +6771,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "season": "|520,586-summer,619,586-summer,619,520,619,621,619,621,619,621|520,586-autumn,619,586-autumn,619,520,619,621,619,621,619,621|583,586-winter,619,586-winter,619,614,619,583,619,583,619,583",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
@@ -6810,7 +6810,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -6847,7 +6847,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -6884,7 +6884,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -6921,7 +6921,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -6990,7 +6990,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|520,585-summer,619,585-summer,619,520,619,621,619,621,619,621|520,585-autumn,619,585-autumn,619,520,619,621,619,621,619,621|582,585-winter,619,585-winter,619,613,619,582,619,582,619,582",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -7058,7 +7058,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|||531,531,587,531,531,531,531,531,531,531,531,531",
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
@@ -7126,7 +7126,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "season": "0,0,0,0,0,0,0,0,0,0,0,0|0,0,0,0,0,0,0,0,0,0,0,0|0,0,0,0,0,0,0,0,0,0,0,0|583,586-winter,619,586-winter,619,614,619,583,619,583,619,583",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
@@ -7197,7 +7197,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -7267,7 +7267,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -7334,7 +7334,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -7401,7 +7401,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -7441,7 +7441,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -7478,7 +7478,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -7515,7 +7515,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -7552,7 +7552,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -7621,7 +7621,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -7690,7 +7690,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -7757,7 +7757,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -7794,7 +7794,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -7831,7 +7831,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -7868,7 +7868,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -7905,7 +7905,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -7974,7 +7974,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8041,7 +8041,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8078,7 +8078,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8115,7 +8115,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8152,7 +8152,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8189,7 +8189,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -8258,7 +8258,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8325,7 +8325,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8392,7 +8392,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -8462,7 +8462,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8529,7 +8529,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8596,7 +8596,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -8666,7 +8666,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|||0,0,0,0,0,0,0,0,0,0,0,0",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -8704,7 +8704,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8741,7 +8741,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8778,7 +8778,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8815,7 +8815,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -8884,7 +8884,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -8951,7 +8951,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9018,7 +9018,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -9056,7 +9056,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9093,7 +9093,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9130,7 +9130,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9167,7 +9167,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -9236,7 +9236,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -9305,7 +9305,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9372,7 +9372,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -9441,7 +9441,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|||0,0,0,0,0,0,0,0,0,0,0,0",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -9479,7 +9479,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9516,7 +9516,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9553,7 +9553,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9590,7 +9590,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -9659,7 +9659,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9726,7 +9726,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9763,7 +9763,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9800,7 +9800,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9837,7 +9837,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -9874,7 +9874,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -9943,7 +9943,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -10010,7 +10010,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -10077,7 +10077,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -10147,7 +10147,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -10214,7 +10214,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -10281,7 +10281,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -10319,7 +10319,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -10356,7 +10356,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -10393,7 +10393,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -10430,7 +10430,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -10499,7 +10499,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -10568,7 +10568,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -10637,7 +10637,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -10706,7 +10706,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -10745,7 +10745,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -10782,7 +10782,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -10819,7 +10819,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -10856,7 +10856,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -10925,7 +10925,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|525,533,525,533,525,527,525,527,613,527,615,527|525,533,525,533,525,613,525,527,525,527,615,527|613,525,533,613,525,613,613,527,615,527,615,527",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -10993,7 +10993,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -11032,7 +11032,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|||278,363,279,279,279",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -11070,7 +11070,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "season": "|||320,364,321,365,365",
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
@@ -11108,7 +11108,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11145,7 +11145,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -11184,7 +11184,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11221,7 +11221,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11258,7 +11258,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11295,7 +11295,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -11364,7 +11364,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11431,7 +11431,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11468,7 +11468,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11505,7 +11505,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11542,7 +11542,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11579,7 +11579,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -11648,7 +11648,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11715,7 +11715,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -11784,7 +11784,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11851,7 +11851,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -11920,7 +11920,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -11987,7 +11987,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -12056,7 +12056,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12123,7 +12123,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -12192,7 +12192,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12259,7 +12259,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -12328,7 +12328,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -12397,7 +12397,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12464,7 +12464,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12531,7 +12531,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "double": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
@@ -12569,7 +12569,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12606,7 +12606,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12643,7 +12643,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12680,7 +12680,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
@@ -12749,7 +12749,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12816,7 +12816,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12853,7 +12853,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12890,7 +12890,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12927,7 +12927,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -12964,7 +12964,7 @@
         },
         "variables": {
           "repel": "true",
-          "lucky": "true",
+          
           "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
         }
       }
