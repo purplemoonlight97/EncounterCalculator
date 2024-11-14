@@ -242,31 +242,31 @@
     },
     "Rippling Surf": {
       "0": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.05"
       },
       "3": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.04"
       },
       "4": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.01"
@@ -322,7 +322,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -738,7 +738,7 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.3"
@@ -812,7 +812,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -1515,13 +1515,13 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "10",
         "maxLevel": "30",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "10",
         "maxLevel": "30",
         "rate": "0.05"
@@ -1589,7 +1589,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -2503,7 +2503,7 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "25",
         "maxLevel": "40",
         "rate": "0.3"
@@ -2577,7 +2577,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -3067,7 +3067,7 @@
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "30",
         "maxLevel": "40",
         "rate": "0.05"
@@ -3413,7 +3413,7 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "15",
         "maxLevel": "40",
         "rate": "0.3"
@@ -3487,7 +3487,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -4604,31 +4604,31 @@
     },
     "Rippling Surf": {
       "0": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.05"
       },
       "3": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.04"
       },
       "4": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.01"
@@ -4684,7 +4684,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -4959,7 +4959,7 @@
     },
     "Rippling Surf": {
       "0": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.6"
@@ -4971,7 +4971,7 @@
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.05"
@@ -5039,7 +5039,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -5468,13 +5468,13 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "15",
         "maxLevel": "40",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "25",
         "maxLevel": "45",
         "rate": "0.05"
@@ -5542,7 +5542,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -5820,7 +5820,7 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "55",
         "rate": "0.3"
@@ -5894,7 +5894,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -6173,13 +6173,13 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "25",
         "maxLevel": "40",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "30",
         "maxLevel": "40",
         "rate": "0.05"
@@ -6247,7 +6247,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -6317,31 +6317,31 @@
     },
     "Rippling Surf": {
       "0": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.05"
       },
       "3": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.04"
       },
       "4": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.01"
@@ -6397,7 +6397,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -7709,31 +7709,31 @@
     },
     "Rippling Surf": {
       "0": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.05"
       },
       "3": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.04"
       },
       "4": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.01"
@@ -7789,7 +7789,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.4"
@@ -8342,31 +8342,31 @@
     },
     "Rippling Surf": {
       "0": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.05"
       },
       "3": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.04"
       },
       "4": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.01"
@@ -8422,7 +8422,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -9177,7 +9177,7 @@
     },
     "Rippling Surf": {
       "0": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.6"
@@ -9189,7 +9189,7 @@
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "5",
         "maxLevel": "15",
         "rate": "0.05"
@@ -9257,7 +9257,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -9467,7 +9467,7 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "35",
         "maxLevel": "50",
         "rate": "0.3"
@@ -9541,7 +9541,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -10031,7 +10031,7 @@
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "35",
         "maxLevel": "45",
         "rate": "0.05"
@@ -10599,7 +10599,7 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "10",
         "maxLevel": "30",
         "rate": "0.3"
@@ -10673,7 +10673,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -11378,13 +11378,13 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.05"
@@ -11452,7 +11452,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -12219,13 +12219,13 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.05"
@@ -12293,7 +12293,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "35",
         "maxLevel": "60",
         "rate": "0.4"
@@ -12982,13 +12982,13 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "10",
         "maxLevel": "30",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "10",
         "maxLevel": "30",
         "rate": "0.05"
@@ -13056,7 +13056,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -14092,13 +14092,13 @@
     },
     "Rippling Surf": {
       "0": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.3"
@@ -14172,7 +14172,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -14543,7 +14543,7 @@
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "30",
         "maxLevel": "40",
         "rate": "0.05"
@@ -14890,13 +14890,13 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "35",
         "maxLevel": "50",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "50",
         "rate": "0.05"
@@ -14964,7 +14964,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -15174,13 +15174,13 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "35",
         "maxLevel": "60",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "70",
         "rate": "0.05"
@@ -15248,7 +15248,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -15798,7 +15798,7 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "35",
         "maxLevel": "50",
         "rate": "0.3"
@@ -15872,7 +15872,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -16558,7 +16558,7 @@
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "25",
         "maxLevel": "40",
         "rate": "0.3"
@@ -16632,7 +16632,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "40",
         "maxLevel": "60",
         "rate": "0.4"
@@ -16947,6 +16947,74 @@
         "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
       }
     },
+    "Dark Grass": {
+      "0": {
+        "number": "240",
+        "minLevel": "11",
+        "rate": "0.2"
+      },
+      "1": {
+        "number": "81",
+        "minLevel": "11",
+        "rate": "0.2"
+      },
+      "2": {
+        "number": "504",
+        "minLevel": "11",
+        "rate": "0.1"
+      },
+      "3": {
+        "number": "109",
+        "minLevel": "11",
+        "rate": "0.1"
+      },
+      "4": {
+        "number": "58",
+        "minLevel": "12",
+        "rate": "0.1"
+      },
+      "5": {
+        "number": "58",
+        "minLevel": "14",
+        "rate": "0.1"
+      },
+      "6": {
+        "number": "240",
+        "minLevel": "13",
+        "rate": "0.05"
+      },
+      "7": {
+        "number": "81",
+        "minLevel": "13",
+        "rate": "0.05"
+      },
+      "8": {
+        "number": "504",
+        "minLevel": "13",
+        "rate": "0.04"
+      },
+      "9": {
+        "number": "109",
+        "minLevel": "13",
+        "rate": "0.04"
+      },
+      "10": {
+        "number": "504",
+        "minLevel": "14",
+        "rate": "0.01"
+      },
+      "11": {
+        "number": "109",
+        "minLevel": "14",
+        "rate": "0.01"
+      },
+      "variables": {
+        "repel": "true",
+        "lucky": "true",
+        "double": "true",
+        "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+      }
+    },
     "Surf": {
       "0": {
         "number": "592",
@@ -17230,74 +17298,6 @@
         "lucky": "true",
         "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
       }
-    },
-    "Dark Grass": {
-      "0": {
-        "number": "240",
-        "minLevel": "11",
-        "rate": "0.2"
-      },
-      "1": {
-        "number": "81",
-        "minLevel": "11",
-        "rate": "0.2"
-      },
-      "2": {
-        "number": "504",
-        "minLevel": "11",
-        "rate": "0.1"
-      },
-      "3": {
-        "number": "109",
-        "minLevel": "11",
-        "rate": "0.1"
-      },
-      "4": {
-        "number": "58",
-        "minLevel": "12",
-        "rate": "0.1"
-      },
-      "5": {
-        "number": "58",
-        "minLevel": "14",
-        "rate": "0.1"
-      },
-      "6": {
-        "number": "240",
-        "minLevel": "13",
-        "rate": "0.05"
-      },
-      "7": {
-        "number": "81",
-        "minLevel": "13",
-        "rate": "0.05"
-      },
-      "8": {
-        "number": "504",
-        "minLevel": "13",
-        "rate": "0.04"
-      },
-      "9": {
-        "number": "109",
-        "minLevel": "13",
-        "rate": "0.04"
-      },
-      "10": {
-        "number": "504",
-        "minLevel": "14",
-        "rate": "0.01"
-      },
-      "11": {
-        "number": "109",
-        "minLevel": "14",
-        "rate": "0.01"
-      },
-      "variables": {
-        "repel": "true",
-        "lucky": "true",
-        "double": "true",
-        "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
-      }
     }
   },
   "Wellspring Cave": {
@@ -17474,31 +17474,31 @@
     },
     "Rippling Surf": {
       "0": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.6"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "45",
         "maxLevel": "60",
         "rate": "0.3"
       },
       "2": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.05"
       },
       "3": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.04"
       },
       "4": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.01"
@@ -17554,7 +17554,7 @@
         "rate": "0.4"
       },
       "1": {
-        "number": "550",
+        "number": "550-blue-striped",
         "minLevel": "50",
         "maxLevel": "60",
         "rate": "0.4"

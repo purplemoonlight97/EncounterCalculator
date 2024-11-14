@@ -2167,6 +2167,7 @@ const App = () => {
                   <option value="black">Black</option>
                   <option value="white">White</option>
                   <option value="black2">Black 2</option>
+                  <option value="white2">White 2</option>
                 </optgroup>
               </select>
               <span class="focus"></span>
