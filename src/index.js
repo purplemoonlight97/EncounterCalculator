@@ -2100,7 +2100,7 @@ const App = () => {
 
   //which method of encounters has changed (walking, surfing, fishing, etc.)
   const handleMethodChange = (event) => {
-    let tempArray = Object.values(encounterData[selectedArea][event.target.value]);
+    let tempArray = JSON.parse(JSON.stringify(Object.values(encounterData[selectedArea][event.target.value])));
     clearEncounters();
     document.getElementById("encounterSlots").style.display = "flex";
     document.getElementById("processedEncounters").style.display = "flex";
@@ -2109,7 +2109,7 @@ const App = () => {
 
     //if encounters includes hordes, set the hordes to incorporate later
     if (tempVariables.hordes){
-      const tempHordes = Object.values(encounterData[selectedArea]["Hordes"]);
+      const tempHordes = JSON.parse(JSON.stringify(Object.values(encounterData[selectedArea]["Hordes"])));
       tempHordes.pop(); //remove horde variables as they are not needed for regular encounters
       tempHordes.forEach(e => {
         const speciesNumbers = e.number.split("-");
@@ -2122,6 +2122,18 @@ const App = () => {
       setHordes(tempHordes);
     } else { //clear hordes
       setHordes();
+    }
+
+    //check if species are hordes store in num-num-num-num-num format
+    if(tempArray[0].number.includes("-")){
+      tempArray.forEach(e => {
+        const speciesNumbers = e.number.split("-");
+        e.number = speciesNumbers[0];
+        e.number2 = speciesNumbers[1];
+        e.number3 = speciesNumbers[2];
+        e.number4 = speciesNumbers[3];
+        e.number5 = speciesNumbers[4];
+      });
     }
 
     setEncounters(tempArray);
