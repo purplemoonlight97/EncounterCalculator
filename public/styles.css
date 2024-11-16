@@ -406,8 +406,6 @@ fieldset > label {
     z-index: 1;
 }
 
-
-
 .shinyFlip:hover{
     cursor: pointer;
 }
@@ -428,6 +426,13 @@ fieldset > label {
 .encounterSlot > div {
     display: flex;
     flex-wrap: wrap;
+}
+
+.hordePokemon {
+    background-origin: content-box;
+    background-position: left top, right top, left bottom, right bottom;
+    background-size: 40% 40%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .encounterSlot > p > span {

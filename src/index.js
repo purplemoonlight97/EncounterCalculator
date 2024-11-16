@@ -14,37 +14,6 @@ const findName = (num, arr) => {
   return name;
 };
 
-//converts an array of encounters into HTML for output
-const encounterHTMLGenerator = (arr, str, pokemonArr, bool, modelStr) => {
-  let tempHTML = ``;
-  arr.forEach(e => {
-
-    //check for N's pokemon. Uses special sprite rules
-    let npokemon = false;
-    if (e.number.includes("n") && e.number.length === 4){
-      npokemon = true;
-    }
-
-    const pokemon = findName(e.number, pokemonArr);
-    tempHTML += `
-      <div class="encounterSlot">
-        <p>
-          <span class="pokemonName fullLength"><b>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
-        </p>
-        <img class="${pokemon.type1} ${npokemon ? "nPokemon" : ""}" src="${'./resources/' + (modelStr === "sprites" ? str : modelStr) + '/' + 
-          (((str.includes("gen1") && modelStr === "sprites") || !bool || npokemon) ?
-          "" : "shiny/") + 
-          (npokemon ? e.number.slice(0,3) : e.number) 
-          + '.png'}" alt="Pokemon sprite for ${pokemon.name}"
-        />
-        <span>Rate: </span><span class="secondaryInfo">${Math.round(e.rate * 10000)/100}%</span>
-        <span>Level: </span><span class="secondaryInfo">${e.minLevel}${('maxLevel' in e) ? "-" + e.maxLevel : ""}</span>
-      </div>
-    `;
-  });
-  return {__html: tempHTML};
-};
-
 //switch between the shiny and not shiny sprite
 const shinyFlip = (event) => {
   let str = event.target.src.toString();
@@ -72,13 +41,17 @@ const condenseEncounters = (arr) => {
   arr.forEach(e => {
     let match = false;
     smooshedArr.forEach(j => {
-      if (j.number === e.number){
+      if (j.number === e.number && j.number2 === e.number2){ //number 2 makes hordes only combine with like hordes
         match = true;
         j.rate += Number(e.rate);
       }
     });
     if (!match){
-      smooshedArr.push({"number": e.number, "rate": Number(e.rate), "genderBias": e.genderBias});
+      if (e.number2){ //horde
+        smooshedArr.push({"number": e.number, "number2": e.number2, "number3": e.number3, "number4": e.number4, "number5": e.number5, "rate": Number(e.rate), "genderBias": e.genderBias});
+      } else { //no horde
+        smooshedArr.push({"number": e.number, "rate": Number(e.rate), "genderBias": e.genderBias});
+      }
     }
   });
   smooshedArr.sort((a,b) => b.rate - a.rate);
@@ -91,7 +64,7 @@ const RepelSection = (props) => {
   const [repelLevel, setRepelLevel] = useState();
 
   //takes an array of encounters and repels out lower levels
-  const processRepels = (arr, num, bool) => {
+  const processRepels = (arr, num) => {
     const tempArray = [];
     arr.forEach(e => {
       const minLevel = Number(e.minLevel);
@@ -142,6 +115,9 @@ const RepelSection = (props) => {
       const exemptGames = ["emerald", "diamond", "pearl", "platinum", "heartgold", "soulsilver"/*, "black", "black2", "white", "white2"*/];
       if(!(exemptGames.includes(props.game))){ //exempt games can have intimidate and repel at the same time
         repelInput.disabled = props.intimidateActive;
+        if(props.intimidateActive){
+          setRepelLevel("");
+        }
       } else {
         repelInput.disabled = false;
       }
@@ -1414,8 +1390,8 @@ const AbilitySection = (props) => {
   const [abilityHTML, setAbilityHTML] = useState("");
   const [leadLevel, setLeadLevel] = useState();
 
-  const typeModAbility = (type, rate) => {
-    const tempArray = JSON.parse(JSON.stringify(props.encounters));
+  const typeModAbility = (type, rate, arr) => {
+    const tempArray = JSON.parse(JSON.stringify(arr));
     const foundType = [];
 
     tempArray.forEach((e) => {
@@ -1444,10 +1420,10 @@ const AbilitySection = (props) => {
     return tempArray;
   };
 
-  const intimidateAbility = (levelInt) => {
+  const intimidateAbility = (levelInt, arr) => {
     const tempArray = [];
     
-    props.encounters.forEach((e) => {
+    arr.forEach((e) => {
       
       const minLevel = Number(e.minLevel);
       const maxLevel = Number(e.maxLevel);
@@ -1469,9 +1445,9 @@ const AbilitySection = (props) => {
     return tempArray;
   };
 
-  const hustleAbility = () => {
-    const tempArray = JSON.parse(JSON.stringify(props.encounters));
-    if (!props.encounters[1].maxLevel){ //hustle affects encounters differently if there is a level spread in a slot (by species)
+  const hustleAbility = (arr) => {
+    const tempArray = JSON.parse(JSON.stringify(arr));
+    if (!tempArray[0].maxLevel){ //hustle affects encounters differently if there is a level spread in a slot (by species)
       const tempSpecies = [];
       const tempRates = [];
       const index = [];
@@ -1541,8 +1517,8 @@ const AbilitySection = (props) => {
     }
   }
 
-  const cuteCharmAbility = (gender) => {
-    const tempArray = JSON.parse(JSON.stringify(props.encounters));
+  const cuteCharmAbility = (gender, arr) => {
+    const tempArray = JSON.parse(JSON.stringify(arr));
     tempArray.forEach(e => {
       if(!e.genderBias){ //gender hasn't been set to default by swarms
         //set the gender bias caused by cute charm
@@ -1566,37 +1542,60 @@ const AbilitySection = (props) => {
       if (props.game !== "sword" && props.game !== "shield"){
         switch (dropdown.value){
           case "static":
-            props.setEncounters(typeModAbility("electric", 0.5));
+            props.setEncounters(typeModAbility("electric", 0.5, props.encounters));
+            if (props.hordeVariable){
+              props.setHordes(typeModAbility("electric", 0.5, props.hordes));
+            }
             break;
           case "magnet pull":
-            props.setEncounters(typeModAbility("steel", 0.5));
+            props.setEncounters(typeModAbility("steel", 0.5, props.encounters));if (props.hordeVariable){
+              props.setHordes(typeModAbility("steel", 0.5, props.hordes));
+            }
             break;
           case "keen eye":
           case "intimidate":
             if (!props.radarActive){
               leadLevelInput.disabled = false;
               leadLevelSection.style.display = "flex";
-              props.setEncounters(intimidateAbility(leadLevel));
+              props.setEncounters(intimidateAbility(leadLevel, props.encounters));
+              if (props.hordeVariable){
+                props.setHordes(intimidateAbility(leadLevel, props.hordes));
+              }
               props.setIntimidateActive(true);
             } else {
               leadLevelInput.value = "";
               props.setEncounters(props.encounters);
+              if (props.hordeVariable){
+                props.setHordes(props.hordes);
+              }
             }
             break;
           case "hustle":
           case "pressure":
           case "vital spirit":
-            props.setEncounters(hustleAbility());
+            props.setEncounters(hustleAbility(props.encounters));
+            if (props.hordeVariable){
+              props.setHordes(hustleAbility(props.hordes));
+            }
             break;
           case "cute charm":
             leadGenderSection.style.display = "block";
             if (document.getElementById("maleGenderRadio").checked){ //male checked
-              props.setEncounters(cuteCharmAbility("male"));
+              props.setEncounters(cuteCharmAbility("male", props.encounters));
+              if (props.hordeVariable){
+                props.setHordes(cuteCharmAbility("male", props.hordes));
+              }
             } else if (document.getElementById("femaleGenderRadio").checked){ //female checked
-              props.setEncounters(cuteCharmAbility("female"));
+              props.setEncounters(cuteCharmAbility("female", props.encounters));
+              if (props.hordeVariable){
+                props.setHordes(cuteCharmAbility("female", props.hordes));
+              }
             } else { //neither checked
               document.getElementById("maleGenderRadio").checked = true;
-              props.setEncounters(cuteCharmAbility("male"));
+              props.setEncounters(cuteCharmAbility("male", props.encounters));
+              if (props.hordeVariable){
+                props.setHordes(cuteCharmAbility("male", props.hordes));
+              }
             }
             break;
           default:
@@ -1605,6 +1604,7 @@ const AbilitySection = (props) => {
       }
     } else {
       props.setEncounters(props.encounters);
+      props.setHordes(props.hordes);
     }
   };
 
@@ -1616,7 +1616,10 @@ const AbilitySection = (props) => {
       holdLeadLevel = "";
     }
     setLeadLevel(holdLeadLevel);
-    props.setEncounters(intimidateAbility(holdLeadLevel));
+    props.setEncounters(intimidateAbility(holdLeadLevel, props.encounters));
+    if (props.hordeVariable){
+      props.setHordes(intimidateAbility(holdLeadLevel, props.hordes));
+    }
   };
 
   const handleGenderChange = () => {
@@ -1624,7 +1627,10 @@ const AbilitySection = (props) => {
     if (document.getElementById("femaleGenderRadio").checked){
       gender = "female";
     }
-    props.setEncounters(cuteCharmAbility(gender));
+    props.setEncounters(cuteCharmAbility(gender, props.encounters));
+    if (props.hordeVariable){
+      props.setHordes(cuteCharmAbility(gender, props.hordes));
+    }
   };
 
   useEffect(() => {
@@ -1632,6 +1638,7 @@ const AbilitySection = (props) => {
       handleChange();
     } else {
       props.setEncounters(props.encounters);
+      props.setHordes(props.hordes);
     }
     props.setIntimidateActive(false);
     setLeadLevel();
@@ -1773,10 +1780,17 @@ const App = () => {
   const [bwSwarmEncounters, setBwSwarmEncounters] = useState([]); //encounters modified by swarms in BWB2W2
   const [nPokemonEncounters, setNPokemonEncounters] = useState([]); //encounters modified by N's pokemon in B2W2
   const [whiteForestEncounters, setWhiteForestEncounters] = useState([]); //encounters modified by White Forest
+  const [hordeEncountersBeforeAbilities, setHordeEncountersBeforeAbilities] = useState([]); //encounters with hordes in encounter slots
+  //the above is only used temporarily for displaying
+  //hordes have their abilities calculated seperately
   const [abilityEncounters, setAbilityEncounters] = useState([]);//encounters modified by abilities such as static
+  const [hordeEncounters, setHordeEncounters] = useState([]); //encounters modified by hordes in XYORAS after abilities
   const [repelEncounters, setRepelEncounters] = useState([]); //encounters modified by repels
   //variables that come with the encounters such as if a repel can be used
   const [variables, setVariables] = useState({});
+  //hordes that come with the encounters
+  const [hordes, setHordes] = useState({});
+  const [hordesAfterAbilities, setHordesAfterAbilities] = useState({});
   //variables created by user inputs that have to be passed between componenents
   const [todIndex, setTodIndex] = useState(1);
   const [intimidateActive, setIntimidateActive] = useState(false);
@@ -1866,6 +1880,44 @@ const App = () => {
     handleProcessedImagesChange();
   }, [repelEncounters, useModels, useShiny]);
 
+  //combine hordes into encounter slots
+  //temporary for display purposes
+  //abilities are calculated seperately and then the two are combined again later
+  useEffect(() => {
+    const incomingEncounters = whiteForestEncounters;
+    if (variables.hordes){
+      const tempArray = JSON.parse(JSON.stringify(incomingEncounters));
+      const tempHordesArr = JSON.parse(JSON.stringify(hordes));
+      tempArray.forEach(e => {
+        e.rate *= 0.95;
+      });
+      tempHordesArr.forEach(e => {
+        e.rate *= 0.05;
+      });
+      setHordeEncountersBeforeAbilities(tempArray.concat(tempHordesArr))
+    } else {
+      setHordeEncountersBeforeAbilities(whiteForestEncounters);
+    }
+  }, [whiteForestEncounters]);
+
+  //combine hordes into encounters after abilities
+  useEffect(() => {
+    const incomingEncounters = abilityEncounters;
+    if(variables.hordes){
+      const tempArray = JSON.parse(JSON.stringify(incomingEncounters));
+      const tempHordesArr = JSON.parse(JSON.stringify(hordesAfterAbilities));
+      tempArray.forEach(e => {
+        e.rate *= 0.95;
+      });
+      tempHordesArr.forEach(e => {
+        e.rate *= 0.05;
+      });
+      setHordeEncounters(tempArray.concat(tempHordesArr))
+    } else {
+      setHordeEncounters(incomingEncounters);
+    }
+  }, [abilityEncounters]);
+
   //variables for output HTML
   const [condensedArr, setCondensedArr] = useState([]);
   const [encounterRate, setEncounterRate] = useState();
@@ -1952,10 +2004,11 @@ const App = () => {
 
   //which game has been selected has changed
   const handleGameChange = (event) => {
-    fetchEncounterData(event.target.value);
-    setGame(event.target.value);
+    const eventValue = event.target.value;
+    fetchEncounterData(eventValue);
+    setGame(eventValue);
     clearEncounters();
-    switch (event.target.value){
+    switch (eventValue){
       case "red":
       case "blue - INT":
       case "blue - JPN":
@@ -2015,6 +2068,10 @@ const App = () => {
         setSpriteExtension("gen5");
         setGenderSpread(5);  
         break;
+      case "x":
+        setSpriteExtension("gen6");
+        setGenderSpread(6);
+        break;
       default:
         setSpriteExtension("gen6");
     }
@@ -2047,11 +2104,31 @@ const App = () => {
     clearEncounters();
     document.getElementById("encounterSlots").style.display = "flex";
     document.getElementById("processedEncounters").style.display = "flex";
-    setVariables(Object.keys(encounterData[selectedArea][event.target.value])[tempArray.length - 1] === "variables" ? tempArray.pop() : {});
+    const tempVariables = Object.keys(encounterData[selectedArea][event.target.value])[tempArray.length - 1] === "variables" ? tempArray.pop() : {};
+    setVariables(tempVariables);
+
+    //if encounters includes hordes, set the hordes to incorporate later
+    if (tempVariables.hordes){
+      const tempHordes = Object.values(encounterData[selectedArea]["Hordes"]);
+      tempHordes.pop(); //remove horde variables as they are not needed for regular encounters
+      tempHordes.forEach(e => {
+        const speciesNumbers = e.number.split("-");
+        e.number = speciesNumbers[0];
+        e.number2 = speciesNumbers[1];
+        e.number3 = speciesNumbers[2];
+        e.number4 = speciesNumbers[3];
+        e.number5 = speciesNumbers[4];
+      });
+      setHordes(tempHordes);
+    } else { //clear hordes
+      setHordes();
+    }
+
     setEncounters(tempArray);
     const methodsDiv = document.getElementById("methodsDiv");
     const methods = document.getElementById("methods");
 
+    //set class for picture on dropdown arrow
     if (methods.value.includes("Walk")){
       methodsDiv.classList = ("select select--walk");
     } else if(methods.value.includes("Rod")) {
@@ -2084,6 +2161,8 @@ const App = () => {
         break;
       case "dark":
         colorsArr = ["#0A0F0D", "#F2F4F3", "#F2F4F3", "#0A0F0D", "#0091AD", "#A31621", "#EA3788"];
+        break;
+      default:
         break;
     }
 
@@ -2169,6 +2248,9 @@ const App = () => {
                   <option value="black2">Black 2</option>
                   <option value="white2">White 2</option>
                 </optgroup>
+                <optgroup label="Generation 6">
+                  <option value="x">X</option>
+                </optgroup>
               </select>
               <span class="focus"></span>
             </div>
@@ -2224,7 +2306,37 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div id="encounterSlots" dangerouslySetInnerHTML={encounterHTMLGenerator(whiteForestEncounters, spriteExtension, pokemonData, useShiny, useModels)} style={{display: "none"}}></div>
+      <div id="encounterSlots">
+        {
+          hordeEncountersBeforeAbilities.map((e) => {
+            let npokemon = false;
+            if (e.number.includes("n") && e.number.length === 4){
+              npokemon = true;
+            }
+            
+            const pokemon = findName(e.number, pokemonData);
+
+            return(
+              <div class="encounterSlot">
+                <p>
+                  <span class="pokemonName fullLength"><b>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)+ (e.number2 ? " Horde" : "")}</b></span>
+                </p>
+                <img 
+                  class={pokemon.type1 + (npokemon ? " nPokemon" : "") + (e.number2 ? " hordePokemon" : "")} 
+                  src={'./resources/' + (useModels === "sprites" ? spriteExtension : useModels) + '/' + 
+                    (((spriteExtension.includes("gen1") && useModels === "sprites") || !useShiny || npokemon) ?
+                    "" : "shiny/") + (npokemon ? e.number.slice(0,3) : e.number) + '.png'
+                  } 
+                  alt={"Pokemon sprite for " + pokemon.name}
+                  style={{backgroundImage: e.number2 ? `url(./resources/icons/${e.number2}.png), url(./resources/icons/${e.number3}.png), url(./resources/icons/${e.number4}.png), url(./resources/icons/${e.number5}.png)` : ""}}
+                />
+              <span>Rate: </span><span class="secondaryInfo">{Math.round(e.rate * 10000)/100}%</span>
+              <span>Level: </span><span class="secondaryInfo">{e.minLevel}{('maxLevel' in e) ? "-" + e.maxLevel : ""}</span>
+            </div>
+            )
+          })
+        }
+      </div>
       <div class="modChunkHolder">
         <TimeOfDaySection tod={variables.tod} setTodIndex={setTodIndex} encounters={encounters} setEncounters={setTodEncounters}/>
         <GscSwarmSection gscSwarm={variables.gscSwarm} todIndex={todIndex} encounters={todEncounters} setEncounters={setGscSwarmEncounters}/>
@@ -2242,12 +2354,15 @@ const App = () => {
         <BwSwarmSection bwSwarm={variables.bwSwarm} encounters={luckyEncounters} setEncounters={setBwSwarmEncounters}/>
         <NPokemonSection nPokemon={variables.nPokemon} encounters={bwSwarmEncounters} setEncounters={setNPokemonEncounters} pokemonArr={pokemonData}/>
         <WhiteForestSection whiteForeset={variables.whiteforest} encounters={nPokemonEncounters} setEncounters={setWhiteForestEncounters}/>
-        <AbilitySection ability={variables.ability} encounters={whiteForestEncounters} setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive} game={game}/>
-        <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={abilityEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive} game={game}/>
+        <AbilitySection ability={variables.ability} encounters={whiteForestEncounters} 
+          setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive} 
+          game={game} hordes={hordes} setHordes={setHordesAfterAbilities} hordeVariable={variables.hordes}
+        />
+        <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={hordeEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive} game={game}/>
       </div>
       <div id="processedEncounters">
         {
-          condensedArr.map((e, i) => {
+          condensedArr.map((e) => {
             const pokemon = findName(e.number, pokemonData);
             //calculate gender split
             let male = 0;
@@ -2278,7 +2393,7 @@ const App = () => {
             return (
               <div class={"encounterSlot " + (Math.floor(Math.random() * 1000) === 0 ? "ellipse" : "")}>
                 <p>
-                  <span class="pokemonName"><b>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</b></span>
+                  <span class="pokemonName"><b>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1) + (e.number2 ? " Horde" : "")}</b></span>
                   <span class="pokemonRate"><b>{Math.round(finalRate)/100}%</b></span>
                 </p>
                 <img 
@@ -2287,10 +2402,12 @@ const App = () => {
                       ${pokemon.type1}
                       ${Math.floor(Math.random() * 100) === 0 ? "ellipse" : ""} 
                       ${npokemon ? "nPokemon" : ""}
+                      ${e.number2 ? "hordePokemon" : ""}
                   `}
                   src={`./resources/${useModels === "sprites" ? spriteExtension : useModels}/${(((spriteExtension.includes("gen1") && useModels === "sprites") || !useShiny || npokemon) ? "" : "shiny/")}${npokemon ? e.number.slice(0,3) : e.number}.png`}
                   alt={"Pokemon sprite for " + pokemon.name}
                   onClick={((spriteExtension.includes("gen1") && useModels === "sprites") || npokemon) ? null : shinyFlip}
+                  style={{backgroundImage: e.number2 ? `url(./resources/icons/${e.number2}.png), url(./resources/icons/${e.number3}.png), url(./resources/icons/${e.number4}.png), url(./resources/icons/${e.number5}.png)` : ""}}
                 />
                 {(male !== 0) ? <div><span class="genderHeader">Male: </span><span class="genderPercent">{Math.round(male * finalRate)/100}% ({Math.round(male * 10000)/100}%)</span></div> : ""}
                 {(female !== 0) ? <div><span class="genderHeader">Female: </span><span class="genderPercent">{Math.round(female * finalRate)/100}% ({Math.round(female * 10000)/100}%)</span></div> : ""}

@@ -1,0 +1,6480 @@
+{
+    "Route 2": {
+      "Walk": {
+        "0": {
+          "number": "659",
+          "minLevel": "2",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "659",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "263",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "661",
+          "minLevel": "2",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "661",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "16",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "664",
+          "minLevel": "2",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "664",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "13",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "263",
+          "minLevel": "4",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "16",
+          "minLevel": "4",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "13",
+          "minLevel": "4",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 3": {
+      "Walk": {
+        "0": {
+          "number": "659",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "659",
+          "minLevel": "4",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "399",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "399",
+          "minLevel": "4",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "661",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "661",
+          "minLevel": "5",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "16",
+          "minLevel": "4",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "412",
+          "minLevel": "5",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "298",
+          "minLevel": "5",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "206",
+          "minLevel": "5",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "25",
+          "minLevel": "4",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "25",
+          "minLevel": "5",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "284",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "183",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "284",
+          "minLevel": "26",
+          "maxLevel": "26",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "183",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "284",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "129",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "129",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "129",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "118",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "341",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "118",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "130",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "119",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "342",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 4": {
+      "Red Flowers": {
+        "0": {
+          "number": "669-red",
+          "minLevel": "6",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "669-red",
+          "minLevel": "7",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "669-red",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "165",
+          "minLevel": "6",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "165",
+          "minLevel": "7",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "165",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "406",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "415",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "300",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "280",
+          "minLevel": "8",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "669-orange",
+          "minLevel": "7",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "669-white",
+          "minLevel": "8",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Yellow Flowers": {
+        "0": {
+          "number": "669-yellow",
+          "minLevel": "6",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "669-yellow",
+          "minLevel": "7",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "669-yellow",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "415",
+          "minLevel": "6",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "415",
+          "minLevel": "7",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "415",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "406",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "165",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "300",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "280",
+          "minLevel": "8",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "669-orange",
+          "minLevel": "7",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "669-white",
+          "minLevel": "8",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 5": {
+      "Walk": {
+        "0": {
+          "number": "659",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "659",
+          "minLevel": "9",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "659",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "676",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "676",
+          "minLevel": "9",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "674",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "672",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "84",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "316",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "63",
+          "minLevel": "10",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "311",
+          "minLevel": "9",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "311",
+          "minLevel": "10",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Purple Flowers": {
+        "0": {
+          "number": "672",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "672",
+          "minLevel": "9",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "672",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "674",
+          "minLevel": "8",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "674",
+          "minLevel": "9",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "676",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "659",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "84",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "316",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "63",
+          "minLevel": "10",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "311",
+          "minLevel": "9",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "311",
+          "minLevel": "10",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "316-316-316-316-316",
+          "minLevel": "5",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "559-559-559-559-559",
+          "minLevel": "5",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "311-312-311-311-311",
+          "minLevel": "6",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 6": {
+      "Tall Grass": {
+        "0": {
+          "number": "43",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "43",
+          "minLevel": "11",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "43",
+          "minLevel": "12",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "161",
+          "minLevel": "10",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "161",
+          "minLevel": "11",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "290",
+          "minLevel": "12",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "677",
+          "minLevel": "11",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "677",
+          "minLevel": "12",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "679",
+          "minLevel": "11",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "679",
+          "minLevel": "12",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "352",
+          "minLevel": "11",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "352",
+          "minLevel": "12",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 7": {
+      "Walk": {
+        "0": {
+          "number": "453",
+          "minLevel": "12",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "453",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "453",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "313",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "314",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "684",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "235",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "580",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "315",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "453",
+          "minLevel": "14",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "669-orange",
+          "minLevel": "13",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "669-white",
+          "minLevel": "14",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Purple Flowers": {
+        "0": {
+          "number": "669-blue",
+          "minLevel": "12",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "669-blue",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "669-blue",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "313",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "314",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "684",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "235",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "580",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "315",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "453",
+          "minLevel": "14",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "669-orange",
+          "minLevel": "13",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "669-white",
+          "minLevel": "14",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Yellow Flowers": {
+        "0": {
+          "number": "669-yellow",
+          "minLevel": "12",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "669-yellow",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "669-yellow",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "313",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "314",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "684",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "235",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "580",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "315",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "453",
+          "minLevel": "14",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "669-orange",
+          "minLevel": "13",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "669-white",
+          "minLevel": "14",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "187-187-187-187-187",
+          "minLevel": "7",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "54-54-54-54-54",
+          "minLevel": "7",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "315-315-315-315-315",
+          "minLevel": "8",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 8": {
+      "Walk": {
+        "0": {
+          "number": "425",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "425",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "425",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "325",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "325",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "359",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "619",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "686",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "335",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "686",
+          "minLevel": "15",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "371",
+          "minLevel": "14",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "371",
+          "minLevel": "15",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Yellow Flowers": {
+        "0": {
+          "number": "619",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "619",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "619",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "359",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "359",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "325",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "425",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "686",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "335",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "686",
+          "minLevel": "15",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "371",
+          "minLevel": "14",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "371",
+          "minLevel": "15",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "278-278-278-278-278",
+          "minLevel": "7",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "335-335-335-336-335",
+          "minLevel": "8",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "276-276-276-276-276",
+          "minLevel": "7",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Rock Smash": {
+        "0": {
+          "number": "557",
+          "minLevel": "18",
+          "maxLevel": "18",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "688",
+          "minLevel": "18",
+          "maxLevel": "18",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "557",
+          "minLevel": "19",
+          "maxLevel": "19",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "688",
+          "minLevel": "20",
+          "maxLevel": "20",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "557",
+          "minLevel": "20",
+          "maxLevel": "20",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "72",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "320",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "72",
+          "minLevel": "26",
+          "maxLevel": "26",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "72",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "320",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "692",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "120",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "692",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "211",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "693",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "121",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 9": {
+      "Terrain": {
+        "0": {
+          "number": "551",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "551",
+          "minLevel": "16",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "551",
+          "minLevel": "16",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "551",
+          "minLevel": "17",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "449",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "449",
+          "minLevel": "16",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "449",
+          "minLevel": "16",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "449",
+          "minLevel": "17",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "694",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "694",
+          "minLevel": "16",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "694",
+          "minLevel": "16",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "694",
+          "minLevel": "17",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 10": {
+      "Walk": {
+        "0": {
+          "number": "622",
+          "minLevel": "19",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "622",
+          "minLevel": "20",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "622",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "561",
+          "minLevel": "19",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "561",
+          "minLevel": "20",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "701",
+          "minLevel": "19",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "701",
+          "minLevel": "20",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "209",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "228",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "133",
+          "minLevel": "21",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "587",
+          "minLevel": "19",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "587",
+          "minLevel": "20",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Yellow Flowers": {
+        "0": {
+          "number": "209",
+          "minLevel": "19",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "209",
+          "minLevel": "20",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "209",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "228",
+          "minLevel": "19",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "228",
+          "minLevel": "20",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "133",
+          "minLevel": "19",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "133",
+          "minLevel": "20",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "622",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "561",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "701",
+          "minLevel": "21",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "587",
+          "minLevel": "19",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "587",
+          "minLevel": "20",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "299-299-299-299-299",
+          "minLevel": "10",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "193-193-193-193-193",
+          "minLevel": "10",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "228-228-228-228-228",
+          "minLevel": "11",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 11": {
+      "Walk": {
+        "0": {
+          "number": "297",
+          "minLevel": "22",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "297",
+          "minLevel": "23",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "539",
+          "minLevel": "22",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "539",
+          "minLevel": "23",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "397",
+          "minLevel": "22",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "397",
+          "minLevel": "23",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "434",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "433",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "33",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "30",
+          "minLevel": "21",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "702",
+          "minLevel": "21",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "702",
+          "minLevel": "22",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "29-32-32-32-32",
+          "minLevel": "11",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "434-434-434-434-434",
+          "minLevel": "11",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "396-396-396-396-396",
+          "minLevel": "12",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 12": {
+      "Walk": {
+        "0": {
+          "number": "79",
+          "minLevel": "23",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "79",
+          "minLevel": "24",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "79",
+          "minLevel": "25",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "441",
+          "minLevel": "23",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "441",
+          "minLevel": "24",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "441",
+          "minLevel": "25",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "241",
+          "minLevel": "25",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "128",
+          "minLevel": "25",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "102",
+          "minLevel": "24",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "127",
+          "minLevel": "25",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "417",
+          "minLevel": "23",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "417",
+          "minLevel": "24",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Yellow Flowers": {
+        "0": {
+          "number": "241",
+          "minLevel": "25",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "241",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "241",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "128",
+          "minLevel": "25",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "128",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "128",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "79",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "441",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "102",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "127",
+          "minLevel": "27",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "417",
+          "minLevel": "25",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "417",
+          "minLevel": "26",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "278-278-278-278-278",
+          "minLevel": "13",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "179-179-179-179-179",
+          "minLevel": "13",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "128-128-128-241-128",
+          "minLevel": "14",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Rock Smash": {
+        "0": {
+          "number": "557",
+          "minLevel": "23",
+          "maxLevel": "23",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "688",
+          "minLevel": "23",
+          "maxLevel": "23",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "557",
+          "minLevel": "24",
+          "maxLevel": "24",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "688",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "557",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "72",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "72",
+          "minLevel": "26",
+          "maxLevel": "26",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "458",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "72",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "131",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "223",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "366",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "223",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "222",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "224",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "367",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 13": {
+      "Dirt Cloud": {
+        "0": {
+          "number": "51",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "51",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "51",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "51",
+          "minLevel": "28",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "328",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "328",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "328",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "328",
+          "minLevel": "28",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "443",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "443",
+          "minLevel": "27",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "443",
+          "minLevel": "27",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "443",
+          "minLevel": "28",
+          "rate": "0.01"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Rock Smash": {
+        "0": {
+          "number": "75",
+          "minLevel": "26",
+          "maxLevel": "26",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "218",
+          "minLevel": "26",
+          "maxLevel": "26",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "75",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "218",
+          "minLevel": "28",
+          "maxLevel": "28",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "75",
+          "minLevel": "28",
+          "maxLevel": "28",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 14": {
+      "Walk": {
+        "0": {
+          "number": "451",
+          "minLevel": "30",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "451",
+          "minLevel": "31",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "70",
+          "minLevel": "31",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "70",
+          "minLevel": "32",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "195",
+          "minLevel": "30",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "704",
+          "minLevel": "30",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "588",
+          "minLevel": "30",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "616",
+          "minLevel": "30",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "455",
+          "minLevel": "30",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "93",
+          "minLevel": "31",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "455",
+          "minLevel": "31",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "455",
+          "minLevel": "32",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "69-69-69-69-69",
+          "minLevel": "16",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "451-451-451-451-451",
+          "minLevel": "16",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "23-23-23-23-23",
+          "minLevel": "17",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Swamp Water": {
+        "0": {
+          "number": "195",
+          "minLevel": "30",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "195",
+          "minLevel": "31",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "195",
+          "minLevel": "32",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "704",
+          "minLevel": "31",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "704",
+          "minLevel": "32",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "618",
+          "minLevel": "31",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "618",
+          "minLevel": "32",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "588",
+          "minLevel": "30",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "616",
+          "minLevel": "30",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "93",
+          "minLevel": "31",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "455",
+          "minLevel": "31",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "455",
+          "minLevel": "32",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "195",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "618",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "704",
+          "minLevel": "31",
+          "maxLevel": "31",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "618",
+          "minLevel": "31",
+          "maxLevel": "31",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "618",
+          "minLevel": "32",
+          "maxLevel": "32",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "339",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "339",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "340",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 15": {
+      "Walk": {
+        "0": {
+          "number": "262",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "262",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "262",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "451",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "451",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "624",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "505",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "590",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "590",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "707",
+          "minLevel": "34",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "707",
+          "minLevel": "35",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "707",
+          "minLevel": "36",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Red Flowers": {
+        "0": {
+          "number": "505",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "505",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "505",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "624",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "624",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "451",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "262",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "590",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "590",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "707",
+          "minLevel": "34",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "707",
+          "minLevel": "35",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "707",
+          "minLevel": "36",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "590-590-590-590-590",
+          "minLevel": "18",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "198-198-198-198-198",
+          "minLevel": "18",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "707-707-707-707-707",
+          "minLevel": "19",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "271",
+          "minLevel": "34",
+          "maxLevel": "34",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "419",
+          "minLevel": "34",
+          "maxLevel": "34",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "271",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "419",
+          "minLevel": "36",
+          "maxLevel": "36",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "271",
+          "minLevel": "36",
+          "maxLevel": "36",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "NaN",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "NaN",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "550",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 16": {
+      "Yellow Flowers": {
+        "0": {
+          "number": "70",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "70",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "451",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "451",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "419",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "419",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "708",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "590",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "590",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "707",
+          "minLevel": "34",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "707",
+          "minLevel": "35",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "707",
+          "minLevel": "36",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "590-590-590-590-590",
+          "minLevel": "18",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "198-198-198-198-198",
+          "minLevel": "18",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "707-707-707-707-707",
+          "minLevel": "19",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Tall Grass": {
+        "0": {
+          "number": "710-average",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "710-average",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "710-average",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "710",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "710",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "710-large",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "708",
+          "minLevel": "35",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "590",
+          "minLevel": "34",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "590",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "707",
+          "minLevel": "34",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "707",
+          "minLevel": "35",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "710-super",
+          "minLevel": "36",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "271",
+          "minLevel": "34",
+          "maxLevel": "34",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "419",
+          "minLevel": "34",
+          "maxLevel": "34",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "271",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "419",
+          "minLevel": "36",
+          "maxLevel": "36",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "271",
+          "minLevel": "36",
+          "maxLevel": "36",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "NaN",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "NaN",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "550",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 17": {
+      "Snow": {
+        "0": {
+          "number": "459",
+          "minLevel": "38",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "459",
+          "minLevel": "39",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "459",
+          "minLevel": "39",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "215",
+          "minLevel": "39",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "225",
+          "minLevel": "38",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "225",
+          "minLevel": "39",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "225",
+          "minLevel": "39",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "225",
+          "minLevel": "40",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "215",
+          "minLevel": "38",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "215",
+          "minLevel": "40",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "215",
+          "minLevel": "40",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "460",
+          "minLevel": "40",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 18": {
+      "Walk": {
+        "0": {
+          "number": "533",
+          "minLevel": "44",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "533",
+          "minLevel": "45",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "533",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "324",
+          "minLevel": "44",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "324",
+          "minLevel": "45",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "28",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "305",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "632",
+          "minLevel": "44",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "75",
+          "minLevel": "45",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "75",
+          "minLevel": "46",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "631",
+          "minLevel": "45",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "631",
+          "minLevel": "46",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Red Flowers": {
+        "0": {
+          "number": "305",
+          "minLevel": "44",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "305",
+          "minLevel": "45",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "305",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "28",
+          "minLevel": "44",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "28",
+          "minLevel": "45",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "324",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "533",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "632",
+          "minLevel": "44",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "75",
+          "minLevel": "45",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "75",
+          "minLevel": "46",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "631",
+          "minLevel": "45",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "631",
+          "minLevel": "46",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "74-74-74-74-74",
+          "minLevel": "23",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "632-632-632-632-632",
+          "minLevel": "23",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "632-631-632-632-632",
+          "minLevel": "23",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Rock Smash": {
+        "0": {
+          "number": "75",
+          "minLevel": "44",
+          "maxLevel": "44",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "75",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "75",
+          "minLevel": "46",
+          "maxLevel": "46",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "213",
+          "minLevel": "44",
+          "maxLevel": "44",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "213",
+          "minLevel": "46",
+          "maxLevel": "46",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 19": {
+      "Purple Flowers": {
+        "0": {
+          "number": "452",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "452",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "452",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "70",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "70",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "705",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "195",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "588",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "616",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "93",
+          "minLevel": "47",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "455",
+          "minLevel": "46",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "455",
+          "minLevel": "48",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Yellow Flowers": {
+        "0": {
+          "number": "195",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "195",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "195",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "705",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "705",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "70",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "452",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "588",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "616",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "93",
+          "minLevel": "47",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "455",
+          "minLevel": "46",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "455",
+          "minLevel": "48",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "70-70-70-70-70",
+          "minLevel": "24",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "207-207-207-207-207",
+          "minLevel": "24",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "24-24-24-24-24",
+          "minLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Swamp Water": {
+        "0": {
+          "number": "195",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "195",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "195",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "705",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "705",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "618",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "618",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "588",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "616",
+          "minLevel": "47",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "93",
+          "minLevel": "47",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "455",
+          "minLevel": "46",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "455",
+          "minLevel": "48",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "195",
+          "minLevel": "46",
+          "maxLevel": "46",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "618",
+          "minLevel": "46",
+          "maxLevel": "46",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "705",
+          "minLevel": "47",
+          "maxLevel": "47",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "618",
+          "minLevel": "48",
+          "maxLevel": "48",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "705",
+          "minLevel": "48",
+          "maxLevel": "48",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "339",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "339",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "340",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "186",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 20": {
+      "Walk": {
+        "0": {
+          "number": "164",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "164",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "164",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "39",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "39",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "709",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "575",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "591",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "591",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "591",
+          "minLevel": "50",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "571",
+          "minLevel": "48",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "571",
+          "minLevel": "50",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Red Flowers": {
+        "0": {
+          "number": "575",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "575",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "575",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "709",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "709",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "39",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "164",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "591",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "591",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "591",
+          "minLevel": "50",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "571",
+          "minLevel": "48",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "571",
+          "minLevel": "50",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "590-590-590-590-590",
+          "minLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "709-709-709-709-709",
+          "minLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "709-185-709-709-709",
+          "minLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 21": {
+      "Red Flowers": {
+        "0": {
+          "number": "217",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "217",
+          "minLevel": "51",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "217",
+          "minLevel": "52",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "334",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "334",
+          "minLevel": "51",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "217",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "327",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "327",
+          "minLevel": "52",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "419",
+          "minLevel": "52",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "123",
+          "minLevel": "50",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "123",
+          "minLevel": "51",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "123",
+          "minLevel": "52",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Purple Flowers": {
+        "0": {
+          "number": "419",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "419",
+          "minLevel": "51",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "419",
+          "minLevel": "52",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "334",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "334",
+          "minLevel": "51",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "419",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "327",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "327",
+          "minLevel": "52",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "217",
+          "minLevel": "52",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "123",
+          "minLevel": "50",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "123",
+          "minLevel": "51",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "123",
+          "minLevel": "52",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "327-327-327-327-327",
+          "minLevel": "26",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "333-333-333-333-333",
+          "minLevel": "26",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "123-123-123-123-123",
+          "minLevel": "27",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "271",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "419",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "271",
+          "minLevel": "51",
+          "maxLevel": "51",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "419",
+          "minLevel": "52",
+          "maxLevel": "52",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "271",
+          "minLevel": "52",
+          "maxLevel": "52",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "550",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "147",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "550",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "148",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Route 22": {
+      "Walk": {
+        "0": {
+          "number": "659",
+          "minLevel": "5",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "659",
+          "minLevel": "6",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "667",
+          "minLevel": "5",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "667",
+          "minLevel": "6",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "54",
+          "minLevel": "6",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "399",
+          "minLevel": "6",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "298",
+          "minLevel": "6",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "298",
+          "minLevel": "7",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "83",
+          "minLevel": "7",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "206",
+          "minLevel": "7",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "447",
+          "minLevel": "6",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "447",
+          "minLevel": "7",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Yellow Flowers": {
+        "0": {
+          "number": "400",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "400",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "54",
+          "minLevel": "25",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "54",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "667",
+          "minLevel": "25",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "660",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "184",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "184",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "83",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "206",
+          "minLevel": "26",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "447",
+          "minLevel": "25",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "447",
+          "minLevel": "26",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "54",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "54",
+          "minLevel": "26",
+          "maxLevel": "26",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "54",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "184",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "184",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "129",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "129",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "129",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "118",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "318",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "118",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "130",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "119",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "319",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Ambrette Town": {
+      "Rock Smash": {
+        "0": {
+          "number": "557",
+          "minLevel": "18",
+          "maxLevel": "18",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "688",
+          "minLevel": "18",
+          "maxLevel": "18",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "557",
+          "minLevel": "19",
+          "maxLevel": "19",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "688",
+          "minLevel": "20",
+          "maxLevel": "20",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "557",
+          "minLevel": "20",
+          "maxLevel": "20",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "72",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "320",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "72",
+          "minLevel": "26",
+          "maxLevel": "26",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "72",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "320",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "692",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "116",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "692",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "369",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "693",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "117",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Azure Bay": {
+      "Walk": {
+        "0": {
+          "number": "79",
+          "minLevel": "25",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "79",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "79",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "441",
+          "minLevel": "25",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "441",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "441",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "79",
+          "minLevel": "27",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "686",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "102",
+          "minLevel": "26",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "686",
+          "minLevel": "27",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "441",
+          "minLevel": "27",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "441",
+          "minLevel": "27",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "278-278-278-278-278",
+          "minLevel": "13",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "79-79-79-79-79",
+          "minLevel": "13",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "102-102-102-102-102",
+          "minLevel": "14",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Rock Smash": {
+        "0": {
+          "number": "557",
+          "minLevel": "23",
+          "maxLevel": "23",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "688",
+          "minLevel": "23",
+          "maxLevel": "23",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "557",
+          "minLevel": "24",
+          "maxLevel": "24",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "688",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "557",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "72",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "72",
+          "minLevel": "26",
+          "maxLevel": "26",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "458",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "72",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "131",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "223",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "170",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "223",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "594",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "224",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "171",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Connecting Cave": {
+      "Walk": {
+        "0": {
+          "number": "293",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "293",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "293",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "307",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "307",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "307",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "41",
+          "minLevel": "13",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "41",
+          "minLevel": "14",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "41",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "610",
+          "minLevel": "13",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "610",
+          "minLevel": "14",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "610",
+          "minLevel": "15",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "41-41-41-41-41",
+          "minLevel": "8",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "293-293-293-293-293",
+          "minLevel": "7",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "610-610-610-610-610",
+          "minLevel": "8",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Couriway Town": {
+      "Surf": {
+        "0": {
+          "number": "271",
+          "minLevel": "44",
+          "maxLevel": "44",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "419",
+          "minLevel": "44",
+          "maxLevel": "44",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "271",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "419",
+          "minLevel": "46",
+          "maxLevel": "46",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "271",
+          "minLevel": "46",
+          "maxLevel": "46",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "NaN",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "NaN",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "550",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Cyllage City": {
+      "Rock Smash": {
+        "0": {
+          "number": "557",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "95",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "557",
+          "minLevel": "17",
+          "maxLevel": "17",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "95",
+          "minLevel": "16",
+          "maxLevel": "16",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "95",
+          "minLevel": "17",
+          "maxLevel": "17",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "72",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "320",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "72",
+          "minLevel": "26",
+          "maxLevel": "26",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "72",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "320",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "692",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "116",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "692",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "369",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "693",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "117",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Friend Safari": {
+        "Walk": {
+            "variables": {
+                "friendsafari": "true"
+            }
+        }
+    },
+    "Frost Cavern": {
+      "Walk": {
+        "0": {
+          "number": "221",
+          "minLevel": "38",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "221",
+          "minLevel": "39",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "712",
+          "minLevel": "39",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "712",
+          "minLevel": "40",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "614",
+          "minLevel": "39",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "614",
+          "minLevel": "40",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "124",
+          "minLevel": "39",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "124",
+          "minLevel": "40",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "93",
+          "minLevel": "38",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "93",
+          "minLevel": "39",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "615",
+          "minLevel": "40",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "93",
+          "minLevel": "40",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "582-582-582-582-582",
+          "minLevel": "20",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "613-613-613-613-613",
+          "minLevel": "20",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "238-238-238-238-238",
+          "minLevel": "21",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "61",
+          "minLevel": "38",
+          "maxLevel": "38",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "419",
+          "minLevel": "38",
+          "maxLevel": "38",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "39",
+          "maxLevel": "39",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "419",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "61",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "20",
+          "maxLevel": "20",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "20",
+          "maxLevel": "20",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "20",
+          "maxLevel": "20",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "NaN",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "NaN",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "550",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Glittering Cave": {
+      "Walk": {
+        "0": {
+          "number": "66",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "66",
+          "minLevel": "16",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "66",
+          "minLevel": "17",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "111",
+          "minLevel": "17",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "95",
+          "minLevel": "17",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "104",
+          "minLevel": "15",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "104",
+          "minLevel": "16",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "338",
+          "minLevel": "17",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "337",
+          "minLevel": "17",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "115",
+          "minLevel": "17",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "303",
+          "minLevel": "15",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "303",
+          "minLevel": "16",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Rock Smash": {
+        "0": {
+          "number": "557",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "95",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "557",
+          "minLevel": "17",
+          "maxLevel": "17",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "95",
+          "minLevel": "16",
+          "maxLevel": "16",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "95",
+          "minLevel": "17",
+          "maxLevel": "17",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Laverre City": {
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "NaN",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "NaN",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "550",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Lost Hotel": {
+      "Walk": {
+        "0": {
+          "number": "82",
+          "minLevel": "37",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "82",
+          "minLevel": "38",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "624",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "624",
+          "minLevel": "37",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "607",
+          "minLevel": "37",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "607",
+          "minLevel": "38",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "101",
+          "minLevel": "37",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "101",
+          "minLevel": "38",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "707",
+          "minLevel": "36",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "707",
+          "minLevel": "37",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "707",
+          "minLevel": "38",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "707",
+          "minLevel": "38",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Parfum Palace": {
+      "Old Rod": {
+        "0": {
+          "number": "129",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "129",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "129",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "118",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "341",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "118",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "130",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "119",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "342",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Pokemon Village": {
+      "Purple Flowers": {
+        "0": {
+          "number": "164",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "164",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "164",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "39",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "39",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "132",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "575",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "591",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "591",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "571",
+          "minLevel": "48",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "571",
+          "minLevel": "49",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "571",
+          "minLevel": "50",
+          "rate": "0.01"
+        },
+        "variables": {
+          "hordes": "true",
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Yellow Flowers": {
+        "0": {
+          "number": "575",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "575",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "575",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "132",
+          "minLevel": "48",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "132",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "39",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "164",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "591",
+          "minLevel": "49",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "591",
+          "minLevel": "50",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "571",
+          "minLevel": "48",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "571",
+          "minLevel": "49",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "571",
+          "minLevel": "50",
+          "rate": "0.01"
+        },
+        "variables": {
+          "hordes": "true",
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "590-590-590-590-590",
+          "minLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60-60-60-60-60",
+          "minLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "271-271-271-271-271",
+          "minLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "271",
+          "minLevel": "48",
+          "maxLevel": "48",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "48",
+          "maxLevel": "48",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "271",
+          "minLevel": "49",
+          "maxLevel": "49",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "61",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "271",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "30",
+          "maxLevel": "30",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "NaN",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "NaN",
+          "minLevel": "40",
+          "maxLevel": "40",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "550",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "50",
+          "maxLevel": "50",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Reflection Cave": {
+      "Walk": {
+        "0": {
+          "number": "122",
+          "minLevel": "22",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "122",
+          "minLevel": "23",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "577",
+          "minLevel": "22",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "577",
+          "minLevel": "23",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "524",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "524",
+          "minLevel": "22",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "703",
+          "minLevel": "23",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "433",
+          "minLevel": "21",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "202",
+          "minLevel": "22",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "433",
+          "minLevel": "22",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "302",
+          "minLevel": "22",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "302",
+          "minLevel": "23",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "439-439-439-439-439",
+          "minLevel": "11",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "524-524-524-524-524",
+          "minLevel": "11",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "524-703-524-524-524",
+          "minLevel": "11",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Santalune Forest": {
+      "Walk": {
+        "0": {
+          "number": "664",
+          "minLevel": "2",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "664",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "13",
+          "minLevel": "2",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "13",
+          "minLevel": "3",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "661",
+          "minLevel": "4",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "511",
+          "minLevel": "4",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "513",
+          "minLevel": "4",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "515",
+          "minLevel": "4",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "10",
+          "minLevel": "2",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "25",
+          "minLevel": "3",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "14",
+          "minLevel": "4",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "25",
+          "minLevel": "4",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Shalour City": {
+      "Surf": {
+        "0": {
+          "number": "72",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "72",
+          "minLevel": "26",
+          "maxLevel": "26",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "458",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "72",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "458",
+          "minLevel": "27",
+          "maxLevel": "27",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "370",
+          "minLevel": "15",
+          "maxLevel": "15",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "223",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "170",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "223",
+          "minLevel": "25",
+          "maxLevel": "25",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "594",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "224",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "171",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Terminus Cave": {
+      "Walk": {
+        "0": {
+          "number": "305",
+          "minLevel": "45",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "305",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "28",
+          "minLevel": "45",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "28",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "632",
+          "minLevel": "44",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "632",
+          "minLevel": "44",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "632",
+          "minLevel": "45",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "632",
+          "minLevel": "46",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "75",
+          "minLevel": "44",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "75",
+          "minLevel": "45",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "75",
+          "minLevel": "46",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "75",
+          "minLevel": "46",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "632-632-632-632-632",
+          "minLevel": "23",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "74-74-74-74-74",
+          "minLevel": "23",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "304-304-304-304-304",
+          "minLevel": "24",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Rock Smash": {
+        "0": {
+          "number": "75",
+          "minLevel": "44",
+          "maxLevel": "44",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "75",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "75",
+          "minLevel": "46",
+          "maxLevel": "46",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "213",
+          "minLevel": "44",
+          "maxLevel": "44",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "213",
+          "minLevel": "46",
+          "maxLevel": "46",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Victory Road - Inside Part 1": {
+      "Walk": {
+        "0": {
+          "number": "533",
+          "minLevel": "57",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "533",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "533",
+          "minLevel": "59",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "621",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "621",
+          "minLevel": "59",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "93",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "75",
+          "minLevel": "57",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "75",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "108",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "108",
+          "minLevel": "59",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "634",
+          "minLevel": "59",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "634",
+          "minLevel": "59",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "hordes": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "74-74-74-74-74",
+          "minLevel": "28",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "419-419-419-419-419",
+          "minLevel": "29",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "108-108-108-108-108",
+          "minLevel": "30",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Rock Smash": {
+        "0": {
+          "number": "75",
+          "minLevel": "57",
+          "maxLevel": "57",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "75",
+          "minLevel": "58",
+          "maxLevel": "58",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "75",
+          "minLevel": "59",
+          "maxLevel": "59",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "213",
+          "minLevel": "57",
+          "maxLevel": "57",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "213",
+          "minLevel": "59",
+          "maxLevel": "59",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "61",
+          "minLevel": "57",
+          "maxLevel": "57",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "419",
+          "minLevel": "57",
+          "maxLevel": "57",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "58",
+          "maxLevel": "58",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "419",
+          "minLevel": "59",
+          "maxLevel": "59",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "61",
+          "minLevel": "59",
+          "maxLevel": "59",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "NaN",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "NaN",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "55",
+          "maxLevel": "55",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "550",
+          "minLevel": "55",
+          "maxLevel": "55",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "55",
+          "maxLevel": "55",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Victory Road - Inside Part 2": {
+      "Walk": {
+        "0": {
+          "number": "533",
+          "minLevel": "57",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "533",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "533",
+          "minLevel": "59",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "621",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "621",
+          "minLevel": "59",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "93",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "75",
+          "minLevel": "57",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "75",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "108",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "108",
+          "minLevel": "59",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "634",
+          "minLevel": "59",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "634",
+          "minLevel": "59",
+          "rate": "0.01"
+        },
+        "variables": {
+          "hordes": "true",
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "74-74-74-74-74",
+          "minLevel": "28",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "75-75-75-75-75",
+          "minLevel": "29",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "108-108-108-108-108",
+          "minLevel": "30",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Rock Smash": {
+        "0": {
+          "number": "75",
+          "minLevel": "57",
+          "maxLevel": "57",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "75",
+          "minLevel": "58",
+          "maxLevel": "58",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "75",
+          "minLevel": "59",
+          "maxLevel": "59",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "213",
+          "minLevel": "57",
+          "maxLevel": "57",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "213",
+          "minLevel": "59",
+          "maxLevel": "59",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Victory Road - Inside Part 3": {
+      "Walk": {
+        "0": {
+          "number": "533",
+          "minLevel": "57",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "533",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "533",
+          "minLevel": "59",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "621",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "621",
+          "minLevel": "59",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "93",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "75",
+          "minLevel": "57",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "75",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "108",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "108",
+          "minLevel": "59",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "634",
+          "minLevel": "59",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "634",
+          "minLevel": "59",
+          "rate": "0.01"
+        },
+        "variables": {
+          "hordes": "true",
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "74-74-74-74-74",
+          "minLevel": "28",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "75-75-75-75-75",
+          "minLevel": "29",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "108-108-108-108-108",
+          "minLevel": "30",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Victory Road - Inside Part 4": {
+      "Walk": {
+        "0": {
+          "number": "533",
+          "minLevel": "57",
+          "rate": "0.1"
+        },
+        "1": {
+          "number": "533",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "2": {
+          "number": "533",
+          "minLevel": "59",
+          "rate": "0.1"
+        },
+        "3": {
+          "number": "621",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "4": {
+          "number": "621",
+          "minLevel": "59",
+          "rate": "0.1"
+        },
+        "5": {
+          "number": "93",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "6": {
+          "number": "75",
+          "minLevel": "57",
+          "rate": "0.1"
+        },
+        "7": {
+          "number": "75",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "8": {
+          "number": "108",
+          "minLevel": "58",
+          "rate": "0.1"
+        },
+        "9": {
+          "number": "108",
+          "minLevel": "59",
+          "rate": "0.05"
+        },
+        "10": {
+          "number": "634",
+          "minLevel": "59",
+          "rate": "0.04"
+        },
+        "11": {
+          "number": "634",
+          "minLevel": "59",
+          "rate": "0.01"
+        },
+        "variables": {
+          "hordes": "true",
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Hordes": {
+        "0": {
+          "number": "74-74-74-74-74",
+          "minLevel": "28",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "419-419-419-419-419",
+          "minLevel": "29",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "108-108-108-108-108",
+          "minLevel": "30",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Surf": {
+        "0": {
+          "number": "61",
+          "minLevel": "57",
+          "maxLevel": "57",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "419",
+          "minLevel": "57",
+          "maxLevel": "57",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "58",
+          "maxLevel": "58",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "419",
+          "minLevel": "59",
+          "maxLevel": "59",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "61",
+          "minLevel": "59",
+          "maxLevel": "59",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "NaN",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "NaN",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "55",
+          "maxLevel": "55",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "550",
+          "minLevel": "55",
+          "maxLevel": "55",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "62",
+          "minLevel": "60",
+          "maxLevel": "60",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    },
+    "Victory Road - Outside": {
+      "Surf": {
+        "0": {
+          "number": "271",
+          "minLevel": "57",
+          "maxLevel": "57",
+          "rate": "0.5"
+        },
+        "1": {
+          "number": "419",
+          "minLevel": "57",
+          "maxLevel": "57",
+          "rate": "0.3"
+        },
+        "2": {
+          "number": "271",
+          "minLevel": "58",
+          "maxLevel": "58",
+          "rate": "0.15"
+        },
+        "3": {
+          "number": "419",
+          "minLevel": "59",
+          "maxLevel": "59",
+          "rate": "0.04"
+        },
+        "4": {
+          "number": "271",
+          "minLevel": "59",
+          "maxLevel": "59",
+          "rate": "0.01"
+        },
+        "variables": {
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Old Rod": {
+        "0": {
+          "number": "60",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "60",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "60",
+          "minLevel": "35",
+          "maxLevel": "35",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Good Rod": {
+        "0": {
+          "number": "NaN",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "61",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "NaN",
+          "minLevel": "45",
+          "maxLevel": "45",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      },
+      "Super Rod": {
+        "0": {
+          "number": "61",
+          "minLevel": "55",
+          "maxLevel": "55",
+          "rate": "0.6"
+        },
+        "1": {
+          "number": "550",
+          "minLevel": "55",
+          "maxLevel": "55",
+          "rate": "0.35"
+        },
+        "2": {
+          "number": "61",
+          "minLevel": "55",
+          "maxLevel": "55",
+          "rate": "0.05"
+        },
+        "variables": {
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
+        }
+      }
+    }
+  }
