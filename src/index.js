@@ -37,6 +37,9 @@ const shinyFlip = (event) => {
 
 //takes an array of encounters and combines slots of the same species (number)
 const condenseEncounters = (arr) => {
+  if (!arr){
+    return [];
+  }
   const smooshedArr = [];
   arr.forEach(e => {
     let match = false;
@@ -1016,7 +1019,7 @@ const LuckyPowerSection = (props) => {
         case "0.4": //encounters are fishing or equivalent
           switch (value){
             case "1":
-              newRates = ["0.4", "0.35", "0.15", "0.5", "0.5"];
+              newRates = ["0.4", "0.35", "0.15", "0.05", "0.05"];
               break;
             case "2":
               newRates = ["0.3", "0.3", "0.2", "0.1", "0.1"];
@@ -1381,6 +1384,225 @@ const WhiteForestSection = (props) => {
             <img alt="trainer30 sprite" src="./resources/images/WhiteForest/Emi.png"/>
           </div>
         </fieldset>
+      </div>
+    )
+  }
+}
+
+const FriendSafariSection = (props) => {
+
+  const [selectedType, setSelectedType] = useState(0);
+
+  const slotOneSpecies = [
+    ["-1"],
+    ["216", "190", "206", "506"],
+    ["58", "77", "126", "513"],
+    ["56", "67", "307", "619"],
+    ["98", "224", "400", "515"],
+    ["16", "21", "83", "84"],
+    ["43", "114", "191", "511"],
+    ["14", "44", "268", "336"],
+    ["101", "417", "587", "702"],
+    ["27", "194", "231", "328"],
+    ["63", "96", "326", "517"],
+    ["299", "525", "557"],
+    ["225", "361", "363", "459"],
+    ["12", "46", "165", "415"],
+    ["444", "611"],
+    ["353", "608"],
+    ["262", "274", "624", "629"],
+    ["82", "303", "597"],
+    ["175", "209", "281", "702"]
+  ];
+
+  const slotTwoSpecies = [
+    ["-1"],
+    ["294", "352", "531", "572"],
+    ["5", "218", "636", "668"],
+    ["538", "539", "674"],
+    ["8", "130", "195", "419"],
+    ["163", "520", "527", "581"],
+    ["2", "541", "548", "586"],
+    ["49", "168", "317", "569"],
+    ["25", "125", "618", "694"],
+    ["51", "105", "290", "323"],
+    ["202", "561", "677"],
+    ["95", "219", "222", "247"],
+    ["215", "614", "712"],
+    ["267", "284", "313", "314"],
+    ["148", "372", "714"],
+    ["708", "710"],
+    ["215", "332", "342", "551"],
+    ["205", "227", "375", "600"],
+    ["39", "303", "682", "684"]
+  ];
+
+  const slotThreeSpecies = [
+    ["-1"],
+    ["0", "113", "132", "133", "235"],
+    ["0", "38", "654", "662"],
+    ["0", "236", "286", "297", "447"],
+    ["0", "61", "184", "657"],
+    ["0", "357", "627", "662", "701"],
+    ["0", "556", "651", "673"],
+    ["0", "89", "452", "454", "544"],
+    ["0", "310", "404", "523", "596"],
+    ["0", "423", "536", "660"],
+    ["0", "178", "203", "575", "578"],
+    ["0", "112", "213", "689"],
+    ["0", "87", "91", "131", "221"],
+    ["0", "49", "127", "214", "666"],
+    ["0", "621", "705"],
+    ["0", "356", "426", "442", "623"],
+    ["0", "302", "359", "510", "686"],
+    ["0", "437", "530", "707"],
+    ["0", "35", "670"]
+  ];
+
+  const handleChange = () => {
+    if (selectedType === 0){
+      props.setEncounters([{"number": "0", "rate": "1", "minLevel": "0"}]);
+    } else {
+      const slotOneValue = document.getElementById("friendSafariSlotOneSelect").value;
+      const slotTwoValue = document.getElementById("friendSafariSlotTwoSelect").value;
+      const slotThreeValue = document.getElementById("friendSafariSlotThreeSelect").value;
+
+      if (slotThreeValue === "0"){
+        props.setEncounters([
+          {"number": slotOneValue, "rate": "0.5", "minLevel": "30"}, 
+          {"number": slotTwoValue, "rate": "0.5", "minLevel": "30"}
+        ]);
+      } else {
+        props.setEncounters([
+          {"number": slotOneValue, "rate": "0.333333", "minLevel": "30"}, 
+          {"number": slotTwoValue, "rate": "0.333333", "minLevel": "30"}, 
+          {"number": slotThreeValue, "rate": "0.333333", "minLevel": "30"}
+        ]);
+      }
+    }
+    
+  }
+
+  const handleTypeChange = (event) => {
+    const fssSelects = document.getElementsByClassName("fsSlot");
+    for (let i = 0; i < fssSelects.length; i++){
+      fssSelects[i].classList = "select select--enabled fsSlot";
+    }
+
+    const type = event.target.value;
+    const slotOne = document.getElementById("friendSafariSlotOneSelect");
+    const slotTwo = document.getElementById("friendSafariSlotTwoSelect");
+    const slotThree = document.getElementById("friendSafariSlotThreeSelect");
+
+    slotOne.disabled = false;
+    slotTwo.disabled = false;
+    slotThree.disabled = false;
+
+    slotOne.selectedIndex = 0;
+    slotTwo.selectedIndex = 0;
+    slotThree.selectedIndex = 0;
+
+    setSelectedType(type);
+  }
+
+  useEffect(() => {
+    if(props.friendsafari){
+      handleChange();
+    } else {
+      props.setEncounters(props.encounters);
+    }
+  }, [props.encounters, selectedType]);
+
+  if(props.friendsafari){
+    return(
+      <div id="friendSafariArea" class="modChunk">
+        <label for="friendSafariTypeSelect">Type: </label>
+        <div class="select select--enabled">
+          <select id="friendSafariTypeSelect" onChange={handleTypeChange}>
+            <option value="" selected disabled hidden>Choose Type</option>
+            <option value="1">Normal</option>
+            <option value="2">Fire</option>
+            <option value="3">Fighting</option>
+            <option value="4">Water</option>
+            <option value="5">Flying</option>
+            <option value="6">Grass</option>
+            <option value="7">Poison</option>
+            <option value="8">Electric</option>
+            <option value="9">Ground</option>
+            <option value="10">Psychic</option>
+            <option value="11">Rock</option>
+            <option value="12">Ice</option>
+            <option value="13">Bug</option>
+            <option value="14">Dragon</option>
+            <option value="15">Ghost</option>
+            <option value="16">Dark</option>
+            <option value="17">Steel</option>
+            <option value="18">Fairy</option>
+          </select>
+          <span class="focus"></span>
+        </div>
+        <label for="friendSafariSlotOneSelect">Slot 1: </label>
+        <div class="select select--disabled fsSlot">
+          <select id="friendSafariSlotOneSelect" onChange={handleChange} disabled>
+            {
+              slotOneSpecies[selectedType].map(e => {
+                if(e === "-1"){
+                  return(
+                    <option value="" selected disabled hidden>Choose Type First</option>
+                  )
+                } else {
+                  const pokemon = findName(e, props.pokemonArr);
+                  return(
+                    <option value={e}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</option>
+                  )
+                }
+              })
+            }
+          </select>
+          <span class="focus"></span>
+        </div><label for="friendSafariSlotTwoSelect">Slot 2: </label>
+        <div class="select select--disabled fsSlot">
+          <select id="friendSafariSlotTwoSelect" onChange={handleChange} disabled>
+            {
+              slotTwoSpecies[selectedType].map(e => {
+                if(e === "-1"){
+                  return(
+                    <option value="" selected disabled hidden>Choose Type First</option>
+                  )
+                } else {
+                  const pokemon = findName(e, props.pokemonArr);
+                  return(
+                    <option value={e}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</option>
+                  )
+                }
+              })
+            }
+          </select>
+          <span class="focus"></span>
+        </div><label for="friendSafariSlotThreeSelect">Slot 3: </label>
+        <div class="select select--disabled fsSlot">
+          <select id="friendSafariSlotThreeSelect" onChange={handleChange} disabled>
+            {
+              slotThreeSpecies[selectedType].map(e => {
+                if(e === "-1"){
+                  return(
+                    <option value="" selected disabled hidden>Choose Type First</option>
+                  )
+                } else if (e === "0"){
+                  return(
+                    <option value={e}>None</option>
+                  )
+                } else {
+                  const pokemon = findName(e, props.pokemonArr);
+                  return(
+                    <option value={e}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</option>
+                  )
+                }
+              })
+            }
+          </select>
+          <span class="focus"></span>
+        </div>
       </div>
     )
   }
@@ -1781,6 +2003,7 @@ const App = () => {
   const [nPokemonEncounters, setNPokemonEncounters] = useState([]); //encounters modified by N's pokemon in B2W2
   const [whiteForestEncounters, setWhiteForestEncounters] = useState([]); //encounters modified by White Forest
   const [hordeEncountersBeforeAbilities, setHordeEncountersBeforeAbilities] = useState([]); //encounters with hordes in encounter slots
+  const [friendSafariEncounters, setFriendSafariEncounters] = useState([]); //encounters set by the friend safari in XY
   //the above is only used temporarily for displaying
   //hordes have their abilities calculated seperately
   const [abilityEncounters, setAbilityEncounters] = useState([]);//encounters modified by abilities such as static
@@ -1884,7 +2107,7 @@ const App = () => {
   //temporary for display purposes
   //abilities are calculated seperately and then the two are combined again later
   useEffect(() => {
-    const incomingEncounters = whiteForestEncounters;
+    const incomingEncounters = friendSafariEncounters ? friendSafariEncounters : [];
     if (variables.hordes){
       const tempArray = JSON.parse(JSON.stringify(incomingEncounters));
       const tempHordesArr = JSON.parse(JSON.stringify(hordes));
@@ -1896,9 +2119,9 @@ const App = () => {
       });
       setHordeEncountersBeforeAbilities(tempArray.concat(tempHordesArr))
     } else {
-      setHordeEncountersBeforeAbilities(whiteForestEncounters);
+      setHordeEncountersBeforeAbilities(incomingEncounters);
     }
-  }, [whiteForestEncounters]);
+  }, [friendSafariEncounters]);
 
   //combine hordes into encounters after abilities
   useEffect(() => {
@@ -1975,7 +2198,6 @@ const App = () => {
       const pde = 0.4 * tempEncRate * tempEncRate;
       //percent that will be double battles
       if (pde === 0){
-        alert()
         setPged(0);
       } else {
         setPged(Number(pde / (pse + pde)));
@@ -2125,7 +2347,7 @@ const App = () => {
     }
 
     //check if species are hordes store in num-num-num-num-num format
-    if(tempArray[0].number.includes("-")){
+    if(tempArray.length > 0 && tempArray[0].number.includes("-")){
       tempArray.forEach(e => {
         const speciesNumbers = e.number.split("-");
         e.number = speciesNumbers[0];
@@ -2143,7 +2365,7 @@ const App = () => {
     //set class for picture on dropdown arrow
     if (methods.value.includes("Walk")){
       methodsDiv.classList = ("select select--walk");
-    } else if(methods.value.includes("Rod")) {
+    } else if(methods.value.includes("Rod") || methods.value.includes("Fish")) {
       methodsDiv.classList = ("select select--fishing");
     } else if(methods.value.includes("Surf")){
       methodsDiv.classList = ("select select--surf");
@@ -2157,6 +2379,20 @@ const App = () => {
       methodsDiv.classList = ("select select--shaking");
     } else if (methods.value.includes("Rippling")){
       methodsDiv.classList = ("select select--rippling");
+    } else if (methods.value.includes("Swamp")){
+      methodsDiv.classList = ("select select--swamp");
+    } else if (methods.value.includes("Snow")){
+      methodsDiv.classList = ("select select--snow");
+    } else if (methods.value.includes("Terrain")){
+      methodsDiv.classList = ("select select--terrain");
+    } else if (methods.value.includes("Dirt")){
+      methodsDiv.classList = ("select select--dirt");
+    } else if (methods.value.includes("Purple")){
+      methodsDiv.classList = ("select select--purpleflowers");
+    } else if (methods.value.includes("Yellow")){
+      methodsDiv.classList = ("select select--yellowflowers");
+    } else if (methods.value.includes("Red")){
+      methodsDiv.classList = ("select select--redflowers");
     } else {
       methodsDiv.classList = ("select select--enabled");
     }
@@ -2366,10 +2602,13 @@ const App = () => {
         <BwSwarmSection bwSwarm={variables.bwSwarm} encounters={luckyEncounters} setEncounters={setBwSwarmEncounters}/>
         <NPokemonSection nPokemon={variables.nPokemon} encounters={bwSwarmEncounters} setEncounters={setNPokemonEncounters} pokemonArr={pokemonData}/>
         <WhiteForestSection whiteForeset={variables.whiteforest} encounters={nPokemonEncounters} setEncounters={setWhiteForestEncounters}/>
-        <AbilitySection ability={variables.ability} encounters={whiteForestEncounters} 
+        <FriendSafariSection friendsafari={variables.friendsafari} encounters={whiteForestEncounters} setEncounters={setFriendSafariEncounters} pokemonArr={pokemonData}/>
+        {/* the encounters have hordes before abilities inserted here for XYORAS be sure to change the incoming encounters in the above hook*/}
+        <AbilitySection ability={variables.ability} encounters={friendSafariEncounters} 
           setEncounters={setAbilityEncounters} pokemonArr={pokemonData} setIntimidateActive={setIntimidateActive} radarActive={radarActive} 
           game={game} hordes={hordes} setHordes={setHordesAfterAbilities} hordeVariable={variables.hordes}
         />
+        {/* the encounters have hordes after abilities inserted here for XYORAS */}
         <RepelSection repel={variables.repel} primeEncounters={encounters} encounters={hordeEncounters} setEncounters={setRepelEncounters} intimidateActive={intimidateActive} radarActive={radarActive} game={game}/>
       </div>
       <div id="processedEncounters">

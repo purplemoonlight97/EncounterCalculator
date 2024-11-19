@@ -100,7 +100,14 @@ select::-ms-expand {
 .select--headbutt::after,
 .select--darkgrass::after,
 .select--shaking::after,
-.select--rippling::after{
+.select--rippling::after,
+.select--swamp::after,
+.select--snow::after,
+.select--terrain::after,
+.select--dirt::after,
+.select--purpleflowers::after,
+.select--yellowflowers::after,
+.select--redflowers::after{
     content: "";
     display: block;
     width: 1em;
@@ -108,6 +115,7 @@ select::-ms-expand {
     background-size: contain;
     background-position: center;
     justify-self: end;
+    background-size: cover;
 }
 
 .select--walk::after{
@@ -131,15 +139,43 @@ select::-ms-expand {
 }
 
 .select--darkgrass::after{
-    background-image: url(./resources//images/darkgrass.png);
+    background-image: url(./resources/images/darkgrass.png);
 }
 
 .select--shaking::after{
-    background-image: url(./resources//images/shakinggrass.png);
+    background-image: url(./resources/images/shakinggrass.png);
 }
 
 .select--rippling::after{
-    background-image: url(./resources//images/ripplingwater.png);
+    background-image: url(./resources/images/ripplingwater.png);
+}
+
+.select--dirt::after{
+    background-image: url(./resources/images/dirt.png);
+}
+
+.select--snow::after{
+    background-image: url(./resources/images/snow.png);
+}
+
+.select--terrain::after{
+    background-image: url(./resources/images/terrain.png);
+}
+
+.select--swamp::after{
+    background-image: url(./resources/images/swamp.png);
+}
+
+.select--yellowflowers::after{
+    background-image: url(./resources/images/yellowflowers.png);
+}
+
+.select--redflowers::after{
+    background-image: url(./resources/images/redflowers.png);
+}
+
+.select--purpleflowers::after{
+    background-image: url(./resources/images/purpleflowers.png);
 }
 
 .select--disabled {
@@ -184,6 +220,7 @@ select:focus + .focus {
 }
 
 .modChunk > label, .modChunk > div > label {
+    min-width: 20%;
     margin-right: 10px;
     color: var(--textLight);
     font-size: 1.25em;
