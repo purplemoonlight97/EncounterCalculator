@@ -42,7 +42,7 @@
           "rate": "0.1"
         },
         "8": {
-          "number": "13",
+          "number": "10",
           "minLevel": "3",
           "rate": "0.1"
         },
@@ -57,7 +57,7 @@
           "rate": "0.04"
         },
         "11": {
-          "number": "13",
+          "number": "10",
           "minLevel": "4",
           "rate": "0.01"
         },
@@ -243,17 +243,17 @@
     "Route 4": {
       "Red Flowers": {
         "0": {
-          "number": "669-red",
+          "number": "669",
           "minLevel": "6",
           "rate": "0.1"
         },
         "1": {
-          "number": "669-red",
+          "number": "669",
           "minLevel": "7",
           "rate": "0.1"
         },
         "2": {
-          "number": "669-red",
+          "number": "669",
           "minLevel": "8",
           "rate": "0.1"
         },
@@ -427,12 +427,12 @@
           "rate": "0.05"
         },
         "10": {
-          "number": "311",
+          "number": "312",
           "minLevel": "9",
           "rate": "0.04"
         },
         "11": {
-          "number": "311",
+          "number": "312",
           "minLevel": "10",
           "rate": "0.01"
         },
@@ -494,12 +494,12 @@
           "rate": "0.05"
         },
         "10": {
-          "number": "311",
+          "number": "312",
           "minLevel": "9",
           "rate": "0.04"
         },
         "11": {
-          "number": "311",
+          "number": "312",
           "minLevel": "10",
           "rate": "0.01"
         },
@@ -521,7 +521,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "311|312|311|311|311",
+          "number": "312|311|312|312|312",
           "minLevel": "6",
           "rate": "0.05"
         },
@@ -626,7 +626,7 @@
           "rate": "0.1"
         },
         "5": {
-          "number": "684",
+          "number": "682",
           "minLevel": "14",
           "rate": "0.1"
         },
@@ -693,7 +693,7 @@
           "rate": "0.1"
         },
         "5": {
-          "number": "684",
+          "number": "682",
           "minLevel": "14",
           "rate": "0.1"
         },
@@ -760,7 +760,7 @@
           "rate": "0.1"
         },
         "5": {
-          "number": "684",
+          "number": "682",
           "minLevel": "14",
           "rate": "0.1"
         },
@@ -864,7 +864,7 @@
           "rate": "0.1"
         },
         "8": {
-          "number": "335",
+          "number": "336",
           "minLevel": "14",
           "rate": "0.1"
         },
@@ -931,7 +931,7 @@
           "rate": "0.1"
         },
         "8": {
-          "number": "335",
+          "number": "336",
           "minLevel": "14",
           "rate": "0.1"
         },
@@ -963,7 +963,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "335|335|335|336|335",
+          "number": "336|336|335|336|336",
           "minLevel": "8",
           "rate": "0.35"
         },
@@ -979,32 +979,32 @@
       "Rock Smash": {
         "0": {
           "number": "557",
-          "minLevel": "18",
-          "maxLevel": "18",
+          "minLevel": "13",
+          "maxLevel": "13",
           "rate": "0.5"
         },
         "1": {
           "number": "688",
-          "minLevel": "18",
-          "maxLevel": "18",
+          "minLevel": "13",
+          "maxLevel": "13",
           "rate": "0.3"
         },
         "2": {
           "number": "557",
-          "minLevel": "19",
-          "maxLevel": "19",
+          "minLevel": "14",
+          "maxLevel": "14",
           "rate": "0.15"
         },
         "3": {
           "number": "688",
-          "minLevel": "20",
-          "maxLevel": "20",
+          "minLevel": "15",
+          "maxLevel": "15",
           "rate": "0.04"
         },
         "4": {
           "number": "557",
-          "minLevel": "20",
-          "maxLevel": "20",
+          "minLevel": "15",
+          "maxLevel": "15",
           "rate": "0.01"
         },
         "variables": {
@@ -1073,19 +1073,19 @@
       },
       "Good Rod": {
         "0": {
-          "number": "692",
+          "number": "690",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.6"
         },
         "1": {
-          "number": "120",
+          "number": "90",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.35"
         },
         "2": {
-          "number": "692",
+          "number": "690",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.05"
@@ -1102,13 +1102,13 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "693",
+          "number": "691",
           "minLevel": "35",
           "maxLevel": "35",
           "rate": "0.35"
         },
         "2": {
-          "number": "121",
+          "number": "91",
           "minLevel": "35",
           "maxLevel": "35",
           "rate": "0.05"
@@ -1229,7 +1229,7 @@
           "rate": "0.1"
         },
         "8": {
-          "number": "228",
+          "number": "309",
           "minLevel": "21",
           "rate": "0.1"
         },
@@ -1271,12 +1271,12 @@
           "rate": "0.1"
         },
         "3": {
-          "number": "228",
+          "number": "309",
           "minLevel": "19",
           "rate": "0.1"
         },
         "4": {
-          "number": "228",
+          "number": "309",
           "minLevel": "20",
           "rate": "0.1"
         },
@@ -1333,7 +1333,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "228|228|228|228|228",
+          "number": "309|309|309|309|309",
           "minLevel": "11",
           "rate": "0.05"
         },
@@ -1355,12 +1355,12 @@
           "rate": "0.1"
         },
         "2": {
-          "number": "539",
+          "number": "538",
           "minLevel": "22",
           "rate": "0.1"
         },
         "3": {
-          "number": "539",
+          "number": "538",
           "minLevel": "23",
           "rate": "0.1"
         },
@@ -1479,7 +1479,7 @@
           "rate": "0.1"
         },
         "9": {
-          "number": "127",
+          "number": "214",
           "minLevel": "25",
           "rate": "0.05"
         },
@@ -1546,7 +1546,7 @@
           "rate": "0.1"
         },
         "9": {
-          "number": "127",
+          "number": "214",
           "minLevel": "27",
           "rate": "0.05"
         },
@@ -1718,7 +1718,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "367",
+          "number": "368",
           "minLevel": "35",
           "maxLevel": "35",
           "rate": "0.05"
@@ -2094,17 +2094,17 @@
     "Route 15": {
       "Walk": {
         "0": {
-          "number": "262",
+          "number": "510",
           "minLevel": "34",
           "rate": "0.1"
         },
         "1": {
-          "number": "262",
+          "number": "510",
           "minLevel": "35",
           "rate": "0.1"
         },
         "2": {
-          "number": "262",
+          "number": "510",
           "minLevel": "36",
           "rate": "0.1"
         },
@@ -2191,7 +2191,7 @@
           "rate": "0.1"
         },
         "6": {
-          "number": "262",
+          "number": "510",
           "minLevel": "36",
           "rate": "0.1"
         },
@@ -2307,7 +2307,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.6"
@@ -2319,7 +2319,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.05"
@@ -2336,7 +2336,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "550",
+          "number": "550-blue-striped",
           "minLevel": "35",
           "maxLevel": "35",
           "rate": "0.35"
@@ -2442,17 +2442,17 @@
       },
       "Tall Grass": {
         "0": {
-          "number": "710-average",
+          "number": "710",
           "minLevel": "34",
           "rate": "0.1"
         },
         "1": {
-          "number": "710-average",
+          "number": "710",
           "minLevel": "34",
           "rate": "0.1"
         },
         "2": {
-          "number": "710-average",
+          "number": "710",
           "minLevel": "35",
           "rate": "0.1"
         },
@@ -2467,7 +2467,7 @@
           "rate": "0.1"
         },
         "5": {
-          "number": "710-large",
+          "number": "710",
           "minLevel": "36",
           "rate": "0.1"
         },
@@ -2497,7 +2497,7 @@
           "rate": "0.04"
         },
         "11": {
-          "number": "710-super",
+          "number": "710",
           "minLevel": "36",
           "rate": "0.01"
         },
@@ -2567,7 +2567,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.6"
@@ -2579,7 +2579,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.05"
@@ -2596,7 +2596,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "550",
+          "number": "550-blue-striped",
           "minLevel": "35",
           "maxLevel": "35",
           "rate": "0.35"
@@ -2713,7 +2713,7 @@
           "rate": "0.1"
         },
         "6": {
-          "number": "305",
+          "number": "247",
           "minLevel": "46",
           "rate": "0.1"
         },
@@ -2750,17 +2750,17 @@
       },
       "Red Flowers": {
         "0": {
-          "number": "305",
+          "number": "247",
           "minLevel": "44",
           "rate": "0.1"
         },
         "1": {
-          "number": "305",
+          "number": "247",
           "minLevel": "45",
           "rate": "0.1"
         },
         "2": {
-          "number": "305",
+          "number": "247",
           "minLevel": "46",
           "rate": "0.1"
         },
@@ -3859,32 +3859,32 @@
       "Rock Smash": {
         "0": {
           "number": "557",
-          "minLevel": "18",
-          "maxLevel": "18",
+          "minLevel": "13",
+          "maxLevel": "13",
           "rate": "0.5"
         },
         "1": {
           "number": "688",
-          "minLevel": "18",
-          "maxLevel": "18",
+          "minLevel": "13",
+          "maxLevel": "13",
           "rate": "0.3"
         },
         "2": {
           "number": "557",
-          "minLevel": "19",
-          "maxLevel": "19",
+          "minLevel": "14",
+          "maxLevel": "14",
           "rate": "0.15"
         },
         "3": {
           "number": "688",
-          "minLevel": "20",
-          "maxLevel": "20",
+          "minLevel": "15",
+          "maxLevel": "15",
           "rate": "0.04"
         },
         "4": {
           "number": "557",
-          "minLevel": "20",
-          "maxLevel": "20",
+          "minLevel": "15",
+          "maxLevel": "15",
           "rate": "0.01"
         },
         "variables": {
@@ -3953,7 +3953,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "692",
+          "number": "690",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.6"
@@ -3965,7 +3965,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "692",
+          "number": "690",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.05"
@@ -3982,7 +3982,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "693",
+          "number": "691",
           "minLevel": "35",
           "maxLevel": "35",
           "rate": "0.35"
@@ -4379,7 +4379,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "35",
           "maxLevel": "35",
           "rate": "0.6"
@@ -4391,7 +4391,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "35",
           "maxLevel": "35",
           "rate": "0.05"
@@ -4408,7 +4408,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "550",
+          "number": "550-blue-striped",
           "minLevel": "45",
           "maxLevel": "45",
           "rate": "0.35"
@@ -4428,32 +4428,32 @@
       "Rock Smash": {
         "0": {
           "number": "557",
-          "minLevel": "15",
-          "maxLevel": "15",
+          "minLevel": "13",
+          "maxLevel": "13",
           "rate": "0.5"
         },
         "1": {
-          "number": "95",
-          "minLevel": "15",
-          "maxLevel": "15",
+          "number": "688",
+          "minLevel": "13",
+          "maxLevel": "13",
           "rate": "0.3"
         },
         "2": {
           "number": "557",
-          "minLevel": "17",
-          "maxLevel": "17",
+          "minLevel": "14",
+          "maxLevel": "14",
           "rate": "0.15"
         },
         "3": {
-          "number": "95",
-          "minLevel": "16",
-          "maxLevel": "16",
+          "number": "688",
+          "minLevel": "15",
+          "maxLevel": "15",
           "rate": "0.04"
         },
         "4": {
-          "number": "95",
-          "minLevel": "17",
-          "maxLevel": "17",
+          "number": "557",
+          "minLevel": "15",
+          "maxLevel": "15",
           "rate": "0.01"
         },
         "variables": {
@@ -4522,7 +4522,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "692",
+          "number": "690",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.6"
@@ -4534,7 +4534,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "692",
+          "number": "690",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.05"
@@ -4551,7 +4551,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "693",
+          "number": "691",
           "minLevel": "35",
           "maxLevel": "35",
           "rate": "0.35"
@@ -4568,13 +4568,13 @@
       }
     },
     "Friend Safari": {
-        "Walk": {
-            "variables": {
-                "friendsafari": "true",
-                "repel": "true",
-                "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
-            }
+      "Walk": {
+        "variables": {
+          "friendsafari": "true",
+          "repel": "true",
+          "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
+      }
     },
     "Frost Cavern": {
       "Walk": {
@@ -4725,7 +4725,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "30",
           "maxLevel": "30",
           "rate": "0.6"
@@ -4737,7 +4737,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "30",
           "maxLevel": "30",
           "rate": "0.05"
@@ -4754,7 +4754,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "550",
+          "number": "550-blue-striped",
           "minLevel": "40",
           "maxLevel": "40",
           "rate": "0.35"
@@ -4900,7 +4900,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.6"
@@ -4912,7 +4912,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "25",
           "maxLevel": "25",
           "rate": "0.05"
@@ -4929,7 +4929,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "550",
+          "number": "550-blue-striped",
           "minLevel": "35",
           "maxLevel": "35",
           "rate": "0.35"
@@ -5147,8 +5147,8 @@
           "rate": "0.01"
         },
         "variables": {
-          "hordes": "true",
           "repel": "true",
+          "hordes": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -5214,8 +5214,8 @@
           "rate": "0.01"
         },
         "variables": {
-          "hordes": "true",
           "repel": "true",
+          "hordes": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -5300,7 +5300,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "40",
           "maxLevel": "40",
           "rate": "0.6"
@@ -5312,7 +5312,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "40",
           "maxLevel": "40",
           "rate": "0.05"
@@ -5329,7 +5329,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "550",
+          "number": "550-blue-striped",
           "minLevel": "50",
           "maxLevel": "50",
           "rate": "0.35"
@@ -5447,12 +5447,12 @@
           "rate": "0.1"
         },
         "2": {
-          "number": "13",
+          "number": "10",
           "minLevel": "2",
           "rate": "0.1"
         },
         "3": {
-          "number": "13",
+          "number": "10",
           "minLevel": "3",
           "rate": "0.1"
         },
@@ -5477,7 +5477,7 @@
           "rate": "0.1"
         },
         "8": {
-          "number": "10",
+          "number": "13",
           "minLevel": "2",
           "rate": "0.1"
         },
@@ -5487,7 +5487,7 @@
           "rate": "0.05"
         },
         "10": {
-          "number": "14",
+          "number": "11",
           "minLevel": "4",
           "rate": "0.04"
         },
@@ -5612,12 +5612,12 @@
     "Terminus Cave": {
       "Walk": {
         "0": {
-          "number": "305",
+          "number": "247",
           "minLevel": "45",
           "rate": "0.1"
         },
         "1": {
-          "number": "305",
+          "number": "247",
           "minLevel": "46",
           "rate": "0.1"
         },
@@ -5689,7 +5689,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "304|304|304|304|304",
+          "number": "246|246|246|246|246",
           "minLevel": "24",
           "rate": "0.05"
         },
@@ -5919,7 +5919,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "45",
           "maxLevel": "45",
           "rate": "0.6"
@@ -5931,7 +5931,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "45",
           "maxLevel": "45",
           "rate": "0.05"
@@ -5948,7 +5948,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "550",
+          "number": "550-blue-striped",
           "minLevel": "55",
           "maxLevel": "55",
           "rate": "0.35"
@@ -6027,8 +6027,8 @@
           "rate": "0.01"
         },
         "variables": {
-          "hordes": "true",
           "repel": "true",
+          "hordes": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -6152,8 +6152,8 @@
           "rate": "0.01"
         },
         "variables": {
-          "hordes": "true",
           "repel": "true",
+          "hordes": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -6241,8 +6241,8 @@
           "rate": "0.01"
         },
         "variables": {
-          "hordes": "true",
           "repel": "true",
+          "hordes": "true",
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
         }
       },
@@ -6327,7 +6327,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "45",
           "maxLevel": "45",
           "rate": "0.6"
@@ -6339,7 +6339,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "45",
           "maxLevel": "45",
           "rate": "0.05"
@@ -6356,7 +6356,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "550",
+          "number": "550-blue-striped",
           "minLevel": "55",
           "maxLevel": "55",
           "rate": "0.35"
@@ -6434,7 +6434,7 @@
       },
       "Good Rod": {
         "0": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "45",
           "maxLevel": "45",
           "rate": "0.6"
@@ -6446,7 +6446,7 @@
           "rate": "0.35"
         },
         "2": {
-          "number": "NaN",
+          "number": "550",
           "minLevel": "45",
           "maxLevel": "45",
           "rate": "0.05"
@@ -6463,7 +6463,7 @@
           "rate": "0.6"
         },
         "1": {
-          "number": "550",
+          "number": "550-blue-striped",
           "minLevel": "55",
           "maxLevel": "55",
           "rate": "0.35"

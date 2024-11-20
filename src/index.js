@@ -2291,6 +2291,7 @@ const App = () => {
         setGenderSpread(5);  
         break;
       case "x":
+      case "y":
         setSpriteExtension("gen6");
         setGenderSpread(6);
         break;
@@ -2334,7 +2335,7 @@ const App = () => {
       const tempHordes = JSON.parse(JSON.stringify(Object.values(encounterData[selectedArea]["Hordes"])));
       tempHordes.pop(); //remove horde variables as they are not needed for regular encounters
       tempHordes.forEach(e => {
-        const speciesNumbers = e.number.split("-");
+        const speciesNumbers = e.number.split("|");
         e.number = speciesNumbers[0];
         e.number2 = speciesNumbers[1];
         e.number3 = speciesNumbers[2];
@@ -2346,10 +2347,10 @@ const App = () => {
       setHordes();
     }
 
-    //check if species are hordes store in num-num-num-num-num format
-    if(tempArray.length > 0 && tempArray[0].number.includes("-")){
+    //check if species are hordes store in num|num|num|num|num format
+    if(tempArray[0].number.includes("|")){
       tempArray.forEach(e => {
-        const speciesNumbers = e.number.split("-");
+        const speciesNumbers = e.number.split("|");
         e.number = speciesNumbers[0];
         e.number2 = speciesNumbers[1];
         e.number3 = speciesNumbers[2];
@@ -2363,7 +2364,7 @@ const App = () => {
     const methods = document.getElementById("methods");
 
     //set class for picture on dropdown arrow
-    if (methods.value.includes("Walk")){
+    if (methods.value.includes("Walk") || methods.value.includes("Tall")){
       methodsDiv.classList = ("select select--walk");
     } else if(methods.value.includes("Rod") || methods.value.includes("Fish")) {
       methodsDiv.classList = ("select select--fishing");
@@ -2498,6 +2499,7 @@ const App = () => {
                 </optgroup>
                 <optgroup label="Generation 6">
                   <option value="x">X</option>
+                  <option value="y">Y</option>
                 </optgroup>
               </select>
               <span class="focus"></span>
@@ -2613,7 +2615,7 @@ const App = () => {
       </div>
       <div id="processedEncounters">
         {
-          condensedArr.map((e) => {
+          condensedArr.map((e, i) => {
             const pokemon = findName(e.number, pokemonData);
             //calculate gender split
             let male = 0;
