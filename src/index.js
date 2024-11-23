@@ -2292,6 +2292,7 @@ const App = () => {
         break;
       case "x":
       case "y":
+      case "omegaruby":
         setSpriteExtension("gen6");
         setGenderSpread(6);
         break;
@@ -2348,7 +2349,7 @@ const App = () => {
     }
 
     //check if species are hordes store in num|num|num|num|num format
-    if(tempArray[0].number.includes("|")){
+    if(tempArray.length > 0 && tempArray[0].number.includes("|")){ //if no length, it is the friend safari encounters in XY
       tempArray.forEach(e => {
         const speciesNumbers = e.number.split("|");
         e.number = speciesNumbers[0];
@@ -2394,6 +2395,8 @@ const App = () => {
       methodsDiv.classList = ("select select--yellowflowers");
     } else if (methods.value.includes("Red")){
       methodsDiv.classList = ("select select--redflowers");
+    } else if (methods.value.includes("Soaring")){
+      methodsDiv.classList = ("select select--soaring");
     } else {
       methodsDiv.classList = ("select select--enabled");
     }
@@ -2500,6 +2503,7 @@ const App = () => {
                 <optgroup label="Generation 6">
                   <option value="x">X</option>
                   <option value="y">Y</option>
+                  <option value="omegaruby">Omega Ruby</option>
                 </optgroup>
               </select>
               <span class="focus"></span>

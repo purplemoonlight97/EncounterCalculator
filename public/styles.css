@@ -107,7 +107,8 @@ select::-ms-expand {
 .select--dirt::after,
 .select--purpleflowers::after,
 .select--yellowflowers::after,
-.select--redflowers::after{
+.select--redflowers::after,
+.select--soaring::after{
     content: "";
     display: block;
     width: 1em;
@@ -176,6 +177,10 @@ select::-ms-expand {
 
 .select--purpleflowers::after{
     background-image: url(./resources/images/purpleflowers.png);
+}
+
+.select--soaring::after{
+    background-image: url(./resources/images/soaring.png);
 }
 
 .select--disabled {
