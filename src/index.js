@@ -2293,6 +2293,7 @@ const App = () => {
       case "x":
       case "y":
       case "omegaruby":
+      case "alphasapphire":
         setSpriteExtension("gen6");
         setGenderSpread(6);
         break;
@@ -2504,6 +2505,7 @@ const App = () => {
                   <option value="x">X</option>
                   <option value="y">Y</option>
                   <option value="omegaruby">Omega Ruby</option>
+                  <option value="alphasapphire">Alpha Sapphire</option>
                 </optgroup>
               </select>
               <span class="focus"></span>

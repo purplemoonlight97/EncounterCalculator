@@ -9,6 +9,12 @@
     --select-border: var(--secondary);
     --select-focus: var(--highlight);
     --select-arrow: var(--select-border);
+    --accent-color: #D95F59;
+}
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 *,
@@ -22,15 +28,28 @@ body {
     color: var(--text);
 }
 
+main {
+    margin-top: 100px;
+    min-height: 100vh;
+}
+
 h2{
     text-align: center;
     font-family: Roboto;
     color: var(--text);
+    margin-bottom: 50px;
+}
+
+h3{
+    width: 100%;
+    text-align: center;
+    font-family: Roboto;
+    color: var(--textLight);
 }
 
 label {
     font-family: Roboto;
-    color: var(--text);
+    color: var(--textLight);
     align-content: center;
 }
 
@@ -237,6 +256,16 @@ select:focus + .focus {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.thanksChunk{
+    margin-top: 50px;
+}
+
+.thanksCredit {
+    width: 100%;
+    font-family: Roboto;
+    color: var(--textLight);
 }
 
 .innerDiv {
@@ -721,6 +750,24 @@ fieldset > label {
     position: absolute;
   }
 
+  footer{
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    width: 100%;
+}
+
+footer > div{
+    color: #F1F2F3;
+}
+
+footer > div > a{
+    color: var(--accent-color);
+}
+
   @media screen and (max-width: 600px) {
     .encounterRate {
       display: none;
@@ -752,3 +799,9 @@ fieldset > label {
         width: 80%;
     }
   }
+
+  @media screen and (max-width: 1000px) {
+    footer{
+        font-size: 12px;
+    }
+}
