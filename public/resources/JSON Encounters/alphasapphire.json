@@ -3128,7 +3128,7 @@
           "number": "349",
           "minLevel": "15",
           "maxLevel": "15",
-          "rate": "0.6"
+          "rate": "1"
         },
         "variables": {
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
@@ -3162,7 +3162,7 @@
           "number": "349",
           "minLevel": "25",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "1"
         },
         "variables": {
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"
@@ -3196,7 +3196,7 @@
           "number": "349",
           "minLevel": "35",
           "maxLevel": "35",
-          "rate": "0.6"
+          "rate": "1"
         },
         "variables": {
           "ability": "static|magnet pull|keen eye|intimidate|hustle|pressure|vital spirit|cute charm"

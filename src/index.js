@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import ReactDOM from 'react-dom/client';
+import { Analytics } from "@vercel/analytics/react"
 
 //takes a number and returns the species name of a pokemon
 const findName = (num, arr) => {
@@ -2453,6 +2454,7 @@ const App = () => {
 
   return(
     <div>
+      <Analytics />
       <h2>Pokemon Encounter Calculator Remastered:</h2>
       <div class="imageHolder">
         <img src="./resources/images/Hildawalkdown.png" alt='trainer'/>
