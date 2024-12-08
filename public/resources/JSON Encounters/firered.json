@@ -338,19 +338,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "116",
@@ -571,19 +571,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -938,19 +938,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "116",
@@ -1104,19 +1104,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "116",
@@ -1270,19 +1270,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "116",
@@ -1436,19 +1436,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "116",
@@ -1872,19 +1872,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -1973,19 +1973,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -2139,19 +2139,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -2305,19 +2305,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -2471,19 +2471,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -2637,19 +2637,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "116",
@@ -2803,19 +2803,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -3036,19 +3036,19 @@
           "number": "118",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "119",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -3202,19 +3202,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -3368,19 +3368,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -3469,19 +3469,19 @@
           "number": "129",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "129",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "129",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "129",
@@ -3670,19 +3670,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -3973,19 +3973,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -4074,19 +4074,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "116",
@@ -4175,19 +4175,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "90",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -4410,19 +4410,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "90",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -4576,19 +4576,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "211",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -4677,19 +4677,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -4778,19 +4778,19 @@
           "number": "118",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "119",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -4879,19 +4879,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "211",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -5112,19 +5112,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "90",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -5345,19 +5345,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -5546,19 +5546,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -5913,19 +5913,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "211",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -6958,19 +6958,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "90",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -7059,19 +7059,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "211",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -7162,19 +7162,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "90",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -7866,19 +7866,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "211",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -8268,19 +8268,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -8369,19 +8369,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "90",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "116",
@@ -8535,19 +8535,19 @@
           "number": "118",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "119",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "147",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -8701,19 +8701,19 @@
           "number": "118",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "119",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "147",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -8867,19 +8867,19 @@
           "number": "118",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "119",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "147",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -9033,19 +9033,19 @@
           "number": "118",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "119",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "147",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -9467,19 +9467,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -9633,19 +9633,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -9902,19 +9902,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "211",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -10070,19 +10070,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "211",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -10236,19 +10236,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -10337,19 +10337,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "90",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "116",
@@ -10706,19 +10706,19 @@
           "number": "60",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "61",
           "minLevel": "20",
           "maxLevel": "30",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "54",
@@ -10874,19 +10874,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "211",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",
@@ -11040,19 +11040,19 @@
           "number": "116",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.6"
+          "rate": "0.4"
         },
         "1": {
           "number": "211",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.3"
+          "rate": "0.4"
         },
         "2": {
           "number": "130",
           "minLevel": "15",
           "maxLevel": "25",
-          "rate": "0.05"
+          "rate": "0.15"
         },
         "3": {
           "number": "117",

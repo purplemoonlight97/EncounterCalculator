@@ -228,7 +228,7 @@ select:focus + .focus {
     width: 45%;
     min-width: 400px;
     margin: 10px auto;
-    border: 2px solid var(--highlight);
+    border: 2px solid var(--primaryLight);
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -397,7 +397,7 @@ fieldset > label {
 }
 
 .controlsDiv {
-    border: 2px solid var(--highlight);
+    border: 2px solid var(--primaryLight);
     border-radius: 10px;
     background-color: var(--secondary);
     padding: 10px;
@@ -439,7 +439,7 @@ fieldset > label {
     flex-flow: row wrap;
     justify-content: center;
     margin: 10px auto;
-    border: 2px solid var(--highlight);
+    border: 2px solid var(--primaryLight);
     border-radius: 10px;
 }
 
@@ -725,7 +725,7 @@ fieldset > label {
 
   .pieChartDiv {
     background-color: var(--secondary);
-    border: 2px solid var(--highlight);
+    border: 2px solid var(--primaryLight);
     border-radius: 10px;
     width: 90%;
     margin: 20px auto;

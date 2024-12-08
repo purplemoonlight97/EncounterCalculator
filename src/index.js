@@ -2455,7 +2455,7 @@ const App = () => {
   return(
     <div>
       <Analytics />
-      <h2>Pokemon Encounter Calculator Remastered:</h2>
+      
       <div class="imageHolder">
         <img src="./resources/images/Hildawalkdown.png" alt='trainer'/>
         <img src="./resources/images/Dawn.png" alt='trainer'/>
