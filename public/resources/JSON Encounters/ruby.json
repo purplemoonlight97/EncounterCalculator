@@ -7000,13 +7000,13 @@
         "rate": "0.05"
       },
       "3": {
-        "number": "54",
+        "number": "55",
         "minLevel": "30",
         "maxLevel": "35",
         "rate": "0.04"
       },
       "4": {
-        "number": "54",
+        "number": "55",
         "minLevel": "25",
         "maxLevel": "40",
         "rate": "0.01"
