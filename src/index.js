@@ -536,7 +536,7 @@ const DppGreatMarshSection = (props) => {
   }, [props.encounters]);
 
   if (props.dppGreatMarsh){
-    if (props.game !== "platinum"){ //game is diamond or pearl
+    if (props.game != "platinum"){ //game is diamond or pearl
       return (
         <div id="dppGreatMarshArea" class="modChunk">
           <label for="greatMarshSelect">Daily Spawn?</label>
